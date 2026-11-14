@@ -1,26 +1,70 @@
 [
   {
     "id": "uunipinsa-kanalla-ja-fetalla",
-    "name": "Uunipinsa kanalla ja fetalla",
     "cat": "uuniruoka",
-    "who": ["leo", "aiti"],
-    "time": "25 min",
-    "active": "10 min työtä",
-    "servings": 2,
-    "oven": "225 °C kiertoilma",
-    "tags": ["kana", "uuni", "nopea", "edullinen"],
-    "macros": { "kcal": 520, "protein": 38 },
     "ing": [
-      { "n": "Pinsapohja", "a": "2 kpl", "s": "Pirkka pinsapohja 2 kpl" },
-      { "n": "Broilerin suikale", "a": "250 g", "s": "Atria broilerin suikale maustamaton 400 g" },
-      { "n": "Tomaattikastike pizzalle", "a": "100 g", "s": "Pirkka pizzakastike 200 g" },
-      { "n": "Fetajuustokuutiot", "a": "100 g", "s": "Valio fetajuustokuutiot öljyssä 150 g" },
-      { "n": "Punasipuli", "a": "½ kpl", "s": "Punasipuli irto" },
-      { "n": "Pinaatti", "a": "1 kourallinen", "s": "Pirkka pesty pinaatti 65 g" },
-      { "n": "Oregano", "a": "1 tl", "p": true },
-      { "n": "Oliiviöljy", "a": "1 rkl", "p": true },
-      { "n": "Suola ja pippuri", "a": "ripaus", "p": true }
+      {
+        "a": "2 kpl",
+        "n": "Pinsapohja",
+        "s": "Pirkka pinsapohja 2 kpl"
+      },
+      {
+        "a": "250 g",
+        "n": "Broilerin suikale",
+        "s": "Atria broilerin suikale maustamaton 400 g"
+      },
+      {
+        "a": "100 g",
+        "n": "Tomaattikastike pizzalle",
+        "s": "Pirkka pizzakastike 200 g"
+      },
+      {
+        "a": "100 g",
+        "n": "Fetajuustokuutiot",
+        "s": "Valio fetajuustokuutiot öljyssä 150 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "1 kourallinen",
+        "n": "Pinaatti",
+        "s": "Pirkka pesty pinaatti 65 g"
+      },
+      {
+        "a": "1 tl",
+        "n": "Oregano",
+        "p": true
+      },
+      {
+        "a": "1 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja pippuri",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Uunipinsa kanalla ja fetalla",
+    "oven": "225 °C kiertoilma",
+    "tags": [
+      "kana",
+      "uuni",
+      "nopea",
+      "edullinen"
+    ],
+    "time": "25 min",
+    "tips": "Jos pinsapohjia ei löydy, tortillat toimivat samalla tavalla – paista silloin vain 7–8 min.",
+    "added": 1786838400000,
+    "order": 0,
     "steps": [
       "Lämmitä uuni 225 asteeseen kiertoilmalle ja laita pelti kuumenemaan.",
       "Paista suikaleet pannulla öljyssä 5 min, mausta suolalla, pippurilla ja oreganolla.",
@@ -28,33 +72,79 @@
       "Paista uunissa 10–12 min, kunnes reunat ovat rapeat.",
       "Nostele pinaatti päälle vasta uunin jälkeen, niin se pysyy raikkaana."
     ],
-    "tips": "Jos pinsapohjia ei löydy, tortillat toimivat samalla tavalla – paista silloin vain 7–8 min.",
-    "order": 0,
+    "active": "10 min työtä",
+    "macros": {
+      "kcal": 520,
+      "protein": 38
+    },
     "status": "kirjassa",
-    "added": 1786838400000
+    "servings": 2
   },
   {
     "id": "nachopelti-jauhelihalla",
-    "name": "Nachopelti jauhelihalla",
     "cat": "uuniruoka",
-    "who": ["leo", "aiti"],
-    "time": "30 min",
-    "active": "15 min työtä",
-    "servings": 3,
-    "oven": "200 °C kiertoilma",
-    "tags": ["jauheliha", "uuni", "perheruoka"],
-    "macros": { "kcal": 610, "protein": 36 },
     "ing": [
-      { "n": "Naudan jauheliha 10 %", "a": "400 g", "s": "Pirkka naudan jauheliha 10 % 400 g" },
-      { "n": "Maissilastut", "a": "200 g", "s": "Rainbow maissilastut 200 g" },
-      { "n": "Tomaattimurska", "a": "1 tlk (390 g)", "s": "Pirkka tomaattimurska 390 g" },
-      { "n": "Punainen paprika", "a": "1 kpl", "s": "Paprika punainen irto" },
-      { "n": "Maissi", "a": "1 prk (330 g)", "s": "Pirkka maissi 330 g" },
-      { "n": "Juustoraaste", "a": "150 g", "s": "Valio Arki juustoraaste 250 g" },
-      { "n": "Kreikkalainen jogurtti", "a": "150 g", "s": "Valio kreikkalainen jogurtti 2 % 400 g" },
-      { "n": "Taco-mauste", "a": "1 pss", "s": "Santa Maria Taco Spice Mix 28 g" },
-      { "n": "Rypsiöljy", "a": "1 rkl", "p": true }
+      {
+        "a": "400 g",
+        "n": "Naudan jauheliha 10 %",
+        "s": "Pirkka naudan jauheliha 10 % 400 g"
+      },
+      {
+        "a": "200 g",
+        "n": "Maissilastut",
+        "s": "Rainbow maissilastut 200 g"
+      },
+      {
+        "a": "1 tlk (390 g)",
+        "n": "Tomaattimurska",
+        "s": "Pirkka tomaattimurska 390 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Punainen paprika",
+        "s": "Paprika punainen irto"
+      },
+      {
+        "a": "1 prk (330 g)",
+        "n": "Maissi",
+        "s": "Pirkka maissi 330 g"
+      },
+      {
+        "a": "150 g",
+        "n": "Juustoraaste",
+        "s": "Valio Arki juustoraaste 250 g"
+      },
+      {
+        "a": "150 g",
+        "n": "Kreikkalainen jogurtti",
+        "s": "Valio kreikkalainen jogurtti 2 % 400 g"
+      },
+      {
+        "a": "1 pss",
+        "n": "Taco-mauste",
+        "s": "Santa Maria Taco Spice Mix 28 g"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Nachopelti jauhelihalla",
+    "oven": "200 °C kiertoilma",
+    "tags": [
+      "jauheliha",
+      "uuni",
+      "perheruoka"
+    ],
+    "time": "30 min",
+    "tips": "Puolet jauhelihasta voi korvata punaisilla linsseillä – maku pysyy, hinta puolittuu ja kuitua tulee reilusti lisää.",
+    "added": 1787097600000,
+    "order": 1,
     "steps": [
       "Lämmitä uuni 200 asteeseen.",
       "Ruskista jauheliha öljyssä, lisää taco-mauste, tomaattimurska ja valutettu maissi. Hauduta 10 min.",
@@ -62,286 +152,688 @@
       "Paista 10 min, kunnes juusto on sulanut.",
       "Tarjoa jogurtin ja paprikasuikaleiden kanssa."
     ],
-    "tips": "Puolet jauhelihasta voi korvata punaisilla linsseillä – maku pysyy, hinta puolittuu ja kuitua tulee reilusti lisää.",
-    "order": 1,
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 610,
+      "protein": 36
+    },
     "status": "kirjassa",
-    "added": 1787097600000
+    "servings": 3
   },
   {
     "id": "kanawrapit-jogurttikastikkeella",
-    "name": "Kanawrapit ja jogurttikastike",
     "cat": "lounas",
-    "who": ["leo", "aiti"],
-    "time": "20 min",
-    "active": "20 min työtä",
-    "servings": 2,
-    "tags": ["kana", "nopea", "eväs"],
-    "macros": { "kcal": 480, "protein": 40 },
     "ing": [
-      { "n": "Broilerin suikale", "a": "300 g", "s": "Atria broilerin suikale maustamaton 400 g" },
-      { "n": "Tortilla", "a": "4 kpl", "s": "Pirkka vehnätortilla 8 kpl" },
-      { "n": "Jäävuorisalaatti", "a": "½ kpl", "s": "Jäävuorisalaatti irto" },
-      { "n": "Kurkku", "a": "½ kpl", "s": "Kurkku irto" },
-      { "n": "Tomaatti", "a": "2 kpl", "s": "Tomaatti irto" },
-      { "n": "Kreikkalainen jogurtti", "a": "150 g", "s": "Valio kreikkalainen jogurtti 2 % 400 g" },
-      { "n": "Valkosipuli", "a": "1 kynsi", "s": "Valkosipuli irto" },
-      { "n": "Paprikajauhe", "a": "1 tl", "p": true },
-      { "n": "Rypsiöljy", "a": "1 rkl", "p": true },
-      { "n": "Suola ja pippuri", "a": "ripaus", "p": true }
+      {
+        "a": "300 g",
+        "n": "Broilerin suikale",
+        "s": "Atria broilerin suikale maustamaton 400 g"
+      },
+      {
+        "a": "4 kpl",
+        "n": "Tortilla",
+        "s": "Pirkka vehnätortilla 8 kpl"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Jäävuorisalaatti",
+        "s": "Jäävuorisalaatti irto"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Kurkku",
+        "s": "Kurkku irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Tomaatti",
+        "s": "Tomaatti irto"
+      },
+      {
+        "a": "150 g",
+        "n": "Kreikkalainen jogurtti",
+        "s": "Valio kreikkalainen jogurtti 2 % 400 g"
+      },
+      {
+        "a": "1 kynsi",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "1 tl",
+        "n": "Paprikajauhe",
+        "p": true
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja pippuri",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Kanawrapit ja jogurttikastike",
+    "tags": [
+      "kana",
+      "nopea",
+      "eväs"
+    ],
+    "time": "20 min",
+    "tips": "Kääre pysyy kasassa, kun taitat alareunan sisään ennen rullausta. Kylmänä hyvä eväs seuraavaksi päiväksi.",
+    "added": 1787356800000,
+    "order": 2,
     "steps": [
       "Paista suikaleet kuumalla pannulla öljyssä 6–7 min. Mausta paprikajauheella, suolalla ja pippurilla.",
       "Sekoita jogurttiin murskattu valkosipuli ja ripaus suolaa.",
       "Lämmitä tortillat kuivalla pannulla 20 s puolelta.",
       "Täytä tortillat salaatilla, kurkulla, tomaatilla ja kanalla. Lusikoi kastike päälle ja kääri rullalle."
     ],
-    "tips": "Kääre pysyy kasassa, kun taitat alareunan sisään ennen rullausta. Kylmänä hyvä eväs seuraavaksi päiväksi.",
-    "order": 2,
+    "active": "20 min työtä",
+    "macros": {
+      "kcal": 480,
+      "protein": 40
+    },
     "status": "kirjassa",
-    "added": 1787356800000
+    "servings": 2
   },
   {
     "id": "tonnikalapasta-kirsikkatomaatilla",
-    "name": "Tonnikalapasta ja kirsikkatomaatit",
     "cat": "pasta",
-    "who": ["leo", "aiti"],
-    "time": "20 min",
-    "active": "15 min työtä",
-    "servings": 2,
-    "tags": ["kala", "nopea", "edullinen"],
-    "macros": { "kcal": 530, "protein": 34 },
     "ing": [
-      { "n": "Täysjyväpasta", "a": "200 g", "s": "Pirkka täysjyväpenne 500 g" },
-      { "n": "Tonnikalapala vedessä", "a": "2 prk (à 150 g)", "s": "Pirkka tonnikalapala vedessä 150 g" },
-      { "n": "Kirsikkatomaatti", "a": "250 g", "s": "Pirkka kirsikkatomaatti 250 g" },
-      { "n": "Valkosipuli", "a": "2 kynttä", "s": "Valkosipuli irto" },
-      { "n": "Pinaatti", "a": "65 g", "s": "Pirkka pesty pinaatti 65 g" },
-      { "n": "Sitruuna", "a": "½ kpl", "s": "Sitruuna irto" },
-      { "n": "Oliiviöljy", "a": "2 rkl", "p": true },
-      { "n": "Suola ja mustapippuri", "a": "ripaus", "p": true }
+      {
+        "a": "200 g",
+        "n": "Täysjyväpasta",
+        "s": "Pirkka täysjyväpenne 500 g"
+      },
+      {
+        "a": "2 prk (à 150 g)",
+        "n": "Tonnikalapala vedessä",
+        "s": "Pirkka tonnikalapala vedessä 150 g"
+      },
+      {
+        "a": "250 g",
+        "n": "Kirsikkatomaatti",
+        "s": "Pirkka kirsikkatomaatti 250 g"
+      },
+      {
+        "a": "2 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "65 g",
+        "n": "Pinaatti",
+        "s": "Pirkka pesty pinaatti 65 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Tonnikalapasta ja kirsikkatomaatit",
+    "tags": [
+      "kala",
+      "nopea",
+      "edullinen"
+    ],
+    "time": "20 min",
+    "tips": "Keitinvesi on se, mikä tekee kastikkeesta kiiltävän – älä kaada sitä kaikkea pois.",
+    "added": 1787616000000,
+    "order": 3,
     "steps": [
       "Keitä pasta suolalla maustetussa vedessä pakkauksen ohjeen mukaan. Ota talteen 1 dl keitinvettä.",
       "Kuullota valkosipuli ja puolikkaat kirsikkatomaatit öljyssä 5 min, kunnes tomaatit pehmenevät.",
       "Lisää valutettu tonnikala ja pinaatti, sekoita varovasti.",
       "Yhdistä pasta ja keitinvesi kastikkeeseen. Purista sitruunamehu päälle ja mausta."
     ],
-    "tips": "Keitinvesi on se, mikä tekee kastikkeesta kiiltävän – älä kaada sitä kaikkea pois.",
-    "order": 3,
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 530,
+      "protein": 34
+    },
     "status": "kirjassa",
-    "added": 1787616000000
+    "servings": 2
   },
   {
     "id": "jauheliha-tomaattipasta",
-    "name": "Jauheliha-tomaattipasta",
     "cat": "pasta",
-    "who": ["leo", "aiti"],
-    "time": "25 min",
-    "active": "15 min työtä",
-    "servings": 3,
-    "tags": ["jauheliha", "perusruoka", "edullinen"],
-    "macros": { "kcal": 560, "protein": 35 },
     "ing": [
-      { "n": "Täysjyväspagetti", "a": "250 g", "s": "Pirkka täysjyväspagetti 500 g" },
-      { "n": "Naudan jauheliha 10 %", "a": "400 g", "s": "Pirkka naudan jauheliha 10 % 400 g" },
-      { "n": "Tomaattimurska", "a": "1 tlk (390 g)", "s": "Pirkka tomaattimurska 390 g" },
-      { "n": "Sipuli", "a": "1 kpl", "s": "Keltasipuli irto" },
-      { "n": "Porkkana", "a": "2 kpl", "s": "Porkkana irto" },
-      { "n": "Valkosipuli", "a": "2 kynttä", "s": "Valkosipuli irto" },
-      { "n": "Oregano ja basilika", "a": "1 tl kumpaakin", "p": true },
-      { "n": "Rypsiöljy", "a": "1 rkl", "p": true },
-      { "n": "Suola ja pippuri", "a": "ripaus", "p": true }
+      {
+        "a": "250 g",
+        "n": "Täysjyväspagetti",
+        "s": "Pirkka täysjyväspagetti 500 g"
+      },
+      {
+        "a": "400 g",
+        "n": "Naudan jauheliha 10 %",
+        "s": "Pirkka naudan jauheliha 10 % 400 g"
+      },
+      {
+        "a": "1 tlk (390 g)",
+        "n": "Tomaattimurska",
+        "s": "Pirkka tomaattimurska 390 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sipuli",
+        "s": "Keltasipuli irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Porkkana",
+        "s": "Porkkana irto"
+      },
+      {
+        "a": "2 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "1 tl kumpaakin",
+        "n": "Oregano ja basilika",
+        "p": true
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja pippuri",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Jauheliha-tomaattipasta",
+    "tags": [
+      "jauheliha",
+      "perusruoka",
+      "edullinen"
+    ],
+    "time": "25 min",
+    "tips": "Raastettu porkkana sulaa kastikkeeseen huomaamatta ja tekee siitä makeamman – hyvä tapa saada kasvis mukaan.",
+    "added": 1787875200000,
+    "order": 4,
     "steps": [
       "Kuullota sipuli, valkosipuli ja raastettu porkkana öljyssä 5 min.",
       "Lisää jauheliha ja ruskista kunnolla.",
       "Kaada joukkoon tomaattimurska ja mausteet. Hauduta 10 min miedolla lämmöllä.",
       "Keitä pasta samaan aikaan ja tarjoa kastikkeen kanssa."
     ],
-    "tips": "Raastettu porkkana sulaa kastikkeeseen huomaamatta ja tekee siitä makeamman – hyvä tapa saada kasvis mukaan.",
-    "order": 4,
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 560,
+      "protein": 35
+    },
     "status": "kirjassa",
-    "added": 1787875200000
+    "servings": 3
   },
   {
     "id": "lohikeitto",
-    "name": "Lohikeitto",
     "cat": "keitto",
-    "who": ["leo", "aiti"],
-    "time": "30 min",
-    "active": "15 min työtä",
-    "servings": 3,
-    "tags": ["kala", "keitto", "klassikko"],
-    "macros": { "kcal": 430, "protein": 32 },
     "ing": [
-      { "n": "Lohipala nahaton", "a": "400 g", "s": "Pirkka lohipala nahaton ruodoton 400 g" },
-      { "n": "Peruna", "a": "5 kpl", "s": "Peruna irto" },
-      { "n": "Porkkana", "a": "2 kpl", "s": "Porkkana irto" },
-      { "n": "Purjo", "a": "½ kpl", "s": "Purjo irto" },
-      { "n": "Ruokakerma 15 %", "a": "2 dl", "s": "Valio ruokakerma 15 % 2 dl" },
-      { "n": "Kalaliemikuutio", "a": "1 kpl", "s": "Pirkka kalaliemikuutio 6 kpl" },
-      { "n": "Tilli", "a": "1 rkl", "s": "Tuore tilli nippu" },
-      { "n": "Maustepippuri", "a": "5 kpl", "p": true },
-      { "n": "Suola", "a": "ripaus", "p": true }
+      {
+        "a": "400 g",
+        "n": "Lohipala nahaton",
+        "s": "Pirkka lohipala nahaton ruodoton 400 g"
+      },
+      {
+        "a": "5 kpl",
+        "n": "Peruna",
+        "s": "Peruna irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Porkkana",
+        "s": "Porkkana irto"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Purjo",
+        "s": "Purjo irto"
+      },
+      {
+        "a": "2 dl",
+        "n": "Ruokakerma 15 %",
+        "s": "Valio ruokakerma 15 % 2 dl"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Kalaliemikuutio",
+        "s": "Pirkka kalaliemikuutio 6 kpl"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Tilli",
+        "s": "Tuore tilli nippu"
+      },
+      {
+        "a": "5 kpl",
+        "n": "Maustepippuri",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Lohikeitto",
+    "tags": [
+      "kala",
+      "keitto",
+      "klassikko"
+    ],
+    "time": "30 min",
+    "tips": "Keitto on parasta vasta seuraavana päivänä, joten tee iso satsi. Pakkaseen tämä ei sovi, koska peruna muuttuu jauhoiseksi.",
+    "added": 1788134400000,
+    "order": 5,
     "steps": [
       "Keitä kuutioidut perunat, porkkanat ja purjo liemikuution kanssa 1 litrassa vettä noin 12 min.",
       "Lisää kuutioitu lohi ja keitä 5 min – älä enempää, muuten kala hajoaa.",
       "Kaada kerma joukkoon ja kuumenna kiehuvaksi.",
       "Mausta suolalla ja maustepippurilla, lisää tilli vasta lopuksi."
     ],
-    "tips": "Keitto on parasta vasta seuraavana päivänä, joten tee iso satsi. Pakkaseen tämä ei sovi, koska peruna muuttuu jauhoiseksi.",
-    "order": 5,
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 430,
+      "protein": 32
+    },
     "status": "kirjassa",
-    "added": 1788134400000
+    "servings": 3
   },
   {
     "id": "kasvis-linssikeitto",
-    "name": "Kasvis-linssikeitto",
     "cat": "keitto",
-    "who": ["leo", "aiti"],
-    "time": "30 min",
-    "active": "10 min työtä",
-    "servings": 4,
-    "tags": ["kasvis", "edullinen", "pakastuu"],
-    "macros": { "kcal": 320, "protein": 18 },
     "ing": [
-      { "n": "Punaiset linssit", "a": "2 dl", "s": "Pirkka punainen linssi 500 g" },
-      { "n": "Tomaattimurska", "a": "1 tlk (390 g)", "s": "Pirkka tomaattimurska 390 g" },
-      { "n": "Porkkana", "a": "3 kpl", "s": "Porkkana irto" },
-      { "n": "Sipuli", "a": "1 kpl", "s": "Keltasipuli irto" },
-      { "n": "Valkosipuli", "a": "2 kynttä", "s": "Valkosipuli irto" },
-      { "n": "Kasvisliemikuutio", "a": "2 kpl", "s": "Pirkka kasvisliemikuutio 6 kpl" },
-      { "n": "Juustoraaste", "a": "50 g", "s": "Valio Arki juustoraaste 250 g" },
-      { "n": "Juustokumina ja paprikajauhe", "a": "1 tl kumpaakin", "p": true },
-      { "n": "Oliiviöljy", "a": "1 rkl", "p": true }
+      {
+        "a": "2 dl",
+        "n": "Punaiset linssit",
+        "s": "Pirkka punainen linssi 500 g"
+      },
+      {
+        "a": "1 tlk (390 g)",
+        "n": "Tomaattimurska",
+        "s": "Pirkka tomaattimurska 390 g"
+      },
+      {
+        "a": "3 kpl",
+        "n": "Porkkana",
+        "s": "Porkkana irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sipuli",
+        "s": "Keltasipuli irto"
+      },
+      {
+        "a": "2 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Kasvisliemikuutio",
+        "s": "Pirkka kasvisliemikuutio 6 kpl"
+      },
+      {
+        "a": "50 g",
+        "n": "Juustoraaste",
+        "s": "Valio Arki juustoraaste 250 g"
+      },
+      {
+        "a": "1 tl kumpaakin",
+        "n": "Juustokumina ja paprikajauhe",
+        "p": true
+      },
+      {
+        "a": "1 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Kasvis-linssikeitto",
+    "tags": [
+      "kasvis",
+      "edullinen",
+      "pakastuu"
+    ],
+    "time": "30 min",
+    "tips": "Linssit eivät vaadi liotusta ja antavat saman proteiinin kuin liha murto-osalla hinnasta. Pakastuu hyvin annospurkeissa.",
+    "added": 1788393600000,
+    "order": 6,
     "steps": [
       "Kuullota sipuli, valkosipuli ja kuutioitu porkkana öljyssä 5 min.",
       "Lisää huuhdellut linssit, tomaattimurska, mausteet, liemikuutiot ja 1 litra vettä.",
       "Keitä 20 min, kunnes linssit ovat hajonneet ja keitto on sakeaa.",
       "Soseuta halutessasi sauvasekoittimella ja ripottele juustoraaste annoksiin."
     ],
-    "tips": "Linssit eivät vaadi liotusta ja antavat saman proteiinin kuin liha murto-osalla hinnasta. Pakastuu hyvin annospurkeissa.",
-    "order": 6,
+    "active": "10 min työtä",
+    "macros": {
+      "kcal": 320,
+      "protein": 18
+    },
     "status": "kirjassa",
-    "added": 1788393600000
+    "servings": 4
   },
   {
     "id": "broileri-maissikeitto",
-    "name": "Juustoinen broileri-maissikeitto",
     "cat": "keitto",
-    "who": ["leo", "aiti"],
-    "time": "25 min",
-    "active": "10 min työtä",
-    "servings": 3,
-    "tags": ["kana", "keitto", "nopea"],
-    "macros": { "kcal": 410, "protein": 33 },
     "ing": [
-      { "n": "Broilerin suikale", "a": "400 g", "s": "Atria broilerin suikale maustamaton 400 g" },
-      { "n": "Maissi", "a": "1 prk (330 g)", "s": "Pirkka maissi 330 g" },
-      { "n": "Peruna", "a": "4 kpl", "s": "Peruna irto" },
-      { "n": "Ruokakerma 15 %", "a": "2 dl", "s": "Valio ruokakerma 15 % 2 dl" },
-      { "n": "Sulatejuusto", "a": "100 g", "s": "Valio Koskenlaskija sulatejuusto 200 g" },
-      { "n": "Kanaliemikuutio", "a": "2 kpl", "s": "Pirkka kanaliemikuutio 6 kpl" },
-      { "n": "Persilja", "a": "1 rkl", "p": true },
-      { "n": "Rypsiöljy", "a": "1 rkl", "p": true },
-      { "n": "Mustapippuri", "a": "ripaus", "p": true }
+      {
+        "a": "400 g",
+        "n": "Broilerin suikale",
+        "s": "Atria broilerin suikale maustamaton 400 g"
+      },
+      {
+        "a": "1 prk (330 g)",
+        "n": "Maissi",
+        "s": "Pirkka maissi 330 g"
+      },
+      {
+        "a": "4 kpl",
+        "n": "Peruna",
+        "s": "Peruna irto"
+      },
+      {
+        "a": "2 dl",
+        "n": "Ruokakerma 15 %",
+        "s": "Valio ruokakerma 15 % 2 dl"
+      },
+      {
+        "a": "100 g",
+        "n": "Sulatejuusto",
+        "s": "Valio Koskenlaskija sulatejuusto 200 g"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Kanaliemikuutio",
+        "s": "Pirkka kanaliemikuutio 6 kpl"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Persilja",
+        "p": true
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Mustapippuri",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Juustoinen broileri-maissikeitto",
+    "tags": [
+      "kana",
+      "keitto",
+      "nopea"
+    ],
+    "time": "25 min",
+    "tips": "Sulatejuusto sakeuttaa keiton ilman jauhoja. Jos haluat kevyemmän, jätä kerma pois ja lisää 1 dl vettä.",
+    "added": 1788652800000,
+    "order": 7,
     "steps": [
       "Ruskista suikaleet kattilan pohjalla öljyssä 5 min.",
       "Lisää kuutioidut perunat, liemikuutiot ja 8 dl vettä. Keitä 12 min.",
       "Lisää valutettu maissi, kerma ja sulatejuusto. Sekoita, kunnes juusto on sulanut.",
       "Mausta pippurilla ja persiljalla."
     ],
-    "tips": "Sulatejuusto sakeuttaa keiton ilman jauhoja. Jos haluat kevyemmän, jätä kerma pois ja lisää 1 dl vettä.",
-    "order": 7,
+    "active": "10 min työtä",
+    "macros": {
+      "kcal": 410,
+      "protein": 33
+    },
     "status": "kirjassa",
-    "added": 1788652800000
+    "servings": 3
   },
   {
     "id": "kanasalaatti-fetalla",
-    "name": "Kanasalaatti ja fetajuusto",
     "cat": "salaatti",
-    "who": ["leo", "aiti"],
-    "time": "15 min",
-    "active": "15 min työtä",
-    "servings": 2,
-    "tags": ["kana", "nopea", "kevyt"],
-    "macros": { "kcal": 420, "protein": 39 },
     "ing": [
-      { "n": "Broilerin suikale", "a": "300 g", "s": "Atria broilerin suikale maustamaton 400 g" },
-      { "n": "Salaattisekoitus", "a": "150 g", "s": "Pirkka salaattisekoitus 150 g" },
-      { "n": "Kirsikkatomaatti", "a": "150 g", "s": "Pirkka kirsikkatomaatti 250 g" },
-      { "n": "Kurkku", "a": "½ kpl", "s": "Kurkku irto" },
-      { "n": "Fetajuustokuutiot", "a": "100 g", "s": "Valio fetajuustokuutiot öljyssä 150 g" },
-      { "n": "Punasipuli", "a": "½ kpl", "s": "Punasipuli irto" },
-      { "n": "Sitruuna", "a": "½ kpl", "s": "Sitruuna irto" },
-      { "n": "Oliiviöljy", "a": "1 rkl", "p": true },
-      { "n": "Suola ja pippuri", "a": "ripaus", "p": true }
+      {
+        "a": "300 g",
+        "n": "Broilerin suikale",
+        "s": "Atria broilerin suikale maustamaton 400 g"
+      },
+      {
+        "a": "150 g",
+        "n": "Salaattisekoitus",
+        "s": "Pirkka salaattisekoitus 150 g"
+      },
+      {
+        "a": "150 g",
+        "n": "Kirsikkatomaatti",
+        "s": "Pirkka kirsikkatomaatti 250 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Kurkku",
+        "s": "Kurkku irto"
+      },
+      {
+        "a": "100 g",
+        "n": "Fetajuustokuutiot",
+        "s": "Valio fetajuustokuutiot öljyssä 150 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja pippuri",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Kanasalaatti ja fetajuusto",
+    "tags": [
+      "kana",
+      "nopea",
+      "kevyt"
+    ],
+    "time": "15 min",
+    "tips": "Kun paistat kanan illalla valmiiksi, salaatti syntyy seuraavana päivänä viidessä minuutissa.",
+    "added": 1788912000000,
+    "order": 8,
     "steps": [
       "Paista suikaleet pannulla 6 min, mausta suolalla ja pippurilla. Anna jäähtyä hetki.",
       "Pilko tomaatit, kurkku ja punasipuli salaattikulhoon.",
       "Lisää kana ja feta päälle.",
       "Valuta päälle oliiviöljy ja sitruunamehu, sekoita kevyesti."
     ],
-    "tips": "Kun paistat kanan illalla valmiiksi, salaatti syntyy seuraavana päivänä viidessä minuutissa.",
-    "order": 8,
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 420,
+      "protein": 39
+    },
     "status": "kirjassa",
-    "added": 1788912000000
+    "servings": 2
   },
   {
     "id": "tonnikala-pastasalaatti",
-    "name": "Tonnikala-pastasalaatti",
     "cat": "salaatti",
-    "who": ["leo", "aiti"],
-    "time": "20 min",
-    "active": "15 min työtä",
-    "servings": 3,
-    "tags": ["kala", "eväs", "edullinen"],
-    "macros": { "kcal": 450, "protein": 30 },
     "ing": [
-      { "n": "Täysjyväfusilli", "a": "200 g", "s": "Pirkka täysjyväfusilli 500 g" },
-      { "n": "Tonnikalapala vedessä", "a": "2 prk (à 150 g)", "s": "Pirkka tonnikalapala vedessä 150 g" },
-      { "n": "Kirsikkatomaatti", "a": "200 g", "s": "Pirkka kirsikkatomaatti 250 g" },
-      { "n": "Kurkku", "a": "½ kpl", "s": "Kurkku irto" },
-      { "n": "Maissi", "a": "1 prk (330 g)", "s": "Pirkka maissi 330 g" },
-      { "n": "Kreikkalainen jogurtti", "a": "150 g", "s": "Valio kreikkalainen jogurtti 2 % 400 g" },
-      { "n": "Sitruuna", "a": "½ kpl", "s": "Sitruuna irto" },
-      { "n": "Mustapippuri ja suola", "a": "ripaus", "p": true }
+      {
+        "a": "200 g",
+        "n": "Täysjyväfusilli",
+        "s": "Pirkka täysjyväfusilli 500 g"
+      },
+      {
+        "a": "2 prk (à 150 g)",
+        "n": "Tonnikalapala vedessä",
+        "s": "Pirkka tonnikalapala vedessä 150 g"
+      },
+      {
+        "a": "200 g",
+        "n": "Kirsikkatomaatti",
+        "s": "Pirkka kirsikkatomaatti 250 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Kurkku",
+        "s": "Kurkku irto"
+      },
+      {
+        "a": "1 prk (330 g)",
+        "n": "Maissi",
+        "s": "Pirkka maissi 330 g"
+      },
+      {
+        "a": "150 g",
+        "n": "Kreikkalainen jogurtti",
+        "s": "Valio kreikkalainen jogurtti 2 % 400 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "ripaus",
+        "n": "Mustapippuri ja suola",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Tonnikala-pastasalaatti",
+    "tags": [
+      "kala",
+      "eväs",
+      "edullinen"
+    ],
+    "time": "20 min",
+    "tips": "Majoneesin tilalla jogurtti: sama kermaisuus, kolmasosa rasvasta ja selvästi enemmän proteiinia.",
+    "added": 1789171200000,
+    "order": 9,
     "steps": [
       "Keitä pasta ja huuhtele se kylmällä vedellä, niin salaatti ei lämpene.",
       "Sekoita jogurttiin sitruunamehu, suola ja pippuri.",
       "Yhdistä pasta, valutettu tonnikala, maissi, tomaatit ja kurkku.",
       "Lisää kastike ja sekoita. Anna maustua 10 min jääkaapissa."
     ],
-    "tips": "Majoneesin tilalla jogurtti: sama kermaisuus, kolmasosa rasvasta ja selvästi enemmän proteiinia.",
-    "order": 9,
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 450,
+      "protein": 30
+    },
     "status": "kirjassa",
-    "added": 1789171200000
+    "servings": 3
   },
   {
     "id": "uunilohi-ja-perunat",
-    "name": "Uunilohi ja uuniperunat",
     "cat": "uuniruoka",
-    "who": ["leo", "aiti"],
-    "time": "35 min",
-    "active": "10 min työtä",
-    "servings": 3,
-    "oven": "200 °C kiertoilma",
-    "tags": ["kala", "uuni", "yksi pelti"],
-    "macros": { "kcal": 520, "protein": 36 },
     "ing": [
-      { "n": "Lohifile nahaton", "a": "500 g", "s": "Pirkka lohifile nahaton ruodoton 500 g" },
-      { "n": "Peruna", "a": "8 kpl", "s": "Peruna irto" },
-      { "n": "Sitruuna", "a": "1 kpl", "s": "Sitruuna irto" },
-      { "n": "Parsakaali", "a": "300 g", "s": "Pirkka parsakaali pakaste 400 g" },
-      { "n": "Tilli", "a": "1 rkl", "s": "Tuore tilli nippu" },
-      { "n": "Oliiviöljy", "a": "2 rkl", "p": true },
-      { "n": "Suola ja mustapippuri", "a": "ripaus", "p": true }
+      {
+        "a": "500 g",
+        "n": "Lohifile nahaton",
+        "s": "Pirkka lohifile nahaton ruodoton 500 g"
+      },
+      {
+        "a": "8 kpl",
+        "n": "Peruna",
+        "s": "Peruna irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "300 g",
+        "n": "Parsakaali",
+        "s": "Pirkka parsakaali pakaste 400 g"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Tilli",
+        "s": "Tuore tilli nippu"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Uunilohi ja uuniperunat",
+    "oven": "200 °C kiertoilma",
+    "tags": [
+      "kala",
+      "uuni",
+      "yksi pelti"
+    ],
+    "time": "35 min",
+    "tips": "Yksi pelti, yksi tiskattava. Pellille kannattaa laittaa leivinpaperi, niin lohi ei tartu.",
+    "added": 1789430400000,
+    "order": 10,
     "steps": [
       "Lämmitä uuni 200 asteeseen. Lohko perunat, valuta päälle öljy ja suola ja levitä pellille.",
       "Paista perunoita 15 min.",
@@ -349,33 +841,80 @@
       "Paista vielä 15 min. Lohi on valmis, kun se hilseilee haarukalla.",
       "Ripottele tilli päälle."
     ],
-    "tips": "Yksi pelti, yksi tiskattava. Pellille kannattaa laittaa leivinpaperi, niin lohi ei tartu.",
-    "order": 10,
+    "active": "10 min työtä",
+    "macros": {
+      "kcal": 520,
+      "protein": 36
+    },
     "status": "kirjassa",
-    "added": 1789430400000
+    "servings": 3
   },
   {
     "id": "kanapelti-bataatilla",
-    "name": "Kanapelti bataatilla ja parsakaalilla",
     "cat": "uuniruoka",
-    "who": ["leo", "aiti"],
-    "time": "40 min",
-    "active": "10 min työtä",
-    "servings": 3,
-    "oven": "220 °C kiertoilma",
-    "tags": ["kana", "uuni", "yksi pelti", "meal prep"],
-    "macros": { "kcal": 490, "protein": 42 },
     "ing": [
-      { "n": "Broilerin paistileike", "a": "500 g", "s": "Pirkka broilerin paistileike maustamaton 500 g" },
-      { "n": "Bataatti", "a": "2 kpl", "s": "Bataatti irto" },
-      { "n": "Parsakaali", "a": "400 g", "s": "Pirkka parsakaali pakaste 400 g" },
-      { "n": "Punasipuli", "a": "1 kpl", "s": "Punasipuli irto" },
-      { "n": "Valkosipuli", "a": "3 kynttä", "s": "Valkosipuli irto" },
-      { "n": "Hunaja", "a": "1 rkl", "s": "Pirkka juokseva hunaja 350 g" },
-      { "n": "Paprikajauhe ja oregano", "a": "1 tl kumpaakin", "p": true },
-      { "n": "Oliiviöljy", "a": "2 rkl", "p": true },
-      { "n": "Suola ja pippuri", "a": "ripaus", "p": true }
+      {
+        "a": "500 g",
+        "n": "Broilerin paistileike",
+        "s": "Pirkka broilerin paistileike maustamaton 500 g"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Bataatti",
+        "s": "Bataatti irto"
+      },
+      {
+        "a": "400 g",
+        "n": "Parsakaali",
+        "s": "Pirkka parsakaali pakaste 400 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "3 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Hunaja",
+        "s": "Pirkka juokseva hunaja 350 g"
+      },
+      {
+        "a": "1 tl kumpaakin",
+        "n": "Paprikajauhe ja oregano",
+        "p": true
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja pippuri",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Kanapelti bataatilla ja parsakaalilla",
+    "oven": "220 °C kiertoilma",
+    "tags": [
+      "kana",
+      "uuni",
+      "yksi pelti",
+      "meal prep"
+    ],
+    "time": "40 min",
+    "tips": "Tee tuplasatsi: tähteet ovat valmis lounas seuraavaksi kahdeksi päiväksi.",
+    "added": 1789689600000,
+    "order": 11,
     "steps": [
       "Lämmitä uuni 220 asteeseen.",
       "Kuutioi bataatit ja levitä pellille öljyn ja mausteiden kanssa. Paista 15 min.",
@@ -383,31 +922,69 @@
       "Lisää kana, parsakaali, punasipuli ja valkosipulit pellille. Paista 20 min.",
       "Tarkista, että kana on kypsää läpikotaisin, ja tarjoa suoraan pelliltä."
     ],
-    "tips": "Tee tuplasatsi: tähteet ovat valmis lounas seuraavaksi kahdeksi päiväksi.",
-    "order": 11,
+    "active": "10 min työtä",
+    "macros": {
+      "kcal": 490,
+      "protein": 42
+    },
     "status": "kirjassa",
-    "added": 1789689600000
+    "servings": 3
   },
   {
     "id": "uunifeta-tomaattipasta",
-    "name": "Uunifeta-tomaattipasta",
     "cat": "pasta",
-    "who": ["leo", "aiti"],
-    "time": "30 min",
-    "active": "5 min työtä",
-    "servings": 3,
-    "oven": "200 °C kiertoilma",
-    "tags": ["kasvis", "uuni", "helppo"],
-    "macros": { "kcal": 540, "protein": 21 },
     "ing": [
-      { "n": "Fetajuustopala", "a": "200 g", "s": "Valio fetajuusto 200 g" },
-      { "n": "Kirsikkatomaatti", "a": "500 g", "s": "Pirkka kirsikkatomaatti 250 g (2 rasiaa)" },
-      { "n": "Täysjyväpenne", "a": "250 g", "s": "Pirkka täysjyväpenne 500 g" },
-      { "n": "Valkosipuli", "a": "3 kynttä", "s": "Valkosipuli irto" },
-      { "n": "Basilika", "a": "1 ruukku", "s": "Tuore basilika ruukku" },
-      { "n": "Oliiviöljy", "a": "3 rkl", "p": true },
-      { "n": "Suola ja mustapippuri", "a": "ripaus", "p": true }
+      {
+        "a": "200 g",
+        "n": "Fetajuustopala",
+        "s": "Valio fetajuusto 200 g"
+      },
+      {
+        "a": "500 g",
+        "n": "Kirsikkatomaatti",
+        "s": "Pirkka kirsikkatomaatti 250 g (2 rasiaa)"
+      },
+      {
+        "a": "250 g",
+        "n": "Täysjyväpenne",
+        "s": "Pirkka täysjyväpenne 500 g"
+      },
+      {
+        "a": "3 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "1 ruukku",
+        "n": "Basilika",
+        "s": "Tuore basilika ruukku"
+      },
+      {
+        "a": "3 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Uunifeta-tomaattipasta",
+    "oven": "200 °C kiertoilma",
+    "tags": [
+      "kasvis",
+      "uuni",
+      "helppo"
+    ],
+    "time": "30 min",
+    "tips": "Tästä tuli kuuluisa somessa syystä: viisi minuuttia työtä ja uuni tekee lopun. Puolet fetasta voi korvata raejuustolla, jolloin proteiinia tulee lisää.",
+    "added": 1789948800000,
+    "order": 12,
     "steps": [
       "Lämmitä uuni 200 asteeseen.",
       "Laita fetapala keskelle uunivuokaa, ympärille tomaatit ja valkosipulinkynnet. Valuta öljy päälle ja mausta.",
@@ -415,99 +992,241 @@
       "Keitä pasta sillä aikaa.",
       "Muussaa feta ja tomaatit haarukalla kastikkeeksi ja sekoita pastaan. Lisää basilika."
     ],
-    "tips": "Tästä tuli kuuluisa somessa syystä: viisi minuuttia työtä ja uuni tekee lopun. Puolet fetasta voi korvata raejuustolla, jolloin proteiinia tulee lisää.",
-    "order": 12,
+    "active": "5 min työtä",
+    "macros": {
+      "kcal": 540,
+      "protein": 21
+    },
     "status": "kirjassa",
-    "added": 1789948800000
+    "servings": 3
   },
   {
     "id": "jauhelihapihvit-uuniperunoilla",
-    "name": "Jauhelihapihvit ja uuniperunat",
     "cat": "lounas",
-    "who": ["leo", "aiti"],
-    "time": "35 min",
-    "active": "20 min työtä",
-    "servings": 3,
-    "oven": "225 °C kiertoilma",
-    "tags": ["jauheliha", "kotiruoka", "edullinen"],
-    "macros": { "kcal": 580, "protein": 37 },
     "ing": [
-      { "n": "Naudan jauheliha 10 %", "a": "400 g", "s": "Pirkka naudan jauheliha 10 % 400 g" },
-      { "n": "Peruna", "a": "8 kpl", "s": "Peruna irto" },
-      { "n": "Kananmuna", "a": "1 kpl", "s": "Pirkka kananmunat M 10 kpl" },
-      { "n": "Korppujauho", "a": "2 rkl", "s": "Pirkka korppujauho 400 g" },
-      { "n": "Sipuli", "a": "1 kpl", "s": "Keltasipuli irto" },
-      { "n": "Maito", "a": "½ dl", "s": "Valio Eila laktoositon rasvaton maitojuoma 1 l" },
-      { "n": "Kurkkusalaatti", "a": "1 kpl kurkkua", "s": "Kurkku irto" },
-      { "n": "Suola ja mustapippuri", "a": "ripaus", "p": true },
-      { "n": "Rypsiöljy", "a": "1 rkl", "p": true }
+      {
+        "a": "400 g",
+        "n": "Naudan jauheliha 10 %",
+        "s": "Pirkka naudan jauheliha 10 % 400 g"
+      },
+      {
+        "a": "8 kpl",
+        "n": "Peruna",
+        "s": "Peruna irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Kananmuna",
+        "s": "Pirkka kananmunat M 10 kpl"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Korppujauho",
+        "s": "Pirkka korppujauho 400 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sipuli",
+        "s": "Keltasipuli irto"
+      },
+      {
+        "a": "½ dl",
+        "n": "Maito",
+        "s": "Valio Eila laktoositon rasvaton maitojuoma 1 l"
+      },
+      {
+        "a": "1 kpl kurkkua",
+        "n": "Kurkkusalaatti",
+        "s": "Kurkku irto"
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Jauhelihapihvit ja uuniperunat",
+    "oven": "225 °C kiertoilma",
+    "tags": [
+      "jauheliha",
+      "kotiruoka",
+      "edullinen"
+    ],
+    "time": "35 min",
+    "tips": "Kostea taikina tekee mehevän pihvin – älä jätä maitoa pois. Pihvit voi myös paistaa samalla pellillä perunoiden kanssa viimeiset 15 min.",
+    "added": 1790208000000,
+    "order": 13,
     "steps": [
       "Lämmitä uuni 225 asteeseen. Lohko perunat, öljyä ja suolaa päälle, paista 30 min.",
       "Sekoita jauheliha, muna, korppujauho, hienonnettu sipuli, maito ja mausteet. Anna turvota 5 min.",
       "Muotoile 6 pihviä ja paista pannulla 4 min puolelta.",
       "Tarjoa uuniperunoiden ja kurkkuviipaleiden kanssa."
     ],
-    "tips": "Kostea taikina tekee mehevän pihvin – älä jätä maitoa pois. Pihvit voi myös paistaa samalla pellillä perunoiden kanssa viimeiset 15 min.",
-    "order": 13,
+    "active": "20 min työtä",
+    "macros": {
+      "kcal": 580,
+      "protein": 37
+    },
     "status": "kirjassa",
-    "added": 1790208000000
+    "servings": 3
   },
   {
     "id": "kana-nuudelikeitto",
-    "name": "Kana-nuudelikeitto",
     "cat": "keitto",
-    "who": ["leo", "aiti"],
-    "time": "20 min",
-    "active": "15 min työtä",
-    "servings": 2,
-    "tags": ["kana", "nopea", "kevyt"],
-    "macros": { "kcal": 390, "protein": 34 },
     "ing": [
-      { "n": "Broilerin suikale", "a": "300 g", "s": "Atria broilerin suikale maustamaton 400 g" },
-      { "n": "Nuudeli", "a": "150 g", "s": "Pirkka nuudeli 250 g" },
-      { "n": "Porkkana", "a": "2 kpl", "s": "Porkkana irto" },
-      { "n": "Kiinankaali", "a": "¼ kpl", "s": "Kiinankaali irto" },
-      { "n": "Kanaliemikuutio", "a": "2 kpl", "s": "Pirkka kanaliemikuutio 6 kpl" },
-      { "n": "Soijakastike", "a": "2 rkl", "s": "Kikkoman soijakastike 250 ml" },
-      { "n": "Inkivääri", "a": "1 cm pala", "s": "Tuore inkivääri irto" },
-      { "n": "Valkosipuli", "a": "2 kynttä", "s": "Valkosipuli irto" },
-      { "n": "Rypsiöljy", "a": "1 rkl", "p": true }
+      {
+        "a": "300 g",
+        "n": "Broilerin suikale",
+        "s": "Atria broilerin suikale maustamaton 400 g"
+      },
+      {
+        "a": "150 g",
+        "n": "Nuudeli",
+        "s": "Pirkka nuudeli 250 g"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Porkkana",
+        "s": "Porkkana irto"
+      },
+      {
+        "a": "¼ kpl",
+        "n": "Kiinankaali",
+        "s": "Kiinankaali irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Kanaliemikuutio",
+        "s": "Pirkka kanaliemikuutio 6 kpl"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Soijakastike",
+        "s": "Kikkoman soijakastike 250 ml"
+      },
+      {
+        "a": "1 cm pala",
+        "n": "Inkivääri",
+        "s": "Tuore inkivääri irto"
+      },
+      {
+        "a": "2 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Kana-nuudelikeitto",
+    "tags": [
+      "kana",
+      "nopea",
+      "kevyt"
+    ],
+    "time": "20 min",
+    "tips": "Flunssailtana tämä on parempi kuin mikään purkkikeitto. Inkivääri saa jäädä pois, jos sitä ei ole – lisää silloin ripaus chiliä.",
+    "added": 1790467200000,
+    "order": 14,
     "steps": [
       "Kuullota raastettu inkivääri ja valkosipuli öljyssä kattilassa 1 min.",
       "Lisää 8 dl vettä ja liemikuutiot, kiehauta.",
       "Lisää suikaleet ja porkkanasuikaleet, keitä 6 min.",
       "Lisää nuudelit ja suikaloitu kiinankaali, keitä 3 min. Mausta soijakastikkeella."
     ],
-    "tips": "Flunssailtana tämä on parempi kuin mikään purkkikeitto. Inkivääri saa jäädä pois, jos sitä ei ole – lisää silloin ripaus chiliä.",
-    "order": 14,
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 390,
+      "protein": 34
+    },
     "status": "kirjassa",
-    "added": 1790467200000
+    "servings": 2
   },
   {
     "id": "uunikana-ja-juurekset",
-    "name": "Uunikana ja juurekset",
     "cat": "uuniruoka",
-    "who": ["leo", "aiti"],
-    "time": "1 h 20 min",
-    "active": "15 min työtä",
-    "servings": 4,
-    "oven": "200 °C kiertoilma",
-    "tags": ["kana", "uuni", "viikonloppu"],
-    "macros": { "kcal": 540, "protein": 44 },
     "ing": [
-      { "n": "Kokonainen broileri", "a": "1,2 kg", "s": "Pirkka kokonainen broileri n. 1,2 kg" },
-      { "n": "Peruna", "a": "8 kpl", "s": "Peruna irto" },
-      { "n": "Porkkana", "a": "4 kpl", "s": "Porkkana irto" },
-      { "n": "Palsternakka", "a": "2 kpl", "s": "Palsternakka irto" },
-      { "n": "Sipuli", "a": "2 kpl", "s": "Keltasipuli irto" },
-      { "n": "Sitruuna", "a": "1 kpl", "s": "Sitruuna irto" },
-      { "n": "Valkosipuli", "a": "1 kokonainen", "s": "Valkosipuli irto" },
-      { "n": "Rosmariini ja timjami", "a": "1 tl kumpaakin", "p": true },
-      { "n": "Oliiviöljy", "a": "3 rkl", "p": true },
-      { "n": "Suola ja mustapippuri", "a": "1 tl", "p": true }
+      {
+        "a": "1,2 kg",
+        "n": "Kokonainen broileri",
+        "s": "Pirkka kokonainen broileri n. 1,2 kg"
+      },
+      {
+        "a": "8 kpl",
+        "n": "Peruna",
+        "s": "Peruna irto"
+      },
+      {
+        "a": "4 kpl",
+        "n": "Porkkana",
+        "s": "Porkkana irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Palsternakka",
+        "s": "Palsternakka irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Sipuli",
+        "s": "Keltasipuli irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "1 kokonainen",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "1 tl kumpaakin",
+        "n": "Rosmariini ja timjami",
+        "p": true
+      },
+      {
+        "a": "3 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "1 tl",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Uunikana ja juurekset",
+    "oven": "200 °C kiertoilma",
+    "tags": [
+      "kana",
+      "uuni",
+      "viikonloppu"
+    ],
+    "time": "1 h 20 min",
+    "tips": "Viikonlopun ruoka, josta syntyy arkeen kaksi lisää: tähdelihasta wrapit ja luista keittoliemi.",
+    "added": 1790726400000,
+    "order": 15,
     "steps": [
       "Lämmitä uuni 200 asteeseen. Kuivaa broileri talouspaperilla ja hiero pintaan öljy, suola, pippuri ja yrtit.",
       "Työnnä puolitettu sitruuna ja muutama valkosipulinkynsi broilerin sisään.",
@@ -515,31 +1234,73 @@
       "Paista 1 h 10 min. Liemen pitää valua kirkkaana, kun reiteen pistää veitsen.",
       "Anna vetäytyä 10 min ennen paloittelua – silloin liha pysyy mehevänä."
     ],
-    "tips": "Viikonlopun ruoka, josta syntyy arkeen kaksi lisää: tähdelihasta wrapit ja luista keittoliemi.",
-    "order": 15,
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 540,
+      "protein": 44
+    },
     "status": "kirjassa",
-    "added": 1790726400000
+    "servings": 4
   },
   {
     "id": "munakas-pinaatilla",
-    "name": "Munakas pinaatilla ja juustolla",
     "cat": "iltapala",
-    "who": ["leo", "aiti"],
-    "time": "15 min",
-    "active": "15 min työtä",
-    "servings": 2,
-    "tags": ["kananmuna", "nopea", "proteiini"],
-    "macros": { "kcal": 330, "protein": 26 },
     "ing": [
-      { "n": "Kananmuna", "a": "5 kpl", "s": "Pirkka kananmunat M 10 kpl" },
-      { "n": "Pinaatti", "a": "65 g", "s": "Pirkka pesty pinaatti 65 g" },
-      { "n": "Juustoraaste", "a": "60 g", "s": "Valio Arki juustoraaste 250 g" },
-      { "n": "Kirsikkatomaatti", "a": "100 g", "s": "Pirkka kirsikkatomaatti 250 g" },
-      { "n": "Maito", "a": "2 rkl", "s": "Valio Eila laktoositon rasvaton maitojuoma 1 l" },
-      { "n": "Ruisleipä", "a": "2 viipaletta", "s": "Vaasan ruispalat 290 g" },
-      { "n": "Voi tai öljy", "a": "1 rkl", "p": true },
-      { "n": "Suola ja pippuri", "a": "ripaus", "p": true }
+      {
+        "a": "5 kpl",
+        "n": "Kananmuna",
+        "s": "Pirkka kananmunat M 10 kpl"
+      },
+      {
+        "a": "65 g",
+        "n": "Pinaatti",
+        "s": "Pirkka pesty pinaatti 65 g"
+      },
+      {
+        "a": "60 g",
+        "n": "Juustoraaste",
+        "s": "Valio Arki juustoraaste 250 g"
+      },
+      {
+        "a": "100 g",
+        "n": "Kirsikkatomaatti",
+        "s": "Pirkka kirsikkatomaatti 250 g"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Maito",
+        "s": "Valio Eila laktoositon rasvaton maitojuoma 1 l"
+      },
+      {
+        "a": "2 viipaletta",
+        "n": "Ruisleipä",
+        "s": "Vaasan ruispalat 290 g"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Voi tai öljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja pippuri",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Munakas pinaatilla ja juustolla",
+    "tags": [
+      "kananmuna",
+      "nopea",
+      "proteiini"
+    ],
+    "time": "15 min",
+    "tips": "Liian kuuma pannu tekee munakkaasta kumisen. Keskilämpö ja kansi ovat koko temppu.",
+    "added": 1790985600000,
+    "order": 16,
     "steps": [
       "Riko munat kulhoon, lisää maito, suola ja pippuri ja vatkaa haarukalla.",
       "Kuumenna pannu keskilämmölle ja sulata rasva.",
@@ -547,300 +1308,668 @@
       "Taita munakas kahtia ja anna hautua kannen alla 2 min.",
       "Tarjoa ruisleivän kanssa."
     ],
-    "tips": "Liian kuuma pannu tekee munakkaasta kumisen. Keskilämpö ja kansi ovat koko temppu.",
-    "order": 16,
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 330,
+      "protein": 26
+    },
     "status": "kirjassa",
-    "added": 1790985600000
+    "servings": 2
   },
   {
     "id": "munakokkeli-ruisleivalla",
-    "name": "Munakokkeli ruisleivällä",
     "cat": "iltapala",
-    "who": ["leo", "aiti"],
-    "time": "10 min",
-    "active": "10 min työtä",
-    "servings": 1,
-    "tags": ["kananmuna", "nopea", "proteiini"],
-    "macros": { "kcal": 340, "protein": 24 },
     "ing": [
-      { "n": "Kananmuna", "a": "3 kpl", "s": "Pirkka kananmunat M 10 kpl" },
-      { "n": "Ruisleipä", "a": "2 viipaletta", "s": "Vaasan ruispalat 290 g" },
-      { "n": "Raejuusto", "a": "100 g", "s": "Valio raejuusto 200 g" },
-      { "n": "Ruohosipuli", "a": "1 rkl", "s": "Tuore ruohosipuli nippu" },
-      { "n": "Tomaatti", "a": "1 kpl", "s": "Tomaatti irto" },
-      { "n": "Voi", "a": "1 tl", "p": true },
-      { "n": "Suola ja pippuri", "a": "ripaus", "p": true }
+      {
+        "a": "3 kpl",
+        "n": "Kananmuna",
+        "s": "Pirkka kananmunat M 10 kpl"
+      },
+      {
+        "a": "2 viipaletta",
+        "n": "Ruisleipä",
+        "s": "Vaasan ruispalat 290 g"
+      },
+      {
+        "a": "100 g",
+        "n": "Raejuusto",
+        "s": "Valio raejuusto 200 g"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Ruohosipuli",
+        "s": "Tuore ruohosipuli nippu"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Tomaatti",
+        "s": "Tomaatti irto"
+      },
+      {
+        "a": "1 tl",
+        "n": "Voi",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja pippuri",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Munakokkeli ruisleivällä",
+    "tags": [
+      "kananmuna",
+      "nopea",
+      "proteiini"
+    ],
+    "time": "10 min",
+    "tips": "Raejuusto tuo annokseen 13 g lisää proteiinia eikä maistu miltään erikoiselta leivän päällä.",
+    "added": 1791244800000,
+    "order": 17,
     "steps": [
       "Vatkaa munat kevyesti ja mausta.",
       "Sulata voi pannulla miedolla lämmöllä ja kaada munat joukkoon.",
       "Sekoittele hitaasti lastalla, kunnes muna on juuri ja juuri hyytynyt – ota pois liedeltä hieman kosteana.",
       "Nosta ruisleiville, lisää raejuusto, tomaattiviipaleet ja ruohosipuli."
     ],
-    "tips": "Raejuusto tuo annokseen 13 g lisää proteiinia eikä maistu miltään erikoiselta leivän päällä.",
-    "order": 17,
+    "active": "10 min työtä",
+    "macros": {
+      "kcal": 340,
+      "protein": 24
+    },
     "status": "kirjassa",
-    "added": 1791244800000
+    "servings": 1
   },
   {
     "id": "juustoinen-kinkkuleipa-uunissa",
-    "name": "Juustoinen kinkkuleipä uunissa",
     "cat": "iltapala",
-    "who": ["leo", "aiti"],
-    "time": "12 min",
-    "active": "5 min työtä",
-    "servings": 2,
-    "oven": "225 °C grillivastus",
-    "tags": ["nopea", "iltapala", "uuni"],
-    "macros": { "kcal": 290, "protein": 20 },
     "ing": [
-      { "n": "Ruisleipä tai sämpylä", "a": "2 kpl", "s": "Vaasan ruispalat 290 g" },
-      { "n": "Kalkkunaleikkele", "a": "80 g", "s": "Atria kalkkunaleikkele 250 g" },
-      { "n": "Juustoviipale", "a": "2 viipaletta", "s": "Valio Oltermanni 17 % viipale 225 g" },
-      { "n": "Tomaatti", "a": "1 kpl", "s": "Tomaatti irto" },
-      { "n": "Paprika", "a": "½ kpl", "s": "Paprika punainen irto" },
-      { "n": "Oregano", "a": "ripaus", "p": true }
+      {
+        "a": "2 kpl",
+        "n": "Ruisleipä tai sämpylä",
+        "s": "Vaasan ruispalat 290 g"
+      },
+      {
+        "a": "80 g",
+        "n": "Kalkkunaleikkele",
+        "s": "Atria kalkkunaleikkele 250 g"
+      },
+      {
+        "a": "2 viipaletta",
+        "n": "Juustoviipale",
+        "s": "Valio Oltermanni 17 % viipale 225 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Tomaatti",
+        "s": "Tomaatti irto"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Paprika",
+        "s": "Paprika punainen irto"
+      },
+      {
+        "a": "ripaus",
+        "n": "Oregano",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Juustoinen kinkkuleipä uunissa",
+    "oven": "225 °C grillivastus",
+    "tags": [
+      "nopea",
+      "iltapala",
+      "uuni"
+    ],
+    "time": "12 min",
+    "tips": "Grillivastus hoitaa tämän nopeammin kuin mikro, eikä leipä jää sitkeäksi.",
+    "added": 1791504000000,
+    "order": 18,
     "steps": [
       "Lämmitä uuni 225 asteeseen grillivastuksella.",
       "Kokoa leiville leikkele, tomaatti- ja paprikaviipaleet ja päällimmäiseksi juusto.",
       "Paista ylätasolla 5–7 min, kunnes juusto kuplii.",
       "Ripottele oregano päälle ja syö heti."
     ],
-    "tips": "Grillivastus hoitaa tämän nopeammin kuin mikro, eikä leipä jää sitkeäksi.",
-    "order": 18,
+    "active": "5 min työtä",
+    "macros": {
+      "kcal": 290,
+      "protein": 20
+    },
     "status": "kirjassa",
-    "added": 1791504000000
+    "servings": 2
   },
   {
     "id": "quesadilla-kanalla",
-    "name": "Juustoinen quesadilla kanalla",
     "cat": "iltapala",
-    "who": ["leo", "aiti"],
-    "time": "15 min",
-    "active": "15 min työtä",
-    "servings": 2,
-    "tags": ["kana", "nopea", "iltapala"],
-    "macros": { "kcal": 420, "protein": 32 },
     "ing": [
-      { "n": "Tortilla", "a": "4 kpl", "s": "Pirkka vehnätortilla 8 kpl" },
-      { "n": "Broilerin suikale", "a": "200 g", "s": "Atria broilerin suikale maustamaton 400 g" },
-      { "n": "Juustoraaste", "a": "120 g", "s": "Valio Arki juustoraaste 250 g" },
-      { "n": "Paprika", "a": "1 kpl", "s": "Paprika punainen irto" },
-      { "n": "Punasipuli", "a": "½ kpl", "s": "Punasipuli irto" },
-      { "n": "Kreikkalainen jogurtti", "a": "100 g", "s": "Valio kreikkalainen jogurtti 2 % 400 g" },
-      { "n": "Paprikajauhe ja juustokumina", "a": "1 tl", "p": true },
-      { "n": "Rypsiöljy", "a": "1 rkl", "p": true }
+      {
+        "a": "4 kpl",
+        "n": "Tortilla",
+        "s": "Pirkka vehnätortilla 8 kpl"
+      },
+      {
+        "a": "200 g",
+        "n": "Broilerin suikale",
+        "s": "Atria broilerin suikale maustamaton 400 g"
+      },
+      {
+        "a": "120 g",
+        "n": "Juustoraaste",
+        "s": "Valio Arki juustoraaste 250 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Paprika",
+        "s": "Paprika punainen irto"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "100 g",
+        "n": "Kreikkalainen jogurtti",
+        "s": "Valio kreikkalainen jogurtti 2 % 400 g"
+      },
+      {
+        "a": "1 tl",
+        "n": "Paprikajauhe ja juustokumina",
+        "p": true
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Juustoinen quesadilla kanalla",
+    "tags": [
+      "kana",
+      "nopea",
+      "iltapala"
+    ],
+    "time": "15 min",
+    "tips": "Painele quesadillaa lastalla paistamisen ajan, niin se pysyy kasassa, kun leikkaat.",
+    "added": 1791763200000,
+    "order": 19,
     "steps": [
       "Paista suikaleet ja suikaloitu paprika pannulla öljyssä 6 min. Mausta.",
       "Levitä täyte kahdelle tortillalle, ripottele juustoraaste ja laita toinen tortilla kanneksi.",
       "Paista kuivalla pannulla 2–3 min puolelta, kunnes pinta on rapea ja juusto sulanut.",
       "Leikkaa lohkoiksi ja tarjoa jogurtin kanssa."
     ],
-    "tips": "Painele quesadillaa lastalla paistamisen ajan, niin se pysyy kasassa, kun leikkaat.",
-    "order": 19,
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 420,
+      "protein": 32
+    },
     "status": "kirjassa",
-    "added": 1791763200000
+    "servings": 2
   },
   {
     "id": "tonnikalaleivat-uunissa",
-    "name": "Tonnikalaleivät uunissa",
     "cat": "iltapala",
-    "who": ["leo", "aiti"],
-    "time": "15 min",
-    "active": "8 min työtä",
-    "servings": 2,
-    "oven": "225 °C kiertoilma",
-    "tags": ["kala", "edullinen", "iltapala"],
-    "macros": { "kcal": 330, "protein": 27 },
     "ing": [
-      { "n": "Paahtoleipä täysjyvä", "a": "4 viipaletta", "s": "Vaasan täysjyväpaahto 500 g" },
-      { "n": "Tonnikalapala vedessä", "a": "1 prk (150 g)", "s": "Pirkka tonnikalapala vedessä 150 g" },
-      { "n": "Kreikkalainen jogurtti", "a": "100 g", "s": "Valio kreikkalainen jogurtti 2 % 400 g" },
-      { "n": "Juustoraaste", "a": "60 g", "s": "Valio Arki juustoraaste 250 g" },
-      { "n": "Kevätsipuli", "a": "2 vartta", "s": "Kevätsipuli nippu" },
-      { "n": "Sitruuna", "a": "¼ kpl", "s": "Sitruuna irto" },
-      { "n": "Mustapippuri", "a": "ripaus", "p": true }
+      {
+        "a": "4 viipaletta",
+        "n": "Paahtoleipä täysjyvä",
+        "s": "Vaasan täysjyväpaahto 500 g"
+      },
+      {
+        "a": "1 prk (150 g)",
+        "n": "Tonnikalapala vedessä",
+        "s": "Pirkka tonnikalapala vedessä 150 g"
+      },
+      {
+        "a": "100 g",
+        "n": "Kreikkalainen jogurtti",
+        "s": "Valio kreikkalainen jogurtti 2 % 400 g"
+      },
+      {
+        "a": "60 g",
+        "n": "Juustoraaste",
+        "s": "Valio Arki juustoraaste 250 g"
+      },
+      {
+        "a": "2 vartta",
+        "n": "Kevätsipuli",
+        "s": "Kevätsipuli nippu"
+      },
+      {
+        "a": "¼ kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "ripaus",
+        "n": "Mustapippuri",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Tonnikalaleivät uunissa",
+    "oven": "225 °C kiertoilma",
+    "tags": [
+      "kala",
+      "edullinen",
+      "iltapala"
+    ],
+    "time": "15 min",
+    "tips": "Yhden purkin tonnikalasta saa neljä leipää ja lähes 30 g proteiinia annokseen – halvempi iltapala ei juuri ole.",
+    "added": 1792022400000,
+    "order": 20,
     "steps": [
       "Lämmitä uuni 225 asteeseen.",
       "Sekoita valutettu tonnikala, jogurtti, hienonnettu kevätsipuli, sitruunamehu ja pippuri.",
       "Levitä seos leiville ja ripottele juustoraaste päälle.",
       "Paista 8 min, kunnes pinta saa väriä."
     ],
-    "tips": "Yhden purkin tonnikalasta saa neljä leipää ja lähes 30 g proteiinia annokseen – halvempi iltapala ei juuri ole.",
-    "order": 20,
+    "active": "8 min työtä",
+    "macros": {
+      "kcal": 330,
+      "protein": 27
+    },
     "status": "kirjassa",
-    "added": 1792022400000
+    "servings": 2
   },
   {
     "id": "raejuusto-hedelmakulho",
-    "name": "Raejuusto-hedelmäkulho",
     "cat": "iltapala",
-    "who": ["leo", "aiti"],
-    "time": "5 min",
-    "active": "5 min työtä",
-    "servings": 1,
-    "tags": ["nopea", "proteiini", "ei kokkausta"],
-    "macros": { "kcal": 280, "protein": 28 },
     "ing": [
-      { "n": "Raejuusto", "a": "200 g", "s": "Valio raejuusto 200 g" },
-      { "n": "Banaani", "a": "1 kpl", "s": "Banaani irto" },
-      { "n": "Mustikka pakaste", "a": "1 dl", "s": "Pirkka mustikka pakaste 300 g" },
-      { "n": "Kaurahiutale", "a": "2 rkl", "s": "Elovena kaurahiutale 1 kg" },
-      { "n": "Hunaja", "a": "1 tl", "s": "Pirkka juokseva hunaja 350 g" },
-      { "n": "Kaneli", "a": "ripaus", "p": true }
+      {
+        "a": "200 g",
+        "n": "Raejuusto",
+        "s": "Valio raejuusto 200 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Banaani",
+        "s": "Banaani irto"
+      },
+      {
+        "a": "1 dl",
+        "n": "Mustikka pakaste",
+        "s": "Pirkka mustikka pakaste 300 g"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Kaurahiutale",
+        "s": "Elovena kaurahiutale 1 kg"
+      },
+      {
+        "a": "1 tl",
+        "n": "Hunaja",
+        "s": "Pirkka juokseva hunaja 350 g"
+      },
+      {
+        "a": "ripaus",
+        "n": "Kaneli",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Raejuusto-hedelmäkulho",
+    "tags": [
+      "nopea",
+      "proteiini",
+      "ei kokkausta"
+    ],
+    "time": "5 min",
+    "tips": "Nopein tapa saada 28 g proteiinia iltapalasta ilman että mitään tarvitsee kypsentää.",
+    "added": 1792281600000,
+    "order": 21,
     "steps": [
       "Sulata mustikat mikrossa 30 s tai anna niiden olla hetki huoneenlämmössä.",
       "Lusikoi raejuusto kulhoon.",
       "Lisää banaaniviipaleet, mustikat ja kaurahiutaleet.",
       "Valuta hunaja päälle ja ripottele kaneli."
     ],
-    "tips": "Nopein tapa saada 28 g proteiinia iltapalasta ilman että mitään tarvitsee kypsentää.",
-    "order": 21,
+    "active": "5 min työtä",
+    "macros": {
+      "kcal": 280,
+      "protein": 28
+    },
     "status": "kirjassa",
-    "added": 1792281600000
+    "servings": 1
   },
   {
     "id": "kasvistikut-jogurttidippi",
-    "name": "Kasvistikut ja jogurttidippi",
     "cat": "iltapala",
-    "who": ["leo", "aiti"],
-    "time": "10 min",
-    "active": "10 min työtä",
-    "servings": 2,
-    "tags": ["kevyt", "ei kokkausta", "kasvis"],
-    "macros": { "kcal": 180, "protein": 12 },
     "ing": [
-      { "n": "Porkkana", "a": "3 kpl", "s": "Porkkana irto" },
-      { "n": "Kurkku", "a": "1 kpl", "s": "Kurkku irto" },
-      { "n": "Paprika", "a": "1 kpl", "s": "Paprika punainen irto" },
-      { "n": "Kreikkalainen jogurtti", "a": "200 g", "s": "Valio kreikkalainen jogurtti 2 % 400 g" },
-      { "n": "Ruohosipuli", "a": "1 rkl", "s": "Tuore ruohosipuli nippu" },
-      { "n": "Valkosipuli", "a": "1 kynsi", "s": "Valkosipuli irto" },
-      { "n": "Sitruuna", "a": "¼ kpl", "s": "Sitruuna irto" },
-      { "n": "Suola ja mustapippuri", "a": "ripaus", "p": true }
+      {
+        "a": "3 kpl",
+        "n": "Porkkana",
+        "s": "Porkkana irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Kurkku",
+        "s": "Kurkku irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Paprika",
+        "s": "Paprika punainen irto"
+      },
+      {
+        "a": "200 g",
+        "n": "Kreikkalainen jogurtti",
+        "s": "Valio kreikkalainen jogurtti 2 % 400 g"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Ruohosipuli",
+        "s": "Tuore ruohosipuli nippu"
+      },
+      {
+        "a": "1 kynsi",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "¼ kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Kasvistikut ja jogurttidippi",
+    "tags": [
+      "kevyt",
+      "ei kokkausta",
+      "kasvis"
+    ],
+    "time": "10 min",
+    "tips": "Dippi säilyy jääkaapissa kolme päivää, joten tee kerralla tuplasti – iltapala on silloin valmiina.",
+    "added": 1792540800000,
+    "order": 22,
     "steps": [
       "Sekoita jogurttiin murskattu valkosipuli, ruohosipuli, sitruunamehu, suola ja pippuri.",
       "Anna dipin maustua 5 min.",
       "Leikkaa kasvikset tikuiksi.",
       "Tarjoa dipin kanssa."
     ],
-    "tips": "Dippi säilyy jääkaapissa kolme päivää, joten tee kerralla tuplasti – iltapala on silloin valmiina.",
-    "order": 22,
+    "active": "10 min työtä",
+    "macros": {
+      "kcal": 180,
+      "protein": 12
+    },
     "status": "kirjassa",
-    "added": 1792540800000
+    "servings": 2
   },
   {
     "id": "kaurapuuro-marjoilla",
-    "name": "Kaurapuuro marjoilla",
     "cat": "aamiainen",
-    "who": ["leo", "aiti"],
-    "time": "10 min",
-    "active": "10 min työtä",
-    "servings": 2,
-    "tags": ["aamiainen", "edullinen", "kuitu"],
-    "macros": { "kcal": 310, "protein": 14 },
     "ing": [
-      { "n": "Kaurahiutale", "a": "2 dl", "s": "Elovena kaurahiutale 1 kg" },
-      { "n": "Maito", "a": "3 dl", "s": "Valio Eila laktoositon rasvaton maitojuoma 1 l" },
-      { "n": "Mustikka pakaste", "a": "2 dl", "s": "Pirkka mustikka pakaste 300 g" },
-      { "n": "Raejuusto", "a": "100 g", "s": "Valio raejuusto 200 g" },
-      { "n": "Kaneli", "a": "½ tl", "p": true },
-      { "n": "Suola", "a": "ripaus", "p": true }
+      {
+        "a": "2 dl",
+        "n": "Kaurahiutale",
+        "s": "Elovena kaurahiutale 1 kg"
+      },
+      {
+        "a": "3 dl",
+        "n": "Maito",
+        "s": "Valio Eila laktoositon rasvaton maitojuoma 1 l"
+      },
+      {
+        "a": "2 dl",
+        "n": "Mustikka pakaste",
+        "s": "Pirkka mustikka pakaste 300 g"
+      },
+      {
+        "a": "100 g",
+        "n": "Raejuusto",
+        "s": "Valio raejuusto 200 g"
+      },
+      {
+        "a": "½ tl",
+        "n": "Kaneli",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Kaurapuuro marjoilla",
+    "tags": [
+      "aamiainen",
+      "edullinen",
+      "kuitu"
+    ],
+    "time": "10 min",
+    "tips": "Raejuusto puuron päällä nostaa aamupalan proteiinin 14 grammaan – se pitää nälän loitolla lounaaseen asti.",
+    "added": 1792800000000,
+    "order": 23,
     "steps": [
       "Kiehauta maito ja 2 dl vettä kattilassa.",
       "Lisää kaurahiutaleet ja suola, keitä 5 min välillä sekoittaen.",
       "Lisää mustikat ja anna niiden lämmetä puurossa 1 min.",
       "Annostele kulhoihin, lisää raejuusto ja kaneli."
     ],
-    "tips": "Raejuusto puuron päällä nostaa aamupalan proteiinin 14 grammaan – se pitää nälän loitolla lounaaseen asti.",
-    "order": 23,
+    "active": "10 min työtä",
+    "macros": {
+      "kcal": 310,
+      "protein": 14
+    },
     "status": "kirjassa",
-    "added": 1792800000000
+    "servings": 2
   },
   {
     "id": "proteiinipuuro-banaanilla",
-    "name": "Proteiinipuuro banaanilla",
     "cat": "aamiainen",
-    "who": ["leo", "aiti"],
-    "time": "10 min",
-    "active": "10 min työtä",
-    "servings": 1,
-    "tags": ["aamiainen", "proteiini", "nopea"],
-    "macros": { "kcal": 420, "protein": 32 },
     "ing": [
-      { "n": "Kaurahiutale", "a": "1 dl", "s": "Elovena kaurahiutale 1 kg" },
-      { "n": "Maitorahka maustamaton", "a": "150 g", "s": "Valio maitorahka maustamaton 250 g" },
-      { "n": "Banaani", "a": "1 kpl", "s": "Banaani irto" },
-      { "n": "Maito", "a": "2 dl", "s": "Valio Eila laktoositon rasvaton maitojuoma 1 l" },
-      { "n": "Maapähkinävoi", "a": "1 tl", "s": "Pirkka maapähkinävoi 350 g" },
-      { "n": "Kaneli", "a": "ripaus", "p": true },
-      { "n": "Suola", "a": "ripaus", "p": true }
+      {
+        "a": "1 dl",
+        "n": "Kaurahiutale",
+        "s": "Elovena kaurahiutale 1 kg"
+      },
+      {
+        "a": "150 g",
+        "n": "Maitorahka maustamaton",
+        "s": "Valio maitorahka maustamaton 250 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Banaani",
+        "s": "Banaani irto"
+      },
+      {
+        "a": "2 dl",
+        "n": "Maito",
+        "s": "Valio Eila laktoositon rasvaton maitojuoma 1 l"
+      },
+      {
+        "a": "1 tl",
+        "n": "Maapähkinävoi",
+        "s": "Pirkka maapähkinävoi 350 g"
+      },
+      {
+        "a": "ripaus",
+        "n": "Kaneli",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Proteiinipuuro banaanilla",
+    "tags": [
+      "aamiainen",
+      "proteiini",
+      "nopea"
+    ],
+    "time": "10 min",
+    "tips": "Rahka menee aina viime tipassa sekaan, liedeltä poisotetun kattilan lämmössä – muuten puuro menee rakeiseksi.",
+    "added": 1793059200000,
+    "order": 24,
     "steps": [
       "Keitä kaurahiutaleet maidossa 5 min.",
       "Ota kattila pois liedeltä ja anna jäähtyä 2 min – kuumaan puuroon sekoitettu rahka juoksettuu.",
       "Sekoita rahka joukkoon.",
       "Lisää banaaniviipaleet, maapähkinävoi ja kaneli."
     ],
-    "tips": "Rahka menee aina viime tipassa sekaan, liedeltä poisotetun kattilan lämmössä – muuten puuro menee rakeiseksi.",
-    "order": 24,
+    "active": "10 min työtä",
+    "macros": {
+      "kcal": 420,
+      "protein": 32
+    },
     "status": "kirjassa",
-    "added": 1793059200000
+    "servings": 1
   },
   {
     "id": "mustikkasmoothie",
-    "name": "Mustikkasmoothie",
     "cat": "aamiainen",
-    "who": ["leo", "aiti"],
-    "time": "5 min",
-    "active": "5 min työtä",
-    "servings": 1,
-    "tags": ["nopea", "proteiini", "aamiainen"],
-    "macros": { "kcal": 300, "protein": 26 },
     "ing": [
-      { "n": "Mustikka pakaste", "a": "2 dl", "s": "Pirkka mustikka pakaste 300 g" },
-      { "n": "Maitorahka maustamaton", "a": "150 g", "s": "Valio maitorahka maustamaton 250 g" },
-      { "n": "Banaani", "a": "1 kpl", "s": "Banaani irto" },
-      { "n": "Maito", "a": "1,5 dl", "s": "Valio Eila laktoositon rasvaton maitojuoma 1 l" },
-      { "n": "Kaurahiutale", "a": "1 rkl", "s": "Elovena kaurahiutale 1 kg" }
+      {
+        "a": "2 dl",
+        "n": "Mustikka pakaste",
+        "s": "Pirkka mustikka pakaste 300 g"
+      },
+      {
+        "a": "150 g",
+        "n": "Maitorahka maustamaton",
+        "s": "Valio maitorahka maustamaton 250 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Banaani",
+        "s": "Banaani irto"
+      },
+      {
+        "a": "1,5 dl",
+        "n": "Maito",
+        "s": "Valio Eila laktoositon rasvaton maitojuoma 1 l"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Kaurahiutale",
+        "s": "Elovena kaurahiutale 1 kg"
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Mustikkasmoothie",
+    "tags": [
+      "nopea",
+      "proteiini",
+      "aamiainen"
+    ],
+    "time": "5 min",
+    "tips": "Kaurahiutale tekee smoothiesta täyttävämmän eikä maistu läpi. Pakastemarjoja ei tarvitse sulattaa.",
+    "added": 1793318400000,
+    "order": 25,
     "steps": [
       "Mittaa kaikki ainekset tehosekoittimeen.",
       "Sekoita tasaiseksi 30–45 s.",
       "Lisää maitoa, jos juoma on liian paksua.",
       "Kaada lasiin ja juo heti."
     ],
-    "tips": "Kaurahiutale tekee smoothiesta täyttävämmän eikä maistu läpi. Pakastemarjoja ei tarvitse sulattaa.",
-    "order": 25,
+    "active": "5 min työtä",
+    "macros": {
+      "kcal": 300,
+      "protein": 26
+    },
     "status": "kirjassa",
-    "added": 1793318400000
+    "servings": 1
   },
   {
     "id": "uunipannukakku",
-    "name": "Uunipannukakku",
     "cat": "leivonta",
-    "who": ["leo", "aiti"],
-    "time": "40 min",
-    "active": "10 min työtä",
-    "servings": 4,
-    "oven": "200 °C kiertoilma",
-    "tags": ["leivonta", "jälkiruoka", "edullinen"],
-    "macros": { "kcal": 310, "protein": 12 },
     "ing": [
-      { "n": "Maito", "a": "6 dl", "s": "Valio Eila laktoositon rasvaton maitojuoma 1 l" },
-      { "n": "Kananmuna", "a": "3 kpl", "s": "Pirkka kananmunat M 10 kpl" },
-      { "n": "Vehnäjauho", "a": "3 dl", "p": true },
-      { "n": "Sokeri", "a": "1 dl", "p": true },
-      { "n": "Suola", "a": "½ tl", "p": true },
-      { "n": "Voi", "a": "50 g", "p": true },
-      { "n": "Mansikkahillo", "a": "tarjoiluun", "s": "Pirkka mansikkahillo 440 g" }
+      {
+        "a": "6 dl",
+        "n": "Maito",
+        "s": "Valio Eila laktoositon rasvaton maitojuoma 1 l"
+      },
+      {
+        "a": "3 kpl",
+        "n": "Kananmuna",
+        "s": "Pirkka kananmunat M 10 kpl"
+      },
+      {
+        "a": "3 dl",
+        "n": "Vehnäjauho",
+        "p": true
+      },
+      {
+        "a": "1 dl",
+        "n": "Sokeri",
+        "p": true
+      },
+      {
+        "a": "½ tl",
+        "n": "Suola",
+        "p": true
+      },
+      {
+        "a": "50 g",
+        "n": "Voi",
+        "p": true
+      },
+      {
+        "a": "tarjoiluun",
+        "n": "Mansikkahillo",
+        "s": "Pirkka mansikkahillo 440 g"
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Uunipannukakku",
+    "oven": "200 °C kiertoilma",
+    "tags": [
+      "leivonta",
+      "jälkiruoka",
+      "edullinen"
+    ],
+    "time": "40 min",
+    "tips": "Puolet vehnäjauhoista voi korvata kaurahiutaleilla, jolloin pannukakusta tulee täyttävämpi ja vähemmän makea.",
+    "added": 1793577600000,
+    "order": 26,
     "steps": [
       "Lämmitä uuni 200 asteeseen ja sulata voi.",
       "Vatkaa munat ja sokeri, lisää maito.",
@@ -848,31 +1977,69 @@
       "Kaada taikina voideltulle pellille ja paista 30 min, kunnes pinta on kullanruskea.",
       "Tarjoa hillon kanssa."
     ],
-    "tips": "Puolet vehnäjauhoista voi korvata kaurahiutaleilla, jolloin pannukakusta tulee täyttävämpi ja vähemmän makea.",
-    "order": 26,
+    "active": "10 min työtä",
+    "macros": {
+      "kcal": 310,
+      "protein": 12
+    },
     "status": "kirjassa",
-    "added": 1793577600000
+    "servings": 4
   },
   {
     "id": "kaurasampylat",
-    "name": "Kaurasämpylät",
     "cat": "leivonta",
-    "who": ["leo", "aiti"],
-    "time": "45 min",
-    "active": "15 min työtä",
-    "servings": 12,
-    "oven": "225 °C kiertoilma",
-    "tags": ["leivonta", "edullinen", "pakastuu"],
-    "macros": { "kcal": 150, "protein": 6 },
     "ing": [
-      { "n": "Vesi", "a": "4 dl", "p": true },
-      { "n": "Kuivahiiva", "a": "1 pss (11 g)", "s": "Pirkka kuivahiiva 11 g" },
-      { "n": "Kaurahiutale", "a": "3 dl", "s": "Elovena kaurahiutale 1 kg" },
-      { "n": "Vehnäjauho", "a": "6 dl", "p": true },
-      { "n": "Suola", "a": "1 tl", "p": true },
-      { "n": "Sokeri", "a": "1 rkl", "p": true },
-      { "n": "Rypsiöljy", "a": "2 rkl", "p": true }
+      {
+        "a": "4 dl",
+        "n": "Vesi",
+        "p": true
+      },
+      {
+        "a": "1 pss (11 g)",
+        "n": "Kuivahiiva",
+        "s": "Pirkka kuivahiiva 11 g"
+      },
+      {
+        "a": "3 dl",
+        "n": "Kaurahiutale",
+        "s": "Elovena kaurahiutale 1 kg"
+      },
+      {
+        "a": "6 dl",
+        "n": "Vehnäjauho",
+        "p": true
+      },
+      {
+        "a": "1 tl",
+        "n": "Suola",
+        "p": true
+      },
+      {
+        "a": "1 rkl",
+        "n": "Sokeri",
+        "p": true
+      },
+      {
+        "a": "2 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Kaurasämpylät",
+    "oven": "225 °C kiertoilma",
+    "tags": [
+      "leivonta",
+      "edullinen",
+      "pakastuu"
+    ],
+    "time": "45 min",
+    "tips": "Sämpylät pakastuvat hyvin: ota illalla kaksi pakkasesta, niin aamulla on tuoretta leipää.",
+    "added": 1793836800000,
+    "order": 27,
     "steps": [
       "Sekoita kuivahiiva osaan jauhoja. Lämmitä vesi 42-asteiseksi ja sekoita jauhoseokseen.",
       "Lisää kaurahiutaleet, sokeri, suola ja loput jauhot. Vaivaa 5 min ja lisää öljy lopuksi.",
@@ -880,33 +2047,79 @@
       "Muotoile 12 sämpylää pellille ja anna kohota vielä 10 min.",
       "Paista 225 asteessa 12–14 min."
     ],
-    "tips": "Sämpylät pakastuvat hyvin: ota illalla kaksi pakkasesta, niin aamulla on tuoretta leipää.",
-    "order": 27,
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 150,
+      "protein": 6
+    },
     "status": "kirjassa",
-    "added": 1793836800000
+    "servings": 12
   },
   {
     "id": "banaani-kauramuffinit",
-    "name": "Banaani-kauramuffinit",
     "cat": "leivonta",
-    "who": ["leo", "aiti"],
-    "time": "35 min",
-    "active": "15 min työtä",
-    "servings": 12,
-    "oven": "180 °C kiertoilma",
-    "tags": ["leivonta", "välipala", "vähemmän sokeria"],
-    "macros": { "kcal": 160, "protein": 5 },
     "ing": [
-      { "n": "Banaani", "a": "3 kpl (kypsää)", "s": "Banaani irto" },
-      { "n": "Kananmuna", "a": "2 kpl", "s": "Pirkka kananmunat M 10 kpl" },
-      { "n": "Kaurahiutale", "a": "3 dl", "s": "Elovena kaurahiutale 1 kg" },
-      { "n": "Vehnäjauho", "a": "2 dl", "p": true },
-      { "n": "Maitorahka maustamaton", "a": "150 g", "s": "Valio maitorahka maustamaton 250 g" },
-      { "n": "Leivinjauhe", "a": "2 tl", "s": "Pirkka leivinjauhe 230 g" },
-      { "n": "Hunaja", "a": "2 rkl", "s": "Pirkka juokseva hunaja 350 g" },
-      { "n": "Kaneli", "a": "1 tl", "p": true },
-      { "n": "Suola", "a": "ripaus", "p": true }
+      {
+        "a": "3 kpl (kypsää)",
+        "n": "Banaani",
+        "s": "Banaani irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Kananmuna",
+        "s": "Pirkka kananmunat M 10 kpl"
+      },
+      {
+        "a": "3 dl",
+        "n": "Kaurahiutale",
+        "s": "Elovena kaurahiutale 1 kg"
+      },
+      {
+        "a": "2 dl",
+        "n": "Vehnäjauho",
+        "p": true
+      },
+      {
+        "a": "150 g",
+        "n": "Maitorahka maustamaton",
+        "s": "Valio maitorahka maustamaton 250 g"
+      },
+      {
+        "a": "2 tl",
+        "n": "Leivinjauhe",
+        "s": "Pirkka leivinjauhe 230 g"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Hunaja",
+        "s": "Pirkka juokseva hunaja 350 g"
+      },
+      {
+        "a": "1 tl",
+        "n": "Kaneli",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Banaani-kauramuffinit",
+    "oven": "180 °C kiertoilma",
+    "tags": [
+      "leivonta",
+      "välipala",
+      "vähemmän sokeria"
+    ],
+    "time": "35 min",
+    "tips": "Kypsät banaanit korvaavat suurimman osan sokerista. Mustuneet banaanit ovat tähän parhaita – älä heitä niitä pois.",
+    "added": 1794096000000,
+    "order": 28,
     "steps": [
       "Lämmitä uuni 180 asteeseen ja laita muffinivuokiin paperit.",
       "Muussaa banaanit haarukalla ja sekoita joukkoon munat, rahka ja hunaja.",
@@ -914,41 +2127,2998 @@
       "Jaa 12 vuokaan ja paista 20–22 min. Tikku tulee keskeltä puhtaana.",
       "Anna jäähtyä ritilällä."
     ],
-    "tips": "Kypsät banaanit korvaavat suurimman osan sokerista. Mustuneet banaanit ovat tähän parhaita – älä heitä niitä pois.",
-    "order": 28,
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 160,
+      "protein": 5
+    },
     "status": "kirjassa",
-    "added": 1794096000000
+    "servings": 12
   },
   {
     "id": "kasviswokki-kanalla",
-    "name": "Kasviswokki kanalla ja riisillä",
     "cat": "lounas",
-    "who": ["leo", "aiti"],
-    "time": "25 min",
-    "active": "20 min työtä",
-    "servings": 3,
-    "tags": ["kana", "kasvis", "arki"],
-    "macros": { "kcal": 510, "protein": 38 },
     "ing": [
-      { "n": "Broilerin suikale", "a": "400 g", "s": "Atria broilerin suikale maustamaton 400 g" },
-      { "n": "Wokkivihannes pakaste", "a": "400 g", "s": "Rainbow wokkivihannes pakaste 400 g" },
-      { "n": "Riisi", "a": "3 dl", "s": "Pirkka pitkäjyväinen riisi 1 kg" },
-      { "n": "Soijakastike", "a": "3 rkl", "s": "Kikkoman soijakastike 250 ml" },
-      { "n": "Valkosipuli", "a": "2 kynttä", "s": "Valkosipuli irto" },
-      { "n": "Inkivääri", "a": "1 cm pala", "s": "Tuore inkivääri irto" },
-      { "n": "Hunaja", "a": "1 tl", "s": "Pirkka juokseva hunaja 350 g" },
-      { "n": "Rypsiöljy", "a": "1 rkl", "p": true },
-      { "n": "Mustapippuri", "a": "ripaus", "p": true }
+      {
+        "a": "400 g",
+        "n": "Broilerin suikale",
+        "s": "Atria broilerin suikale maustamaton 400 g"
+      },
+      {
+        "a": "400 g",
+        "n": "Wokkivihannes pakaste",
+        "s": "Rainbow wokkivihannes pakaste 400 g"
+      },
+      {
+        "a": "3 dl",
+        "n": "Riisi",
+        "s": "Pirkka pitkäjyväinen riisi 1 kg"
+      },
+      {
+        "a": "3 rkl",
+        "n": "Soijakastike",
+        "s": "Kikkoman soijakastike 250 ml"
+      },
+      {
+        "a": "2 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "1 cm pala",
+        "n": "Inkivääri",
+        "s": "Tuore inkivääri irto"
+      },
+      {
+        "a": "1 tl",
+        "n": "Hunaja",
+        "s": "Pirkka juokseva hunaja 350 g"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Mustapippuri",
+        "p": true
+      }
     ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Kasviswokki kanalla ja riisillä",
+    "tags": [
+      "kana",
+      "kasvis",
+      "arki"
+    ],
+    "time": "25 min",
+    "tips": "Pakastevihannekset eivät vaadi pilkkomista ja ovat talvella halvempia ja parempia kuin väsyneet tuoreet. Pannun pitää olla kuuma, ettei tule vesilientä.",
+    "added": 1794355200000,
+    "order": 29,
     "steps": [
       "Keitä riisi pakkauksen ohjeen mukaan.",
       "Kuumenna wokki tai iso pannu kunnolla kuumaksi ja paista suikaleet öljyssä 5 min.",
       "Lisää valkosipuli, raastettu inkivääri ja pakastevihannekset. Paista kovalla lämmöllä 5 min.",
       "Mausta soijakastikkeella, hunajalla ja pippurilla. Tarjoa riisin kanssa."
     ],
-    "tips": "Pakastevihannekset eivät vaadi pilkkomista ja ovat talvella halvempia ja parempia kuin väsyneet tuoreet. Pannun pitää olla kuuma, ettei tule vesilientä.",
-    "order": 29,
+    "active": "20 min työtä",
+    "macros": {
+      "kcal": 510,
+      "protein": 38
+    },
     "status": "kirjassa",
-    "added": 1794355200000
+    "servings": 3
+  },
+  {
+    "id": "raejuusto-munatahna-ruisleipa",
+    "cat": "iltapala",
+    "ing": [
+      {
+        "a": "3 kpl",
+        "n": "Kananmuna"
+      },
+      {
+        "a": "100 g",
+        "n": "Raejuusto",
+        "s": "Valio raejuusto 4 % 200 g"
+      },
+      {
+        "a": "4 viipaletta",
+        "n": "Ruisleipä",
+        "s": "Vaasan ruisreikäleipä"
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja pippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "aiti"
+    ],
+    "name": "Raejuusto-munatahna ruisleivällä",
+    "tags": [
+      "kananmuna",
+      "raejuusto",
+      "nopea",
+      "proteiini"
+    ],
+    "time": "15 min",
+    "tips": "Jos kaapista löytyy kurkkua tai ruohosipulia, raasta tai silppua mukaan – tuo mukavaa raikkautta ja väriä.",
+    "added": 1794688459122,
+    "order": 30,
+    "steps": [
+      "Keitä munat kiehuvassa vedessä 7 minuuttia.",
+      "Jäähdytä munat kylmässä vedessä ja kuori.",
+      "Hienonna munat haarukalla kulhossa.",
+      "Sekoita joukkoon raejuusto, suola ja pippuri.",
+      "Levitä tahna ruisleipäviipaleille.",
+      "Tarjoile heti."
+    ],
+    "active": "10 min työtä",
+    "macros": {
+      "kcal": 220,
+      "protein": 20
+    },
+    "source": "chef",
+    "status": "ehdotus",
+    "servings": 2
+  },
+  {
+    "id": "avokado-kananmunaleivat",
+    "cat": "iltapala",
+    "ing": [
+      {
+        "a": "4 viipaletta",
+        "n": "Ruisleipä",
+        "s": "Pirkka ruisleipä viipaloitu"
+      },
+      {
+        "a": "4 kpl",
+        "n": "Kananmuna",
+        "s": "Pirkka kananmuna 10 kpl"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Avokado",
+        "s": "Avokado valmis syötäväksi"
+      },
+      {
+        "a": "1 tl",
+        "n": "Sitruunamehu",
+        "s": "Pirkka sitruunamehu 2,5 dl"
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja pippuri",
+        "p": true
+      },
+      {
+        "a": "1 tl",
+        "n": "Rypsiöljy",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Avokado-kananmunaleivät",
+    "tags": [
+      "muna",
+      "avokado",
+      "nopea"
+    ],
+    "time": "12 min",
+    "tips": "Kovaksi keitetyt munat säilyvät kuorittuina jääkaapissa pari päivää, joten voit keittää ne valmiiksi.",
+    "added": 1794688780421,
+    "order": 31,
+    "steps": [
+      "Keitä munat kiehuvassa vedessä 7 min ja jäähdytä kylmässä vedessä.",
+      "Muussaa avokado haarukalla sitruunamehun, suolan ja pippurin kanssa.",
+      "Paahda ruisleivät halutessasi paahtimessa.",
+      "Levitä avokadotahna leiville ja kuori ja viipaloi munat päälle.",
+      "Mausta vielä pippurilla ja tarjoile heti."
+    ],
+    "active": "12 min työtä",
+    "macros": {
+      "kcal": 340,
+      "protein": 17
+    },
+    "status": "ehdotus",
+    "servings": 2
+  },
+  {
+    "id": "kikherne-fetasalaatti",
+    "cat": "salaatti",
+    "ing": [
+      {
+        "a": "1 tlk (240 g valutettuna)",
+        "n": "Kikherneet",
+        "s": "Pirkka kikherneet 400 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Kurkku",
+        "s": "Kurkku irto"
+      },
+      {
+        "a": "200 g",
+        "n": "Kirsikkatomaatit",
+        "s": "Pirkka kirsikkatomaatti 250 g"
+      },
+      {
+        "a": "¼ kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "100 g",
+        "n": "Fetajuusto",
+        "s": "Valio fetajuusto 150 g"
+      },
+      {
+        "a": "100 g",
+        "n": "Salaattisekoitus",
+        "s": "Pirkka salaattisekoitus 150 g"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Sitruunamehu",
+        "s": "Pirkka sitruunamehu 2,5 dl"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "1 tl",
+        "n": "Paprikajauhe",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja pippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Kikherne-fetasalaatti",
+    "tags": [
+      "kasvis",
+      "kikherne",
+      "feta"
+    ],
+    "time": "20 min",
+    "tips": "Täyttävämmäksi salaatin saa lisäämällä kourallisen kokonaisia täysjyväpastakierteitä tai paistettua broileria.",
+    "added": 1794688780421,
+    "order": 32,
+    "steps": [
+      "Valuta ja huuhtele kikherneet.",
+      "Paahda kikherneitä pannulla 1 rkl öljyssä ja paprikajauheessa 8 min, kunnes ne ovat pinnalta rapeita.",
+      "Pilko kurkku, tomaatit ja punasipuli sekä murenna feta.",
+      "Sekoita loput öljystä ja sitruunamehu kastikkeeksi, mausta suolalla ja pippurilla.",
+      "Kokoa salaatti kulhoon, lisää haalea kikherne päälle ja kasta kastikkeella."
+    ],
+    "active": "20 min työtä",
+    "macros": {
+      "kcal": 430,
+      "protein": 20
+    },
+    "status": "ehdotus",
+    "servings": 2
+  },
+  {
+    "id": "jauheliha-kasviskeitto",
+    "cat": "keitto",
+    "ing": [
+      {
+        "a": "300 g",
+        "n": "Naudan jauheliha 10 %",
+        "s": "Pirkka naudan jauheliha 10 % 400 g"
+      },
+      {
+        "a": "400 g",
+        "n": "Peruna",
+        "s": "Peruna irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Porkkana",
+        "s": "Porkkana irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sipuli",
+        "s": "Keltasipuli irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Valkosipulin kynsi",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "1 tlk (390 g)",
+        "n": "Tomaattimurska",
+        "s": "Pirkka tomaattimurska 390 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Lihaliemikuutio",
+        "s": "Knorr lihaliemikuutio 8 kpl"
+      },
+      {
+        "a": "150 g",
+        "n": "Herneet",
+        "s": "Pirkka pakaste vihreät herneet 500 g"
+      },
+      {
+        "a": "1 tl",
+        "n": "Kuivattu timjami",
+        "p": true
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja pippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Jauheliha-kasviskeitto",
+    "tags": [
+      "jauheliha",
+      "keitto",
+      "perheruoka"
+    ],
+    "time": "35 min",
+    "tips": "Keitto maistuu vielä paremmalta seuraavana päivänä ja sopii pakastettavaksi annoksina.",
+    "added": 1794688780421,
+    "order": 33,
+    "steps": [
+      "Kuori ja kuutioi peruna, porkkanat ja sipuli.",
+      "Ruskista jauheliha öljyssä kattilassa ja lisää sipuli ja murskattu valkosipuli.",
+      "Lisää tomaattimurska, liemikuutio, timjami ja noin 8 dl vettä.",
+      "Lisää perunat ja porkkanat ja kuumenna kiehuvaksi.",
+      "Hauduta kannen alla 20 min, lisää herneet viimeiseksi 3 min ajaksi.",
+      "Mausta suolalla ja pippurilla."
+    ],
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 360,
+      "protein": 25
+    },
+    "status": "ehdotus",
+    "servings": 4
+  },
+  {
+    "id": "kaalilaatikko-jauhelihalla",
+    "cat": "uuniruoka",
+    "ing": [
+      {
+        "a": "800 g",
+        "n": "Valkokaali",
+        "s": "Valkokaali irto"
+      },
+      {
+        "a": "400 g",
+        "n": "Naudan jauheliha 10 %",
+        "s": "Pirkka naudan jauheliha 10 % 400 g"
+      },
+      {
+        "a": "1 dl",
+        "n": "Pyöreärakeinen riisi",
+        "s": "Risella pyöreäjyväinen riisi 1 kg"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sipuli",
+        "s": "Keltasipuli irto"
+      },
+      {
+        "a": "3 dl",
+        "n": "Maito",
+        "s": "Valio kevytmaito 1 l"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Tumma siirappi",
+        "s": "Dansukker tumma siirappi 500 g"
+      },
+      {
+        "a": "1 tl",
+        "n": "Majoraani",
+        "p": true
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      },
+      {
+        "a": "1 tl",
+        "n": "Suola",
+        "p": true
+      },
+      {
+        "a": "½ tl",
+        "n": "Mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Kaalilaatikko jauhelihalla",
+    "oven": "175 °C kiertoilma",
+    "tags": [
+      "jauheliha",
+      "kaali",
+      "uuni",
+      "viikonloppu"
+    ],
+    "time": "1 h 30 min",
+    "tips": "Kaalilaatikko on hyvä tehdä isompi satsi: se pakastuu ja lämpiää kauniisti uudestaan.",
+    "added": 1794688780421,
+    "order": 34,
+    "steps": [
+      "Lämmitä uuni 175 asteeseen kiertoilmalle.",
+      "Silppua kaali ja kuullota sitä pannulla öljyssä siirapin kanssa 10 min, kunnes se pehmenee.",
+      "Sekoita kuullotettu kaali, jauheliha, raakariisi, hienonnettu sipuli, maito, majoraani, suola ja pippuri.",
+      "Kaada seos voideltuun uunivuokaan ja peitä foliolla.",
+      "Paista uunissa 1 h, poista folio ja paista vielä 15 min.",
+      "Tarjoile puolukkahillon kanssa."
+    ],
+    "active": "20 min työtä",
+    "macros": {
+      "kcal": 430,
+      "protein": 27
+    },
+    "status": "ehdotus",
+    "servings": 4
+  },
+  {
+    "id": "broilericurry-ja-riisi",
+    "cat": "lounas",
+    "ing": [
+      {
+        "a": "400 g",
+        "n": "Broilerin suikale",
+        "s": "Atria broilerin suikale maustamaton 400 g"
+      },
+      {
+        "a": "3 dl",
+        "n": "Riisi",
+        "s": "Pirkka pitkäjyväinen riisi 1 kg"
+      },
+      {
+        "a": "1 tlk (400 ml)",
+        "n": "Kookosmaito",
+        "s": "Pirkka kookosmaito 400 ml"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Currytahna mieto",
+        "s": "Santa Maria Red Curry Paste 110 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Paprika",
+        "s": "Paprika punainen irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Porkkana",
+        "s": "Porkkana irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sipuli",
+        "s": "Keltasipuli irto"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Broilericurry ja riisi",
+    "tags": [
+      "kana",
+      "mieto",
+      "arki"
+    ],
+    "time": "30 min",
+    "tips": "Mieto currytahna riittää hyvin – chilin voi lisätä omaan lautaseen. Kookosmaidon voi korvata ruokakermalla, jolloin maku on pehmeämpi ja hinta pienempi.",
+    "added": 1794670100000,
+    "order": 36,
+    "steps": [
+      "Keitä riisi pakkauksen ohjeen mukaan.",
+      "Ruskista suikaleet öljyssä 5 min ja nosta sivuun.",
+      "Kuullota sipuli, porkkanasuikaleet ja paprika samassa pannussa 5 min. Lisää currytahna ja sekoita 1 min.",
+      "Kaada kookosmaito joukkoon, lisää kana takaisin ja hauduta 8 min.",
+      "Tarkista suola ja tarjoa riisin kanssa."
+    ],
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 540,
+      "protein": 40
+    },
+    "status": "kirjassa",
+    "servings": 3
+  },
+  {
+    "id": "lohipasta-pinaatilla",
+    "cat": "pasta",
+    "ing": [
+      {
+        "a": "400 g",
+        "n": "Lohipala nahaton",
+        "s": "Pirkka lohipala nahaton ruodoton 400 g"
+      },
+      {
+        "a": "250 g",
+        "n": "Täysjyväpenne",
+        "s": "Pirkka täysjyväpenne 500 g"
+      },
+      {
+        "a": "2 dl",
+        "n": "Ruokakerma 15 %",
+        "s": "Valio ruokakerma 15 % 2 dl"
+      },
+      {
+        "a": "65 g",
+        "n": "Pinaatti",
+        "s": "Pirkka pesty pinaatti 65 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "2 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Tilli",
+        "s": "Tuore tilli nippu"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Lohipasta ja pinaatti",
+    "tags": [
+      "kala",
+      "nopea",
+      "kermainen"
+    ],
+    "time": "25 min",
+    "tips": "Pakastelohi käy yhtä hyvin ja on halvempaa – sulata se jääkaapissa ja kuivaa talouspaperilla, ettei kastikkeesta tule vetistä.",
+    "added": 1794670400000,
+    "order": 39,
+    "steps": [
+      "Keitä pasta suolalla maustetussa vedessä.",
+      "Kuutioi lohi ja paista pannulla öljyssä valkosipulin kanssa 4 min. Älä sekoita liikaa, niin palat pysyvät kasassa.",
+      "Kaada kerma joukkoon ja anna kiehahtaa. Lisää pinaatti ja anna nahistua 1 min.",
+      "Yhdistä pasta kastikkeeseen. Mausta sitruunamehulla, suolalla ja pippurilla. Ripottele tilli päälle."
+    ],
+    "active": "20 min työtä",
+    "macros": {
+      "kcal": 590,
+      "protein": 35
+    },
+    "status": "kirjassa",
+    "servings": 3
+  },
+  {
+    "id": "kana-pestopasta",
+    "cat": "pasta",
+    "ing": [
+      {
+        "a": "400 g",
+        "n": "Broilerin suikale",
+        "s": "Atria broilerin suikale maustamaton 400 g"
+      },
+      {
+        "a": "250 g",
+        "n": "Täysjyväfusilli",
+        "s": "Pirkka täysjyväfusilli 500 g"
+      },
+      {
+        "a": "3 rkl",
+        "n": "Pesto",
+        "s": "Pirkka basilikapesto 190 g"
+      },
+      {
+        "a": "250 g",
+        "n": "Kirsikkatomaatti",
+        "s": "Pirkka kirsikkatomaatti 250 g"
+      },
+      {
+        "a": "100 g",
+        "n": "Kreikkalainen jogurtti",
+        "s": "Valio kreikkalainen jogurtti 2 % 400 g"
+      },
+      {
+        "a": "30 g",
+        "n": "Parmesaaniraaste",
+        "s": "Pirkka parmigiano reggiano raaste 100 g"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Kana-pestopasta",
+    "tags": [
+      "kana",
+      "nopea",
+      "eväs"
+    ],
+    "time": "20 min",
+    "tips": "Jogurtti peston seassa tekee kastikkeesta kermaisen ilman kermaa ja tuo proteiinia. Hyvä myös kylmänä eväänä.",
+    "added": 1794670500000,
+    "order": 40,
+    "steps": [
+      "Keitä pasta ja ota talteen 1 dl keitinvettä.",
+      "Paista suikaleet öljyssä 6 min ja mausta.",
+      "Sekoita kulhossa pesto, jogurtti ja keitinvesi tasaiseksi kastikkeeksi.",
+      "Yhdistä pasta, kana, puolitetut tomaatit ja kastike. Ripottele parmesaani päälle."
+    ],
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 570,
+      "protein": 41
+    },
+    "status": "kirjassa",
+    "servings": 3
+  },
+  {
+    "id": "tomaatti-mozzarellapasta-kanalla",
+    "cat": "pasta",
+    "ing": [
+      {
+        "a": "400 g",
+        "n": "Broilerin paistileike",
+        "s": "Pirkka broilerin paistileike maustamaton 500 g"
+      },
+      {
+        "a": "250 g",
+        "n": "Täysjyväspagetti",
+        "s": "Pirkka täysjyväspagetti 500 g"
+      },
+      {
+        "a": "1 tlk (390 g)",
+        "n": "Tomaattimurska",
+        "s": "Pirkka tomaattimurska 390 g"
+      },
+      {
+        "a": "125 g",
+        "n": "Mozzarella",
+        "s": "Pirkka mozzarella 125 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sipuli",
+        "s": "Keltasipuli irto"
+      },
+      {
+        "a": "2 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "1 ruukku",
+        "n": "Basilika",
+        "s": "Tuore basilika ruukku"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "1 tl",
+        "n": "Oregano, suola ja pippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Tomaatti-mozzarellapasta kanalla",
+    "tags": [
+      "kana",
+      "juusto",
+      "arki"
+    ],
+    "time": "25 min",
+    "tips": "Mozzarella sulaa kastikkeeseen venyväksi vasta liedeltä otettuna – älä keitä sitä, muuten se jää sitkeäksi.",
+    "added": 1794670600000,
+    "order": 41,
+    "steps": [
+      "Keitä pasta pakkauksen ohjeen mukaan.",
+      "Kuutioi kana ja ruskista se öljyssä 6 min. Mausta suolalla ja pippurilla.",
+      "Lisää sipuli ja valkosipuli, kuullota 3 min. Kaada tomaattimurska joukkoon ja hauduta 8 min.",
+      "Revi mozzarella kastikkeeseen ja anna sulaa 2 min.",
+      "Sekoita pastaan ja lisää basilika."
+    ],
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 580,
+      "protein": 42
+    },
+    "status": "kirjassa",
+    "servings": 3
+  },
+  {
+    "id": "pasta-limonello-kikherneilla",
+    "cat": "lounas",
+    "ing": [
+      {
+        "a": "200 g",
+        "n": "Spagetti täysjyvä",
+        "s": "Pirkka täysjyväspagetti 500 g"
+      },
+      {
+        "a": "1 prk (380 g)",
+        "n": "Kikherne",
+        "s": "Pirkka kikherne 380 g"
+      },
+      {
+        "a": "2 dl",
+        "n": "Turkkilainen jogurtti",
+        "s": "Valio turkkilainen jogurtti 10 % 200 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "3 cm pala",
+        "n": "Inkivääri",
+        "s": "Tuore inkivääri irto"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Hunaja",
+        "s": "Pirkka juokseva hunaja 350 g"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Soijakastike",
+        "s": "Kikkoman soijakastike 250 ml"
+      },
+      {
+        "a": "30 g",
+        "n": "Parmesaaniraaste",
+        "s": "Pirkka parmigiano reggiano raaste 100 g"
+      },
+      {
+        "a": "½ rkl",
+        "n": "Kurkuma",
+        "p": true
+      },
+      {
+        "a": "1 rkl",
+        "n": "Voi tai öljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Pasta limonello kikherneillä",
+    "tags": [
+      "kasvis",
+      "sitruuna",
+      "nopea"
+    ],
+    "time": "20 min",
+    "tips": "Jogurtti juoksettuu, jos pannu on kuuma – siksi se tulee vasta liedeltä otettuun pastaan. Idea on Natalia Salmelan hittipastasta; kikherneet voi vaihtaa broileriin.",
+    "added": 1794671000000,
+    "order": 42,
+    "steps": [
+      "Keitä spagetti suolalla maustetussa vedessä. Ota talteen 1 dl keitinvettä.",
+      "Kuullota pannulla raastettu inkivääri rasvassa 1 min. Lisää hunaja, kurkuma ja soijakastike.",
+      "Lisää valutetut kikherneet ja paista 5 min, kunnes ne saavat väriä.",
+      "Raasta sitruunan kuori pannulle ja purista puolikkaan sitruunan mehu joukkoon.",
+      "Lisää pasta ja keitinvesi. Ota pannu POIS liedeltä ja sekoita jogurtti joukkoon vasta nyt.",
+      "Tarjoa parmesaanin ja mustapippurin kanssa."
+    ],
+    "active": "20 min työtä",
+    "macros": {
+      "kcal": 540,
+      "protein": 22
+    },
+    "status": "kirjassa",
+    "servings": 2
+  },
+  {
+    "id": "teriyaki-nuudeliwokki",
+    "cat": "lounas",
+    "ing": [
+      {
+        "a": "200 g",
+        "n": "Munanuudeli",
+        "s": "Pirkka munanuudeli 250 g"
+      },
+      {
+        "a": "250 g (valutettuna)",
+        "n": "Katkarapu suolaliemessä",
+        "s": "Pirkka katkarapu suolaliemessä 400 g"
+      },
+      {
+        "a": "2 kpl (eri värit)",
+        "n": "Paprika",
+        "s": "Paprika irto"
+      },
+      {
+        "a": "250 g",
+        "n": "Parsakaali",
+        "s": "Pirkka parsakaali pakaste 400 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "¼ kpl",
+        "n": "Kiinankaali",
+        "s": "Kiinankaali irto"
+      },
+      {
+        "a": "3 rkl",
+        "n": "Teriyakikastike",
+        "s": "Kikkoman teriyaki-marinadi 250 ml"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Teriyaki-nuudeliwokki katkaravuilla",
+    "tags": [
+      "nuudeli",
+      "kasvis",
+      "nopea"
+    ],
+    "time": "25 min",
+    "tips": "Sama ruoka toimii seuraavana päivänä kylmänä nuudelisalaattina – idea on Kari Aihisen arkiruokaklassikosta. Katkaravut voi korvata kanasuikaleilla.",
+    "added": 1794671100000,
+    "order": 43,
+    "steps": [
+      "Kaada nuudelien päälle kiehuvaa vettä, anna hautua 5 min, valuta ja sekoita joukkoon tilkka öljyä.",
+      "Suikaloi kaikki kasvikset ohuiksi.",
+      "Paista isolla pannulla kovalla lämmöllä ensin paprikat 2 min, lisää parsakaali ja punasipuli 3 min, lopuksi kiinankaali.",
+      "Lisää nuudelit, pienennä lämpöä ja mausta teriyakilla.",
+      "Nosta kulhoon, lisää valutetut katkaravut ja purista sitruunamehu päälle."
+    ],
+    "active": "20 min työtä",
+    "macros": {
+      "kcal": 450,
+      "protein": 28
+    },
+    "status": "kirjassa",
+    "servings": 3
+  },
+  {
+    "id": "helppo-butter-chicken",
+    "cat": "lounas",
+    "ing": [
+      {
+        "a": "400 g",
+        "n": "Broilerin fileesuikale",
+        "s": "Pirkka kanan fileesuikale maustamaton 400 g"
+      },
+      {
+        "a": "1 ps (170 g)",
+        "n": "Butter chicken -pata-aines",
+        "s": "Pirkka Butter Chicken pata-aines 170 g"
+      },
+      {
+        "a": "½ tlk (250 g)",
+        "n": "Paseerattu tomaatti",
+        "s": "Pirkka paseerattu tomaatti 500 g"
+      },
+      {
+        "a": "2 dl",
+        "n": "Ruokakerma 15 %",
+        "s": "Valio ruokakerma 15 % 2 dl"
+      },
+      {
+        "a": "1 prk (200 g)",
+        "n": "Turkkilainen jogurtti",
+        "s": "Valio turkkilainen jogurtti 10 % 200 g"
+      },
+      {
+        "a": "3 dl",
+        "n": "Riisi",
+        "s": "Pirkka basmatiriisi 1 kg"
+      },
+      {
+        "a": "½ ruukku",
+        "n": "Korianteri",
+        "s": "Tuore korianteri ruukku"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Helppo butter chicken",
+    "tags": [
+      "kana",
+      "intialainen",
+      "mieto"
+    ],
+    "time": "30 min",
+    "tips": "Pata-ainespussi on monelle liian tulinen sellaisenaan – käytä ensimmäisellä kerralla kaksi kolmasosaa pussista ja lisää tarvittaessa. Jogurtti lautasella pehmentää heti.",
+    "added": 1794671200000,
+    "order": 44,
+    "steps": [
+      "Keitä riisi pakkauksen ohjeen mukaan.",
+      "Ruskista suikaleet öljyssä kattilassa 5 min.",
+      "Lisää pata-aines, paseerattu tomaatti ja 3 dl vettä. Keitä hiljalleen 10 min sekoitellen.",
+      "Lisää kerma ja kuumenna. Nosta liedeltä ja anna vetäytyä kannen alla 5 min.",
+      "Tarjoa riisin, jogurtin ja korianterin kanssa."
+    ],
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 520,
+      "protein": 38
+    },
+    "status": "kirjassa",
+    "servings": 4
+  },
+  {
+    "id": "shakshuka",
+    "cat": "lounas",
+    "ing": [
+      {
+        "a": "4 kpl",
+        "n": "Kananmuna",
+        "s": "Pirkka kananmunat M 10 kpl"
+      },
+      {
+        "a": "1 tlk (390 g)",
+        "n": "Tomaattimurska",
+        "s": "Pirkka tomaattimurska 390 g"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Paprika",
+        "s": "Paprika punainen irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sipuli",
+        "s": "Keltasipuli irto"
+      },
+      {
+        "a": "2 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "100 g",
+        "n": "Fetajuustokuutiot",
+        "s": "Valio fetajuustokuutiot öljyssä 150 g"
+      },
+      {
+        "a": "4 viipaletta",
+        "n": "Leipä tarjoiluun",
+        "s": "Vaasan ruispalat 290 g"
+      },
+      {
+        "a": "1 tl kumpaakin",
+        "n": "Juustokumina ja paprikajauhe",
+        "p": true
+      },
+      {
+        "a": "1 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Shakshuka – munat tomaattikastikkeessa",
+    "tags": [
+      "kananmuna",
+      "kasvis",
+      "edullinen"
+    ],
+    "time": "25 min",
+    "tips": "Yksi pannu ja alle puoli tuntia. Jos pidät kypsästä keltuaisesta, anna olla kannen alla 10 minuuttia.",
+    "added": 1794671300000,
+    "order": 45,
+    "steps": [
+      "Kuullota suikaloidut paprikat, sipuli ja valkosipuli öljyssä pannulla 8 min.",
+      "Lisää mausteet ja tomaattimurska. Hauduta 5 min, kunnes kastike sakenee.",
+      "Tee kastikkeeseen neljä kuoppaa ja riko kuhunkin kananmuna.",
+      "Laita kansi päälle ja anna hyytyä 6–8 min: valkuainen on kiinteä, keltuainen vielä pehmeä.",
+      "Ripottele feta päälle ja tarjoa leivän kanssa."
+    ],
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 400,
+      "protein": 24
+    },
+    "status": "kirjassa",
+    "servings": 2
+  },
+  {
+    "id": "texmex-perunapelti",
+    "cat": "uuniruoka",
+    "ing": [
+      {
+        "a": "500 g",
+        "n": "Broilerin suikale",
+        "s": "Atria broilerin suikale maustamaton 400 g (+100 g)"
+      },
+      {
+        "a": "1 kg",
+        "n": "Peruna",
+        "s": "Peruna irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Paprika",
+        "s": "Paprika irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "1 prk (330 g)",
+        "n": "Maissi",
+        "s": "Pirkka maissi 330 g"
+      },
+      {
+        "a": "150 g",
+        "n": "Juustoraaste",
+        "s": "Valio Arki juustoraaste 250 g"
+      },
+      {
+        "a": "200 g",
+        "n": "Kreikkalainen jogurtti",
+        "s": "Valio kreikkalainen jogurtti 2 % 400 g"
+      },
+      {
+        "a": "1 pss",
+        "n": "Taco-mauste",
+        "s": "Santa Maria Taco Spice Mix 28 g"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Texmex-perunapelti kanalla",
+    "oven": "225 °C kiertoilma",
+    "tags": [
+      "kana",
+      "uuni",
+      "yksi pelti"
+    ],
+    "time": "45 min",
+    "tips": "Perunat kannattaa leikata ohuiksi lohkoiksi, muuten ne eivät ehdi kypsyä kanan kanssa samaan aikaan. Tähteet lämpiävät seuraavana päivänä pannulla rapeiksi.",
+    "added": 1794671400000,
+    "order": 46,
+    "steps": [
+      "Lämmitä uuni 225 asteeseen. Lohko perunat ohuiksi, sekoita öljyn ja puolen mausteannoksen kanssa ja levitä pellille.",
+      "Paista perunoita 20 min.",
+      "Sekoita suikaleet lopun mausteen ja öljyn kanssa.",
+      "Lisää kana, paprikat, punasipuli ja valutettu maissi pellille. Paista 15 min.",
+      "Ripottele juustoraaste päälle ja paista vielä 5 min. Tarjoa jogurtin kanssa."
+    ],
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 560,
+      "protein": 40
+    },
+    "status": "kirjassa",
+    "servings": 4
+  },
+  {
+    "id": "tortellinipannu-lehtikaalilla",
+    "cat": "lounas",
+    "ing": [
+      {
+        "a": "1 pkt (250 g)",
+        "n": "Tortellini ricotta-pinaatti",
+        "s": "Pirkka tortelloni ricotta-pinaatti 250 g"
+      },
+      {
+        "a": "200 g",
+        "n": "Kalkkunamakkara",
+        "s": "Atria kalkkunamakkara 250 g"
+      },
+      {
+        "a": "125 g",
+        "n": "Lehtikaalisuikale",
+        "s": "Pirkka lehtikaalisuikale 125 g"
+      },
+      {
+        "a": "250 g",
+        "n": "Kirsikkatomaatti",
+        "s": "Pirkka kirsikkatomaatti 250 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "150 g",
+        "n": "Kreikkalainen jogurtti",
+        "s": "Valio kreikkalainen jogurtti 2 % 400 g"
+      },
+      {
+        "a": "1 tl",
+        "n": "Dijon-sinappi",
+        "s": "Pirkka dijon-sinappi 200 g"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Tortellinipannu lehtikaalilla",
+    "tags": [
+      "nopea",
+      "viisi ainesta",
+      "arki"
+    ],
+    "time": "15 min",
+    "tips": "Viisi ainesta ja neljännestunti. K-Ruoan alkuperäisessä on krakovanmakkaraa – kalkkunamakkara tekee ruoasta selvästi kevyemmän ilman että maku kärsii.",
+    "added": 1794671500000,
+    "order": 47,
+    "steps": [
+      "Keitä tortellinit pakkauksen ohjeen mukaan ja valuta.",
+      "Paista vinoviipaloitu makkara pannulla öljyssä rapeaksi.",
+      "Lisää punasipulisuikaleet, sitten lehtikaali ja lopuksi kirsikkatomaatit. Paista 3 min – tomaattien ei tarvitse hajota.",
+      "Sekoita tortellinit joukkoon ja mausta pippurilla.",
+      "Sekoita jogurtti ja sinappi kastikkeeksi ja lusikoi annosten päälle."
+    ],
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 470,
+      "protein": 26
+    },
+    "status": "kirjassa",
+    "servings": 3
+  },
+  {
+    "id": "valimeren-uunilohi",
+    "cat": "uuniruoka",
+    "ing": [
+      {
+        "a": "500 g",
+        "n": "Lohifile nahaton",
+        "s": "Pirkka lohifile nahaton ruodoton 500 g"
+      },
+      {
+        "a": "250 g",
+        "n": "Kirsikkatomaatti",
+        "s": "Pirkka kirsikkatomaatti 250 g"
+      },
+      {
+        "a": "100 g",
+        "n": "Oliivi kivetön",
+        "s": "Pirkka musta oliivi kivetön 340 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Kesäkurpitsa",
+        "s": "Kesäkurpitsa irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "100 g",
+        "n": "Fetajuustopala",
+        "s": "Valio fetajuusto 200 g"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "1 tl",
+        "n": "Oregano, suola ja mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Välimeren uunilohi",
+    "oven": "200 °C kiertoilma",
+    "tags": [
+      "kala",
+      "uuni",
+      "helppo"
+    ],
+    "time": "35 min",
+    "tips": "Kasvikset ehtivät uunissa ensin, jolloin lohi ei ylikypsy. Tarjoa kokonaisena ateriana tai lisäksi uuniperunat samaan uuniin.",
+    "added": 1794671600000,
+    "order": 48,
+    "steps": [
+      "Lämmitä uuni 200 asteeseen.",
+      "Levitä uunivuokaan kesäkurpitsaviipaleet, tomaatit, oliivit ja punasipulilohkot. Valuta öljy ja mausteet päälle.",
+      "Paista 10 min.",
+      "Nosta lohi kasvisten päälle, mausta ja purista sitruunamehua. Paista 15 min.",
+      "Murustele feta päälle ennen tarjoilua."
+    ],
+    "active": "10 min työtä",
+    "macros": {
+      "kcal": 500,
+      "protein": 37
+    },
+    "status": "kirjassa",
+    "servings": 3
+  },
+  {
+    "id": "punainen-curry-kanapasta",
+    "cat": "pasta",
+    "ing": [
+      {
+        "a": "400 g",
+        "n": "Broilerin suikale",
+        "s": "Atria broilerin suikale maustamaton 400 g"
+      },
+      {
+        "a": "250 g",
+        "n": "Täysjyväpenne",
+        "s": "Pirkka täysjyväpenne 500 g"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Punainen currytahna",
+        "s": "Santa Maria Red Curry Paste 110 g"
+      },
+      {
+        "a": "1 tlk (400 ml)",
+        "n": "Kookosmaito",
+        "s": "Pirkka kookosmaito 400 ml"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Paprika",
+        "s": "Paprika punainen irto"
+      },
+      {
+        "a": "65 g",
+        "n": "Pinaatti",
+        "s": "Pirkka pesty pinaatti 65 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Lime tai sitruuna",
+        "s": "Lime irto"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Punainen curry-kanapasta",
+    "tags": [
+      "kana",
+      "curry",
+      "nopea"
+    ],
+    "time": "25 min",
+    "tips": "Currytahnan kuullottaminen hetki ennen nesteen lisäämistä on koko ruoan juju – se vapauttaa mausteet ja maku syvenee. Kookosmaidon voi korvata ruokakermalla.",
+    "added": 1794671700000,
+    "order": 49,
+    "steps": [
+      "Keitä pasta pakkauksen ohjeen mukaan.",
+      "Paista suikaleet öljyssä 5 min ja nosta sivuun.",
+      "Kuullota currytahnaa pannulla 1 min, lisää kookosmaito ja paprikasuikaleet. Hauduta 5 min.",
+      "Lisää kana takaisin ja pinaatti. Anna pinaatin nahistua 1 min.",
+      "Sekoita pasta kastikkeeseen ja purista limemehu päälle."
+    ],
+    "active": "20 min työtä",
+    "macros": {
+      "kcal": 580,
+      "protein": 40
+    },
+    "status": "kirjassa",
+    "servings": 3
+  },
+  {
+    "id": "italianpata-uunissa",
+    "cat": "uuniruoka",
+    "ing": [
+      {
+        "a": "800 g",
+        "n": "Broilerin koipireisi",
+        "s": "Pirkka broilerin koipireisi 1 kg"
+      },
+      {
+        "a": "1 prk (380 g)",
+        "n": "Valkoinen papu",
+        "s": "Pirkka valkoinen papu 380 g"
+      },
+      {
+        "a": "1 tlk (390 g)",
+        "n": "Tomaattimurska",
+        "s": "Pirkka tomaattimurska 390 g"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "4 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "3 kpl",
+        "n": "Porkkana",
+        "s": "Porkkana irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Kanaliemikuutio",
+        "s": "Pirkka kanaliemikuutio 6 kpl"
+      },
+      {
+        "a": "4 viipaletta",
+        "n": "Leipä tarjoiluun",
+        "s": "Pirkka maalaispatonki 400 g"
+      },
+      {
+        "a": "1 tl kumpaakin",
+        "n": "Rosmariini ja oregano",
+        "p": true
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Italianpata uunissa",
+    "oven": "200 °C kiertoilma",
+    "tags": [
+      "kana",
+      "pavut",
+      "uuni"
+    ],
+    "time": "50 min",
+    "tips": "Koipireisi on broilerin halvin ja mehevin osa, eikä se kuivu uunissa niin kuin fileet. Pata on seuraavana päivänä vielä parempi.",
+    "added": 1794671800000,
+    "order": 50,
+    "steps": [
+      "Lämmitä uuni 200 asteeseen.",
+      "Ruskista koipireidet pannulla öljyssä nahkapuoli alaspäin 5 min ja nosta uunivuokaan.",
+      "Lisää vuokaan lohkotut sipulit, porkkanaviipaleet, valkosipulit, valutetut pavut ja tomaattimurska. Murenna liemikuutio ja lisää 2 dl vettä sekä yrtit.",
+      "Paista uunissa 40 min ilman kantta.",
+      "Tarjoa leivän kanssa, jolla kastike kannattaa pyyhkiä vuoasta."
+    ],
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 470,
+      "protein": 38
+    },
+    "status": "kirjassa",
+    "servings": 4
+  },
+  {
+    "id": "kukkakaalitacot",
+    "cat": "lounas",
+    "ing": [
+      {
+        "a": "1 kpl (n. 800 g)",
+        "n": "Kukkakaali",
+        "s": "Kukkakaali irto"
+      },
+      {
+        "a": "6 kpl",
+        "n": "Tortilla",
+        "s": "Pirkka vehnätortilla 8 kpl"
+      },
+      {
+        "a": "1 prk (380 g)",
+        "n": "Kikherne",
+        "s": "Pirkka kikherne 380 g"
+      },
+      {
+        "a": "200 g",
+        "n": "Kreikkalainen jogurtti",
+        "s": "Valio kreikkalainen jogurtti 2 % 400 g"
+      },
+      {
+        "a": "¼ kpl",
+        "n": "Punakaali",
+        "s": "Punakaali irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Lime",
+        "s": "Lime irto"
+      },
+      {
+        "a": "½ ruukku",
+        "n": "Korianteri",
+        "s": "Tuore korianteri ruukku"
+      },
+      {
+        "a": "1 pss",
+        "n": "Taco-mauste",
+        "s": "Santa Maria Taco Spice Mix 28 g"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Kukkakaalitacot",
+    "oven": "225 °C kiertoilma",
+    "tags": [
+      "kasvis",
+      "uuni",
+      "edullinen"
+    ],
+    "time": "30 min",
+    "tips": "Paahdettu kukkakaali muuttuu uunissa makeaksi ja rapeaksi – se on tässä kokonaan lihan tilalla, eikä kukaan kaipaa jauhelihaa. Älä ahda peltiä täyteen, muuten kaali höyrystyy.",
+    "added": 1794671900000,
+    "order": 51,
+    "steps": [
+      "Lämmitä uuni 225 asteeseen. Paloittele kukkakaali pieniksi nupuiksi.",
+      "Sekoita kukkakaali ja valutetut kikherneet öljyn ja taco-mausteen kanssa. Levitä pellille.",
+      "Paista 20 min, kunnes reunat ovat ruskistuneet ja rapeat.",
+      "Suikaloi punakaali ohueksi ja sekoita joukkoon limemehu ja ripaus suolaa.",
+      "Lämmitä tortillat ja täytä kukkakaalilla, punakaalilla, jogurtilla ja korianterilla."
+    ],
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 420,
+      "protein": 18
+    },
+    "status": "kirjassa",
+    "servings": 3
+  },
+  {
+    "id": "turkkilainen-papupasta",
+    "cat": "pasta",
+    "ing": [
+      {
+        "a": "250 g",
+        "n": "Täysjyväpenne",
+        "s": "Pirkka täysjyväpenne 500 g"
+      },
+      {
+        "a": "1 prk (380 g)",
+        "n": "Valkoinen papu",
+        "s": "Pirkka valkoinen papu 380 g"
+      },
+      {
+        "a": "1 tlk (390 g)",
+        "n": "Tomaattimurska",
+        "s": "Pirkka tomaattimurska 390 g"
+      },
+      {
+        "a": "2 dl",
+        "n": "Turkkilainen jogurtti",
+        "s": "Valio turkkilainen jogurtti 10 % 200 g"
+      },
+      {
+        "a": "3 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sipuli",
+        "s": "Keltasipuli irto"
+      },
+      {
+        "a": "60 g",
+        "n": "Juustoraaste",
+        "s": "Valio Arki juustoraaste 250 g"
+      },
+      {
+        "a": "1 tl kumpaakin",
+        "n": "Paprikajauhe ja kuivattu minttu",
+        "p": true
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Turkkilainen papupasta",
+    "tags": [
+      "kasvis",
+      "edullinen",
+      "jogurtti"
+    ],
+    "time": "25 min",
+    "tips": "Mausteöljy tehdään vasta lopuksi ja kaadetaan kylmän jogurtin päälle – se lämmin-kylmä yhdistelmä on koko ruoan idea. Paprikajauhe palaa sekunneissa, joten ota kattila pois heti.",
+    "added": 1794672000000,
+    "order": 52,
+    "steps": [
+      "Keitä pasta suolalla maustetussa vedessä.",
+      "Kuullota sipuli ja kaksi valkosipulinkynttä öljyssä. Lisää tomaattimurska ja valutetut pavut, hauduta 10 min.",
+      "Sekoita jogurttiin murskattu kolmas valkosipulinkynsi ja ripaus suolaa.",
+      "Kuumenna pienessä kattilassa 1 rkl öljyä, lisää paprikajauhe ja minttu ja ota heti pois liedeltä.",
+      "Annostele pasta ja papukastike, lusikoi päälle valkosipulijogurtti ja valuta mausteöljy. Lopuksi juustoraaste."
+    ],
+    "active": "20 min työtä",
+    "macros": {
+      "kcal": 510,
+      "protein": 23
+    },
+    "status": "kirjassa",
+    "servings": 3
+  },
+  {
+    "id": "halloumi-bataattipelti",
+    "cat": "uuniruoka",
+    "ing": [
+      {
+        "a": "3 kpl",
+        "n": "Bataatti",
+        "s": "Bataatti irto"
+      },
+      {
+        "a": "250 g",
+        "n": "Halloumi",
+        "s": "Pirkka halloumi 225 g"
+      },
+      {
+        "a": "1 prk (380 g)",
+        "n": "Musta papu",
+        "s": "Pirkka musta papu 380 g"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Paprika",
+        "s": "Paprika punainen irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "200 g",
+        "n": "Kreikkalainen jogurtti",
+        "s": "Valio kreikkalainen jogurtti 2 % 400 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Lime",
+        "s": "Lime irto"
+      },
+      {
+        "a": "1 tl kumpaakin",
+        "n": "Juustokumina ja savupaprika",
+        "p": true
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Halloumi-bataattipelti ja limettijogurtti",
+    "oven": "220 °C kiertoilma",
+    "tags": [
+      "kasvis",
+      "uuni",
+      "yksi pelti"
+    ],
+    "time": "40 min",
+    "tips": "Halloumi menee uuniin vasta viimeiset 15 minuuttia, muuten se kovettuu. Halloumin löytää isommista marketeista juustohyllystä; fetakuutiot käyvät tilalle, mutta ne lisätään vasta uunin jälkeen.",
+    "added": 1794672100000,
+    "order": 53,
+    "steps": [
+      "Lämmitä uuni 220 asteeseen. Kuutioi bataatit ja levitä pellille öljyn ja mausteiden kanssa.",
+      "Paista 20 min.",
+      "Lisää paprikalohkot, punasipuli, valutetut pavut ja halloumitikut pellille. Paista vielä 15 min.",
+      "Sekoita jogurttiin limemehu, suola ja pippuri.",
+      "Tarjoa pelti sellaisenaan ja limettijogurtti kulhossa."
+    ],
+    "active": "10 min työtä",
+    "macros": {
+      "kcal": 520,
+      "protein": 24
+    },
+    "status": "kirjassa",
+    "servings": 3
+  },
+  {
+    "id": "cowboy-keitto",
+    "cat": "keitto",
+    "ing": [
+      {
+        "a": "400 g",
+        "n": "Naudan jauheliha 10 %",
+        "s": "Pirkka naudan jauheliha 10 % 400 g"
+      },
+      {
+        "a": "1 prk (380 g)",
+        "n": "Chilipapu",
+        "s": "Pirkka chilipapu 380 g"
+      },
+      {
+        "a": "1 prk (330 g)",
+        "n": "Maissi",
+        "s": "Pirkka maissi 330 g"
+      },
+      {
+        "a": "1 tlk (390 g)",
+        "n": "Tomaattimurska",
+        "s": "Pirkka tomaattimurska 390 g"
+      },
+      {
+        "a": "4 kpl",
+        "n": "Peruna",
+        "s": "Peruna irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sipuli",
+        "s": "Keltasipuli irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Lihaliemikuutio",
+        "s": "Pirkka lihaliemikuutio 6 kpl"
+      },
+      {
+        "a": "80 g",
+        "n": "Juustoraaste",
+        "s": "Valio Arki juustoraaste 250 g"
+      },
+      {
+        "a": "1 tl kumpaakin",
+        "n": "Juustokumina ja paprikajauhe",
+        "p": true
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Cowboy-keitto",
+    "tags": [
+      "jauheliha",
+      "pavut",
+      "pakastuu"
+    ],
+    "time": "30 min",
+    "tips": "Tukeva keitto, joka syö kuin ateria. Pakastuu hyvin annospurkeissa, ja maku paranee seisoessa.",
+    "added": 1794672200000,
+    "order": 54,
+    "steps": [
+      "Ruskista jauheliha öljyssä kattilassa ja lisää hienonnettu sipuli.",
+      "Lisää mausteet, tomaattimurska, kuutioidut perunat, liemikuutiot ja 8 dl vettä.",
+      "Keitä 15 min, kunnes perunat ovat kypsiä.",
+      "Lisää valutetut pavut ja maissi, kuumenna 3 min.",
+      "Annostele kulhoihin ja ripottele juustoraaste päälle."
+    ],
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 430,
+      "protein": 31
+    },
+    "status": "kirjassa",
+    "servings": 4
+  },
+  {
+    "id": "kana-kasvispelti-hunajasinappi",
+    "cat": "uuniruoka",
+    "ing": [
+      {
+        "a": "600 g",
+        "n": "Broilerin paistileike",
+        "s": "Pirkka broilerin paistileike maustamaton 500 g (+100 g)"
+      },
+      {
+        "a": "800 g",
+        "n": "Peruna",
+        "s": "Peruna irto"
+      },
+      {
+        "a": "4 kpl",
+        "n": "Porkkana",
+        "s": "Porkkana irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "300 g",
+        "n": "Parsakaali",
+        "s": "Pirkka parsakaali pakaste 400 g"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Dijon-sinappi",
+        "s": "Pirkka dijon-sinappi 200 g"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Hunaja",
+        "s": "Pirkka juokseva hunaja 350 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "1 tl",
+        "n": "Timjami",
+        "p": true
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Kana-kasvispelti hunajasinapilla",
+    "oven": "200 °C kiertoilma",
+    "tags": [
+      "kana",
+      "uuni",
+      "yksi pelti",
+      "meal prep"
+    ],
+    "time": "45 min",
+    "tips": "Hunajasinappi karamellisoituu kanan pintaan eikä valu pois, kun kasvikset on paistettu ensin kuiviksi. Tee iso pelti – tähteet ovat valmis lounas kahdeksi päiväksi.",
+    "added": 1794672300000,
+    "order": 55,
+    "steps": [
+      "Lämmitä uuni 200 asteeseen. Lohko perunat ja porkkanat, levitä pellille öljyn ja mausteiden kanssa ja paista 20 min.",
+      "Sekoita kulhossa sinappi, hunaja, sitruunamehu ja 1 rkl öljyä. Pyörittele kanapalat marinadissa.",
+      "Lisää kana, punasipulilohkot ja parsakaali pellille. Paista 20 min.",
+      "Tarkista kanan kypsyys ja tarjoa suoraan pelliltä."
+    ],
+    "active": "10 min työtä",
+    "macros": {
+      "kcal": 480,
+      "protein": 42
+    },
+    "status": "kirjassa",
+    "servings": 4
+  },
+  {
+    "id": "thai-kanasalaatti",
+    "cat": "salaatti",
+    "ing": [
+      {
+        "a": "300 g",
+        "n": "Broilerin suikale",
+        "s": "Atria broilerin suikale maustamaton 400 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Jäävuorisalaatti",
+        "s": "Jäävuorisalaatti irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Porkkana",
+        "s": "Porkkana irto"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Kurkku",
+        "s": "Kurkku irto"
+      },
+      {
+        "a": "¼ kpl",
+        "n": "Punakaali",
+        "s": "Punakaali irto"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Maapähkinävoi",
+        "s": "Pirkka maapähkinävoi 350 g"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Soijakastike",
+        "s": "Kikkoman soijakastike 250 ml"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Lime",
+        "s": "Lime irto"
+      },
+      {
+        "a": "1 tl",
+        "n": "Hunaja",
+        "s": "Pirkka juokseva hunaja 350 g"
+      },
+      {
+        "a": "½ ruukku",
+        "n": "Korianteri",
+        "s": "Tuore korianteri ruukku"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Thai-kanasalaatti maapähkinäkastikkeella",
+    "tags": [
+      "kana",
+      "raikas",
+      "nopea"
+    ],
+    "time": "20 min",
+    "tips": "Kastike jähmettyy jääkaapissa – ohenna se kuumalla vedellä ennen tarjoilua. Lämmin kana kylmien kasvisten päällä tekee salaatista ruokaisan.",
+    "added": 1794672400000,
+    "order": 56,
+    "steps": [
+      "Paista suikaleet pannulla öljyssä 6 min ja mausta pippurilla.",
+      "Suikaloi salaatti, punakaali ja kurkku. Raasta porkkanat karkeaksi raasteeksi.",
+      "Sekoita kastike: maapähkinävoi, soijakastike, limemehu, hunaja ja 2 rkl kuumaa vettä, kunnes seos on juoksevaa.",
+      "Kokoa kasvikset lautasille, lisää lämmin kana ja valuta kastike päälle. Ripottele korianteri."
+    ],
+    "active": "20 min työtä",
+    "macros": {
+      "kcal": 470,
+      "protein": 40
+    },
+    "status": "kirjassa",
+    "servings": 2
+  },
+  {
+    "id": "lohi-nuudelikulho",
+    "cat": "lounas",
+    "ing": [
+      {
+        "a": "300 g",
+        "n": "Lohipala nahaton",
+        "s": "Pirkka lohipala nahaton ruodoton 400 g"
+      },
+      {
+        "a": "150 g",
+        "n": "Munanuudeli",
+        "s": "Pirkka munanuudeli 250 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Kurkku",
+        "s": "Kurkku irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Porkkana",
+        "s": "Porkkana irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Avokado",
+        "s": "Avokado irto"
+      },
+      {
+        "a": "2 vartta",
+        "n": "Kevätsipuli",
+        "s": "Kevätsipuli nippu"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Soijakastike",
+        "s": "Kikkoman soijakastike 250 ml"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Lime",
+        "s": "Lime irto"
+      },
+      {
+        "a": "1 tl",
+        "n": "Hunaja",
+        "s": "Pirkka juokseva hunaja 350 g"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Seesaminsiemen",
+        "s": "Pirkka seesaminsiemen 100 g"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Lohi-nuudelikulho",
+    "tags": [
+      "kala",
+      "nuudeli",
+      "raikas"
+    ],
+    "time": "20 min",
+    "tips": "Tämä syödään haaleana, ei kuumana, joten se sopii myös evääksi. Avokado kannattaa lisätä vasta juuri ennen syömistä.",
+    "added": 1794672500000,
+    "order": 57,
+    "steps": [
+      "Keitä nuudelit, huuhtele kylmällä vedellä ja valuta.",
+      "Kuutioi lohi, mausta suolalla ja pippurilla ja paista pannulla öljyssä 4 min. Älä käännä liikaa.",
+      "Sekoita kastike soijakastikkeesta, limemehusta ja hunajasta.",
+      "Suikaloi kurkku ja porkkana, viipaloi avokado.",
+      "Kokoa kulhoihin nuudelit, kasvikset ja lohi. Valuta kastike päälle ja ripottele seesaminsiemenet ja kevätsipuli."
+    ],
+    "active": "20 min työtä",
+    "macros": {
+      "kcal": 540,
+      "protein": 36
+    },
+    "status": "kirjassa",
+    "servings": 2
+  },
+  {
+    "id": "uunifeta-gnocchi",
+    "cat": "lounas",
+    "ing": [
+      {
+        "a": "500 g",
+        "n": "Gnocchi",
+        "s": "Pirkka gnocchi 500 g"
+      },
+      {
+        "a": "200 g",
+        "n": "Fetajuustopala",
+        "s": "Valio fetajuusto 200 g"
+      },
+      {
+        "a": "400 g",
+        "n": "Kirsikkatomaatti",
+        "s": "Pirkka kirsikkatomaatti 250 g (2 rasiaa)"
+      },
+      {
+        "a": "65 g",
+        "n": "Pinaatti",
+        "s": "Pirkka pesty pinaatti 65 g"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Pesto",
+        "s": "Pirkka basilikapesto 190 g"
+      },
+      {
+        "a": "3 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Uunifeta-gnocchi pinaatilla",
+    "oven": "220 °C kiertoilma",
+    "tags": [
+      "kasvis",
+      "uuni",
+      "helppo"
+    ],
+    "time": "30 min",
+    "tips": "Gnocchit kypsyvät uunissa suoraan pakkauksesta eikä niitä tarvitse keittää – reunat tulevat rapeiksi. Viisi minuuttia työtä, loput uuni hoitaa.",
+    "added": 1794672600000,
+    "order": 58,
+    "steps": [
+      "Lämmitä uuni 220 asteeseen.",
+      "Levitä uunivuokaan gnocchit, tomaatit ja valkosipulinkynnet. Valuta öljy päälle ja mausta.",
+      "Aseta fetapala keskelle ja paista 22 min.",
+      "Muussaa feta ja tomaatit haarukalla kastikkeeksi, sekoita pesto ja pinaatti joukkoon kuumana.",
+      "Tarkista suola ja tarjoa heti."
+    ],
+    "active": "5 min työtä",
+    "macros": {
+      "kcal": 520,
+      "protein": 20
+    },
+    "status": "kirjassa",
+    "servings": 3
+  },
+  {
+    "id": "bulgur-bowl-kanalla",
+    "cat": "lounas",
+    "ing": [
+      {
+        "a": "2 dl",
+        "n": "Bulgur",
+        "s": "Pirkka bulgur 500 g"
+      },
+      {
+        "a": "300 g",
+        "n": "Broilerin suikale",
+        "s": "Atria broilerin suikale maustamaton 400 g"
+      },
+      {
+        "a": "200 g",
+        "n": "Kirsikkatomaatti",
+        "s": "Pirkka kirsikkatomaatti 250 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Kurkku",
+        "s": "Kurkku irto"
+      },
+      {
+        "a": "100 g",
+        "n": "Fetajuustokuutiot",
+        "s": "Valio fetajuustokuutiot öljyssä 150 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "½ ruukku",
+        "n": "Persilja tai minttu",
+        "s": "Tuore persilja ruukku"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "1 tl",
+        "n": "Juustokumina, suola ja pippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Bulgur-bowl kanalla ja fetalla",
+    "tags": [
+      "kana",
+      "raikas",
+      "eväs"
+    ],
+    "time": "25 min",
+    "tips": "Bulgur kypsyy nopeammin kuin riisi ja maistuu hyvältä myös kylmänä – tee tuplasatsi, niin huominen eväs on valmis. Sitruunamehu kannattaa lisätä bulguriin lämpimänä, silloin maku imeytyy.",
+    "added": 1794672700000,
+    "order": 59,
+    "steps": [
+      "Keitä bulgur pakkauksen ohjeen mukaan ja anna jäähtyä hetki.",
+      "Paista suikaleet öljyssä 6 min, mausta juustokuminalla, suolalla ja pippurilla.",
+      "Kuutioi tomaatit, kurkku ja punasipuli.",
+      "Sekoita bulguriin kasvikset, sitruunamehu ja öljy.",
+      "Kokoa kulhoihin bulgur, kana, feta ja yrtit."
+    ],
+    "active": "20 min työtä",
+    "macros": {
+      "kcal": 560,
+      "protein": 42
+    },
+    "status": "kirjassa",
+    "servings": 2
+  },
+  {
+    "id": "couscous-kanavuoka",
+    "cat": "uuniruoka",
+    "ing": [
+      {
+        "a": "500 g",
+        "n": "Broilerin suikale",
+        "s": "Atria broilerin suikale maustamaton 400 g (+100 g)"
+      },
+      {
+        "a": "3 dl",
+        "n": "Couscous",
+        "s": "Pirkka couscous 500 g"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Kanaliemikuutio",
+        "s": "Pirkka kanaliemikuutio 6 kpl"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Kesäkurpitsa",
+        "s": "Kesäkurpitsa irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Paprika",
+        "s": "Paprika punainen irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "150 g",
+        "n": "Fetajuustokuutiot",
+        "s": "Valio fetajuustokuutiot öljyssä 150 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "1 tl kumpaakin",
+        "n": "Paprikajauhe ja oregano",
+        "p": true
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja pippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Couscous-kanavuoka",
+    "oven": "200 °C kiertoilma",
+    "tags": [
+      "kana",
+      "uuni",
+      "helppo"
+    ],
+    "time": "35 min",
+    "tips": "Couscous turpoaa suoraan vuoassa – sitä ei tarvitse keittää erikseen. Liemen on oltava kuumaa, muuten rakenteesta tulee puuromainen.",
+    "added": 1794672800000,
+    "order": 60,
+    "steps": [
+      "Lämmitä uuni 200 asteeseen.",
+      "Paista suikaleet ja kuutioidut kasvikset pannulla öljyssä 8 min. Mausta.",
+      "Levitä couscous uunivuoan pohjalle, kaada päälle 4,5 dl kuumaa liemivettä ja anna turvota 5 min.",
+      "Levitä kana ja kasvikset couscousin päälle, ripottele feta ja purista sitruunamehua.",
+      "Paista uunissa 15 min."
+    ],
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 510,
+      "protein": 38
+    },
+    "status": "kirjassa",
+    "servings": 4
+  },
+  {
+    "id": "paistettu-riisi-kanalla",
+    "cat": "lounas",
+    "ing": [
+      {
+        "a": "6 dl (eilisestä)",
+        "n": "Keitetty riisi",
+        "s": "Pirkka pitkäjyväinen riisi 1 kg"
+      },
+      {
+        "a": "300 g",
+        "n": "Broilerin suikale",
+        "s": "Atria broilerin suikale maustamaton 400 g"
+      },
+      {
+        "a": "3 kpl",
+        "n": "Kananmuna",
+        "s": "Pirkka kananmunat M 10 kpl"
+      },
+      {
+        "a": "2 dl",
+        "n": "Herne pakaste",
+        "s": "Pirkka herne pakaste 400 g"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Porkkana",
+        "s": "Porkkana irto"
+      },
+      {
+        "a": "3 vartta",
+        "n": "Kevätsipuli",
+        "s": "Kevätsipuli nippu"
+      },
+      {
+        "a": "3 rkl",
+        "n": "Soijakastike",
+        "s": "Kikkoman soijakastike 250 ml"
+      },
+      {
+        "a": "2 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Paistettu riisi kanalla ja kananmunalla",
+    "tags": [
+      "kana",
+      "tähteet",
+      "nopea"
+    ],
+    "time": "20 min",
+    "tips": "Tämä onnistuu vain kylmällä, eilisellä riisillä – tuore riisi menee puuroksi. Siksi kannattaa keittää riisiä aina reilusti liikaa.",
+    "added": 1794672900000,
+    "order": 61,
+    "steps": [
+      "Kuumenna iso pannu kunnolla kuumaksi. Paista suikaleet öljyssä 5 min ja nosta sivuun.",
+      "Paista porkkanakuutiot ja valkosipuli 3 min, lisää herneet.",
+      "Työnnä kasvikset reunoille, riko munat keskelle ja sekoita kypsäksi munakokkeliksi.",
+      "Lisää kylmä riisi ja paista kovalla lämmöllä 4 min sekoittaen.",
+      "Lisää kana takaisin, mausta soijakastikkeella ja pippurilla ja ripottele kevätsipuli päälle."
+    ],
+    "active": "20 min työtä",
+    "macros": {
+      "kcal": 480,
+      "protein": 34
+    },
+    "status": "kirjassa",
+    "servings": 3
+  },
+  {
+    "id": "kanakebab-pelti-tzatzikilla",
+    "cat": "uuniruoka",
+    "ing": [
+      {
+        "a": "600 g",
+        "n": "Broilerin paistileike",
+        "s": "Pirkka broilerin paistileike maustamaton 500 g (+100 g)"
+      },
+      {
+        "a": "4 kpl",
+        "n": "Pitaleipä",
+        "s": "Pirkka pitaleipä 4 kpl"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Paprika",
+        "s": "Paprika irto"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "250 g",
+        "n": "Kreikkalainen jogurtti",
+        "s": "Valio kreikkalainen jogurtti 2 % 400 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Kurkku",
+        "s": "Kurkku irto"
+      },
+      {
+        "a": "2 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "2 tl",
+        "n": "Kebabmauste tai juustokumina+paprikajauhe",
+        "p": true
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja pippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Kanakebab-pelti ja tzatziki",
+    "oven": "225 °C kiertoilma",
+    "tags": [
+      "kana",
+      "uuni",
+      "pita"
+    ],
+    "time": "35 min",
+    "tips": "Kurkun puristaminen kuivaksi on tzatzikin ainoa temppu – muuten kastikkeesta tulee vetistä. Pelti riittää neljälle ja tähteet maistuvat kylmänäkin pitaan.",
+    "added": 1794673000000,
+    "order": 62,
+    "steps": [
+      "Lämmitä uuni 225 asteeseen.",
+      "Suikaloi kana ja sekoita se öljyn, mausteiden ja puolikkaan sitruunan mehun kanssa.",
+      "Levitä kana, paprikasuikaleet ja punasipulilohkot pellille ja paista 20 min, kunnes kana saa väriä.",
+      "Raasta kurkku, purista neste pois ja sekoita jogurttiin murskatun valkosipulin ja suolan kanssa.",
+      "Lämmitä pitaleivät uunin loppulämmöllä ja täytä kanalla, kasviksilla ja tzatzikilla."
+    ],
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 540,
+      "protein": 44
+    },
+    "status": "kirjassa",
+    "servings": 4
+  },
+  {
+    "id": "linssibolognese",
+    "cat": "pasta",
+    "ing": [
+      {
+        "a": "2 dl",
+        "n": "Punaiset linssit",
+        "s": "Pirkka punainen linssi 500 g"
+      },
+      {
+        "a": "300 g",
+        "n": "Täysjyväspagetti",
+        "s": "Pirkka täysjyväspagetti 500 g"
+      },
+      {
+        "a": "2 tlk (à 390 g)",
+        "n": "Tomaattimurska",
+        "s": "Pirkka tomaattimurska 390 g"
+      },
+      {
+        "a": "3 kpl",
+        "n": "Porkkana",
+        "s": "Porkkana irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sipuli",
+        "s": "Keltasipuli irto"
+      },
+      {
+        "a": "3 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Tomaattipyree",
+        "s": "Pirkka tomaattipyree 200 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Kasvisliemikuutio",
+        "s": "Pirkka kasvisliemikuutio 6 kpl"
+      },
+      {
+        "a": "40 g",
+        "n": "Parmesaaniraaste",
+        "s": "Pirkka parmigiano reggiano raaste 100 g"
+      },
+      {
+        "a": "1 tl kumpaakin",
+        "n": "Oregano ja basilika",
+        "p": true
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Linssibolognese",
+    "tags": [
+      "kasvis",
+      "edullinen",
+      "pakastuu"
+    ],
+    "time": "35 min",
+    "tips": "Punaiset linssit hajoavat kastikkeeseen ja muistuttavat rakenteeltaan jauhelihaa murto-osalla hinnasta. Tee iso satsi ja pakasta puolet.",
+    "added": 1794673100000,
+    "order": 63,
+    "steps": [
+      "Kuullota hienonnettu sipuli, valkosipuli ja raastettu porkkana öljyssä 6 min.",
+      "Lisää tomaattipyree ja paista 1 min, jotta happamuus katoaa.",
+      "Lisää huuhdellut linssit, tomaattimurskat, liemikuutio, mausteet ja 3 dl vettä. Hauduta 20 min välillä sekoittaen.",
+      "Keitä spagetti sillä välin.",
+      "Mausta kastike suolalla ja pippurilla ja tarjoa parmesaanin kanssa."
+    ],
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 480,
+      "protein": 22
+    },
+    "status": "kirjassa",
+    "servings": 4
+  },
+  {
+    "id": "kvinoa-kanapelti-parsakaalilla",
+    "cat": "uuniruoka",
+    "ing": [
+      {
+        "a": "500 g",
+        "n": "Broilerin paistileike",
+        "s": "Pirkka broilerin paistileike maustamaton 500 g"
+      },
+      {
+        "a": "2,5 dl",
+        "n": "Kvinoa",
+        "s": "Pirkka kvinoa 500 g"
+      },
+      {
+        "a": "400 g",
+        "n": "Parsakaali",
+        "s": "Pirkka parsakaali pakaste 400 g"
+      },
+      {
+        "a": "200 g",
+        "n": "Kirsikkatomaatti",
+        "s": "Pirkka kirsikkatomaatti 250 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "100 g",
+        "n": "Fetajuustokuutiot",
+        "s": "Valio fetajuustokuutiot öljyssä 150 g"
+      },
+      {
+        "a": "3 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "1 tl",
+        "n": "Paprikajauhe, suola ja pippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Kvinoa-kanapelti parsakaalilla",
+    "oven": "220 °C kiertoilma",
+    "tags": [
+      "kana",
+      "uuni",
+      "kevyt"
+    ],
+    "time": "40 min",
+    "tips": "Kvinoassa on enemmän proteiinia ja kuitua kuin riisissä ja se kypsyy 15 minuutissa. Huuhtele se ennen keittämistä, niin kitkerä maku lähtee.",
+    "added": 1794673200000,
+    "order": 64,
+    "steps": [
+      "Lämmitä uuni 220 asteeseen. Keitä kvinoa pakkauksen ohjeen mukaan.",
+      "Sekoita kanapalat öljyyn, mausteisiin ja puolikkaan sitruunan mehuun. Levitä pellille.",
+      "Paista 15 min.",
+      "Lisää parsakaali, tomaatit, punasipuli ja valkosipulit pellille ja paista vielä 15 min.",
+      "Annostele kvinoa lautasille, nosta päälle pellin antimet ja murustele feta. Purista loppu sitruuna päälle."
+    ],
+    "active": "10 min työtä",
+    "macros": {
+      "kcal": 490,
+      "protein": 44
+    },
+    "status": "kirjassa",
+    "servings": 3
+  },
+  {
+    "id": "thai-kookos-kanakeitto",
+    "cat": "keitto",
+    "ing": [
+      {
+        "a": "400 g",
+        "n": "Broilerin suikale",
+        "s": "Atria broilerin suikale maustamaton 400 g"
+      },
+      {
+        "a": "1 tlk (400 ml)",
+        "n": "Kookosmaito",
+        "s": "Pirkka kookosmaito 400 ml"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Kanaliemikuutio",
+        "s": "Pirkka kanaliemikuutio 6 kpl"
+      },
+      {
+        "a": "250 g",
+        "n": "Herkkusieni",
+        "s": "Pirkka herkkusieni 250 g"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Porkkana",
+        "s": "Porkkana irto"
+      },
+      {
+        "a": "3 cm pala",
+        "n": "Inkivääri",
+        "s": "Tuore inkivääri irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Lime",
+        "s": "Lime irto"
+      },
+      {
+        "a": "½ ruukku",
+        "n": "Korianteri",
+        "s": "Tuore korianteri ruukku"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Kalakastike tai soijakastike",
+        "s": "Kikkoman soijakastike 250 ml"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Rypsiöljy",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Thai-kookos-kanakeitto",
+    "tags": [
+      "kana",
+      "keitto",
+      "mieto"
+    ],
+    "time": "25 min",
+    "tips": "Tämä on miedompi versio tom kha gai -keitosta: chilin saa lisätä omaan kulhoon. Limemehu lisätään vasta lopuksi, muuten maku haihtuu.",
+    "added": 1794673300000,
+    "order": 65,
+    "steps": [
+      "Kuullota raastettu inkivääri öljyssä kattilassa 1 min.",
+      "Lisää 6 dl vettä ja liemikuutiot, kiehauta.",
+      "Lisää suikaleet, viipaloidut herkkusienet ja porkkanasuikaleet. Keitä 8 min.",
+      "Kaada kookosmaito joukkoon ja kuumenna – älä anna kiehua kovaa.",
+      "Mausta soija- tai kalakastikkeella ja limemehulla. Ripottele korianteri annoksiin."
+    ],
+    "active": "15 min työtä",
+    "macros": {
+      "kcal": 420,
+      "protein": 32
+    },
+    "status": "kirjassa",
+    "servings": 3
+  },
+  {
+    "id": "lammin-bulgurisalaatti-lohella",
+    "cat": "salaatti",
+    "ing": [
+      {
+        "a": "300 g",
+        "n": "Lohipala nahaton",
+        "s": "Pirkka lohipala nahaton ruodoton 400 g"
+      },
+      {
+        "a": "2 dl",
+        "n": "Bulgur",
+        "s": "Pirkka bulgur 500 g"
+      },
+      {
+        "a": "65 g",
+        "n": "Pinaatti",
+        "s": "Pirkka pesty pinaatti 65 g"
+      },
+      {
+        "a": "200 g",
+        "n": "Kirsikkatomaatti",
+        "s": "Pirkka kirsikkatomaatti 250 g"
+      },
+      {
+        "a": "½ kpl",
+        "n": "Punasipuli",
+        "s": "Punasipuli irto"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sitruuna",
+        "s": "Sitruuna irto"
+      },
+      {
+        "a": "80 g",
+        "n": "Fetajuustokuutiot",
+        "s": "Valio fetajuustokuutiot öljyssä 150 g"
+      },
+      {
+        "a": "1 rkl",
+        "n": "Tilli",
+        "s": "Tuore tilli nippu"
+      },
+      {
+        "a": "2 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Lämmin bulgurisalaatti lohella",
+    "tags": [
+      "kala",
+      "raikas",
+      "eväs"
+    ],
+    "time": "25 min",
+    "tips": "Lämmin bulgur kypsentää pinaatin juuri sopivasti. Salaatti on hyvä myös seuraavana päivänä kylmänä, joten tee se suoraan eväsrasiaan.",
+    "added": 1794673400000,
+    "order": 66,
+    "steps": [
+      "Keitä bulgur pakkauksen ohjeen mukaan.",
+      "Kuutioi lohi, mausta ja paista pannulla öljyssä 4 min.",
+      "Sekoita lämpimään bulguriin pinaatti, puolitetut tomaatit, punasipuli, sitruunamehu ja öljy.",
+      "Nostele lohi ja feta päälle ja ripottele tilli."
+    ],
+    "active": "20 min työtä",
+    "macros": {
+      "kcal": 560,
+      "protein": 36
+    },
+    "status": "kirjassa",
+    "servings": 2
+  },
+  {
+    "id": "munakoiso-jauhelihavuoka",
+    "cat": "uuniruoka",
+    "ing": [
+      {
+        "a": "500 g",
+        "n": "Naudan jauheliha 10 %",
+        "s": "Pirkka naudan jauheliha 10 % 400 g (+100 g)"
+      },
+      {
+        "a": "2 kpl",
+        "n": "Munakoiso",
+        "s": "Munakoiso irto"
+      },
+      {
+        "a": "1 tlk (390 g)",
+        "n": "Tomaattimurska",
+        "s": "Pirkka tomaattimurska 390 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Sipuli",
+        "s": "Keltasipuli irto"
+      },
+      {
+        "a": "3 kynttä",
+        "n": "Valkosipuli",
+        "s": "Valkosipuli irto"
+      },
+      {
+        "a": "300 g",
+        "n": "Kreikkalainen jogurtti",
+        "s": "Valio kreikkalainen jogurtti 2 % 400 g"
+      },
+      {
+        "a": "1 kpl",
+        "n": "Kananmuna",
+        "s": "Pirkka kananmunat M 10 kpl"
+      },
+      {
+        "a": "100 g",
+        "n": "Juustoraaste",
+        "s": "Valio Arki juustoraaste 250 g"
+      },
+      {
+        "a": "½ tl kumpaakin",
+        "n": "Kaneli ja oregano",
+        "p": true
+      },
+      {
+        "a": "3 rkl",
+        "n": "Oliiviöljy",
+        "p": true
+      },
+      {
+        "a": "ripaus",
+        "n": "Suola ja mustapippuri",
+        "p": true
+      }
+    ],
+    "who": [
+      "leo",
+      "aiti"
+    ],
+    "name": "Munakoiso-jauhelihavuoka",
+    "oven": "200 °C kiertoilma",
+    "tags": [
+      "jauheliha",
+      "uuni",
+      "viikonloppu"
+    ],
+    "time": "55 min",
+    "tips": "Kevyempi versio moussakasta: valkokastike korvataan jogurtilla ja munalla, eikä munakoisoja paisteta öljyssä vaan uunissa. Kaneli on se mauste, joka tekee siitä kreikkalaisen.",
+    "added": 1794673500000,
+    "order": 67,
+    "steps": [
+      "Lämmitä uuni 200 asteeseen. Viipaloi munakoisot sentin siivuiksi, sivele öljyllä ja paista pellillä 15 min.",
+      "Ruskista jauheliha, lisää sipuli ja valkosipuli. Lisää tomaattimurska ja mausteet ja hauduta 10 min.",
+      "Sekoita jogurttiin kananmuna ja puolet juustoraasteesta.",
+      "Lado vuokaan kerroksittain munakoiso, jauhelihakastike ja loput munakoisosta. Levitä jogurttikastike päälle ja ripottele loppu juusto.",
+      "Paista 25 min, kunnes pinta on kullanruskea. Anna tasaantua 10 min ennen leikkaamista."
+    ],
+    "active": "20 min työtä",
+    "macros": {
+      "kcal": 500,
+      "protein": 34
+    },
+    "status": "kirjassa",
+    "servings": 4
   }
 ]
