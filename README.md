@@ -17,6 +17,8 @@ Yksi HTML-sivu (`index.html`), tietokantana Supabase.
 | `manifest.json` | PWA: kotivalikkoon asennettava sovellus |
 | `icons/` | Sovelluskuvakkeet |
 | `supabase/functions/ruoka-chef/index.ts` | Kokki-chatin edge function (API-avain pysyy palvelimella) |
+| `rutiini.md` | Ohje päivittäiselle ehdotusrutiinille (pilviagentti lukee tämän joka aamu) |
+| `data/seed.json` | Kirjan 30 aloitusreseptiä samassa muodossa kuin tietokannassa |
 
 ## Taulut (Supabase)
 
@@ -48,3 +50,9 @@ update ruoka_chef_prompt set text = '…', updated_at = now() where id = 'main';
 
 `p: true` = kaapissa aina (suola, pippuri, öljyt, kuivatut mausteet, sokeri, vehnäjauhot) → ei mene ostoslistalle.
 Makrot ovat **per annos**.
+
+## Päivittäinen ehdotusrutiini
+
+Pilviagentti ajetaan joka aamu (cron `0 4 * * *` UTC) ja lisää 4 uutta reseptiä ehdotuksina –
+2 lounasta ja 2 iltapalaa. Se lukee ohjeensa tiedostosta [`rutiini.md`](rutiini.md), joten rutiinia
+säädetään muokkaamalla sitä tiedostoa. Rutiinin tila: https://claude.ai/code/routines
