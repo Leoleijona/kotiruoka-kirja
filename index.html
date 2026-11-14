@@ -1,0 +1,1189 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://nkhfqgyxronrfsdbeddn.supabase.co wss://nkhfqgyxronrfsdbeddn.supabase.co; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'self'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Kotiruoka-kirja</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/svg+xml" href="icons/logo.svg">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
+<meta name="theme-color" content="#F6F4EF" id="themeColor">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Kotiruoka">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@500&display=swap">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.4/dist/umd/supabase.min.js" integrity="sha384-2zrRDgDHSYB/GN3nFW3fsZXoxEhKIr3N2h63Tc6DEOB9JJdFIu8xMJT2Cph/gBil" crossorigin="anonymous"></script>
+<style>
+  :root {
+    --bg: #F6F4EF;
+    --surface: #FFFFFF;
+    --surface-2: #ECE8E0;
+    --ink: #231F1A;
+    --muted: #6B6358;
+    --line: #DDD7CC;
+    --accent: #2E6B4F;
+    --accent-ink: #FFFFFF;
+    --accent-soft: #E2EFE7;
+    --ok: #1F7A47;
+    --ok-soft: #E1F2E8;
+    --warn: #9A6206;
+    --warn-soft: #FBF0D6;
+    --no: #2F5F96;
+    --no-soft: #E1EAF5;
+    --toast-link: #8FD6AF;
+    --cat-lounas: #2E6B4F;
+    --cat-iltapala: #B5603A;
+    --cat-keitto: #C0882B;
+    --cat-salaatti: #4E8F3F;
+    --cat-uuniruoka: #A8413A;
+    --cat-pasta: #8A5A2B;
+    --cat-leivonta: #9B4B7A;
+    --cat-aamiainen: #3E6FA8;
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+    --mono: "DM Mono", "Cascadia Mono", Consolas, monospace;
+    --radius: 14px;
+    --shadow: 0 1px 2px rgba(35,31,26,.06), 0 6px 20px rgba(35,31,26,.07);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16140F; --surface: #211E18; --surface-2: #2C2821; --ink: #F0EBE2; --muted: #A69C8D; --line: #39342B;
+      --accent: #6FC08F; --accent-ink: #0E1A13; --accent-soft: #22352A;
+      --ok: #5CBF87; --ok-soft: #1B3326; --warn: #E0A93A; --warn-soft: #3A2E12; --no: #7FAEE6; --no-soft: #1C2A3B; --toast-link: #2E6B4F;
+      --cat-lounas: #6FC08F; --cat-iltapala: #E0906A; --cat-keitto: #E8BA5E; --cat-salaatti: #8CC87A; --cat-uuniruoka: #E07A72; --cat-pasta: #C49460; --cat-leivonta: #D385B0; --cat-aamiainen: #6A9AD6;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 6px 20px rgba(0,0,0,.35);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #16140F; --surface: #211E18; --surface-2: #2C2821; --ink: #F0EBE2; --muted: #A69C8D; --line: #39342B;
+    --accent: #6FC08F; --accent-ink: #0E1A13; --accent-soft: #22352A;
+    --ok: #5CBF87; --ok-soft: #1B3326; --warn: #E0A93A; --warn-soft: #3A2E12; --no: #7FAEE6; --no-soft: #1C2A3B; --toast-link: #2E6B4F;
+    --cat-lounas: #6FC08F; --cat-iltapala: #E0906A; --cat-keitto: #E8BA5E; --cat-salaatti: #8CC87A; --cat-uuniruoka: #E07A72; --cat-pasta: #C49460; --cat-leivonta: #D385B0; --cat-aamiainen: #6A9AD6;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 6px 20px rgba(0,0,0,.35);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--ink); margin: 0; }
+  body { font-family: var(--body); font-size: 16px; line-height: 1.45; -webkit-font-smoothing: antialiased; overscroll-behavior-y: none; }
+  button { font: inherit; color: inherit; cursor: pointer; border: 0; background: none; padding: 0; touch-action: manipulation; }
+  button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  input, textarea { font: inherit; color: inherit; }
+  h1, h2, h3 { font-family: var(--display); margin: 0; text-wrap: balance; line-height: 1.15; }
+  p { margin: 0; }
+  ul, ol { margin: 0; padding: 0; list-style: none; }
+
+  .app { max-width: 540px; margin: 0 auto; min-height: 100dvh; padding-bottom: 88px; }
+
+  /* Header */
+  .top { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 14px 18px 10px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .theme { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px; background: var(--surface-2); color: var(--muted); font-size: 13px; font-weight: 600; min-height: 36px; }
+  .theme svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .theme .ic-sun { display: none; }
+  :root[data-theme="dark"] .theme .ic-moon { display: none; }
+  :root[data-theme="dark"] .theme .ic-sun { display: inline; }
+  .seg { display: inline-flex; background: var(--surface-2); border-radius: 999px; padding: 3px; }
+  .seg button { padding: 7px 16px; border-radius: 999px; font-weight: 600; font-size: 14px; color: var(--muted); min-height: 36px; }
+  .seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
+
+  main { padding: 6px 18px 0; display: grid; gap: 22px; }
+  section { display: grid; gap: 10px; }
+  .sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+  .sec-head h2 { font-size: 20px; font-weight: 700; }
+  .eyebrow { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; }
+  .link { color: var(--accent); font-weight: 600; font-size: 14px; min-height: 32px; }
+
+  .greeting h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; }
+  .greeting p { color: var(--muted); margin-top: 4px; }
+  .banner { display: flex; gap: 10px; align-items: center; padding: 10px 14px; border-radius: 12px; background: var(--warn-soft); color: var(--ink); font-size: 14px; }
+  .banner b { color: var(--warn); }
+
+  /* Cards */
+  .card { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: 14px 16px; display: grid; gap: 8px; text-align: left; width: 100%; }
+  .card.tap:active { transform: scale(.99); }
+  .card-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .cat { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--muted); }
+  .cat::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--cat-color, var(--muted)); }
+  .card h3 { font-size: 18px; font-weight: 700; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; font-size: 13px; color: var(--muted); }
+  .prog { font-family: var(--mono); font-size: 12px; letter-spacing: .04em; background: var(--surface-2); color: var(--ink); padding: 3px 8px; border-radius: 6px; white-space: nowrap; }
+  .stars { color: var(--warn); letter-spacing: 1px; font-size: 13px; }
+  .why { font-size: 12px; font-weight: 600; color: var(--accent); }
+  .pill { font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 999px; background: var(--surface-2); color: var(--muted); }
+  .pill.ok { background: var(--ok-soft); color: var(--ok); }
+  .pill.warn { background: var(--warn-soft); color: var(--warn); }
+  .pill.new { background: var(--accent-soft); color: var(--accent); }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+
+  .sugg { display: grid; gap: 10px; }
+  .row-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 12px 16px; border-radius: 12px; font-weight: 600; font-size: 15px; background: var(--surface-2); color: var(--ink); min-height: 44px; }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); }
+  .btn.ghost { background: transparent; color: var(--muted); }
+  .btn.no { background: var(--no-soft); color: var(--no); border: 1.5px solid var(--no); }
+  .try .btn.no { background: transparent; color: var(--no); border-color: var(--no); }
+  .btn.small { padding: 8px 12px; font-size: 14px; min-height: 36px; border-radius: 10px; }
+  .btn.block { width: 100%; }
+  .btn:disabled, .btn[aria-disabled="true"] { opacity: .45; cursor: default; }
+
+  .empty { color: var(--muted); font-size: 15px; padding: 14px 16px; background: var(--surface); border-radius: var(--radius); border: 1px dashed var(--line); }
+
+  /* Chips */
+  .chips { display: flex; gap: 8px; overflow-x: auto; padding: 2px 0 6px; scrollbar-width: none; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip { flex: 0 0 auto; padding: 8px 14px; border-radius: 999px; background: var(--surface); box-shadow: var(--shadow); font-size: 14px; font-weight: 600; color: var(--muted); min-height: 36px; }
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+  .search { width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); min-height: 44px; }
+  .list { display: grid; gap: 10px; }
+
+  /* Viikon suunnitelma */
+  .plan { gap: 10px; }
+  .plan .t { font-weight: 600; font-size: 17px; }
+  .plan .sub { font-size: 13px; color: var(--muted); }
+  .plan .row-actions { flex-wrap: nowrap; }
+  .plan .row-actions .btn { flex: 1 1 auto; }
+  .plan .row-actions .btn.icon { flex: 0 0 auto; }
+  .btn.icon { min-width: 40px; padding: 8px 12px; }
+  .daypick { display: grid; gap: 8px; }
+  .daypick button { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 16px; border-radius: 12px; background: var(--surface-2); font-weight: 600; min-height: 48px; text-align: left; }
+  .daypick button span.d { color: var(--muted); font-weight: 500; font-size: 14px; }
+
+  /* Shopping */
+  .shop-item { display: grid; grid-template-columns: 26px 1fr auto; gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .shop-item:last-child { border-bottom: 0; }
+  .shop-item input[type="checkbox"] { width: 24px; height: 24px; accent-color: var(--accent); margin: 0; }
+  .shop-item .t { font-weight: 500; }
+  .shop-item.done .t { text-decoration: line-through; color: var(--muted); }
+  .shop-item .sub { font-size: 12px; color: var(--muted); }
+  .addrow { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+  .pantry { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+  /* Bottom nav */
+  nav.tabs { position: fixed; bottom: 0; left: 0; right: 0; z-index: 6; background: var(--surface); border-top: 1px solid var(--line); padding: 6px 0 max(8px, env(safe-area-inset-bottom)); }
+  nav.tabs .in { max-width: 540px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); }
+  nav.tabs button { display: grid; justify-items: center; gap: 2px; padding: 8px 0; font-size: 11px; font-weight: 600; color: var(--muted); position: relative; }
+  nav.tabs { transition: transform .25s cubic-bezier(.17,.59,.4,1); }
+  body.kb nav.tabs, body.typing nav.tabs { transform: translateY(110%); pointer-events: none; }   /* typing: the chat gets the whole screen */
+  html.chat-lock, body.chat-open { position: fixed; inset: 0; width: 100%; height: 100%; overflow: hidden; overscroll-behavior: none; }   /* the chat scrolls, nothing else does */
+  nav.tabs button svg { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  nav.tabs button[aria-pressed="true"] { color: var(--accent); }
+  nav.tabs .badge { position: absolute; left: calc(50% + 8px); top: 4px; background: var(--accent); color: var(--accent-ink); font-size: 10px; min-width: 16px; height: 16px; border-radius: 8px; display: grid; place-items: center; padding: 0 4px; }
+
+  /* Detail sheet */
+  .sheet { position: fixed; inset: 0; z-index: 10; background: var(--bg); overflow-y: auto; }
+  .sheet .in { max-width: 540px; margin: 0 auto; padding: 0 18px 64px; }
+  .sheet-top { position: sticky; top: 0; background: var(--bg); padding: 12px 0; display: flex; align-items: center; gap: 8px; z-index: 2; }
+  .sheet-top .back { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; color: var(--accent); padding: 8px 10px 8px 0; min-height: 44px; }
+  .sheet-top .round { width: 44px; height: 44px; border-radius: 50%; background: var(--surface); box-shadow: var(--shadow); display: grid; place-items: center; }
+  .sheet-top .round svg { width: 22px; height: 22px; stroke: var(--accent); fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+  .sheet-top .heart { margin-left: auto; }
+  .sheet-top .heart[aria-pressed="true"] svg { fill: var(--accent); }
+  .sheet-top .share svg { stroke: var(--muted); }
+  .try { background: var(--surface); color: var(--ink); border-radius: var(--radius); padding: 16px; display: grid; gap: 10px; box-shadow: var(--shadow); border-top: 3px solid var(--accent); }
+  .try .eyebrow { color: var(--accent); }
+  .try h3 { font-size: 22px; font-weight: 800; letter-spacing: -0.01em; }
+  .try .btn { background: var(--surface-2); color: var(--ink); }
+  .try .btn.primary { background: var(--accent); color: var(--accent-ink); }
+  .hidden-list summary { cursor: pointer; color: var(--muted); font-size: 14px; font-weight: 600; padding: 6px 0; list-style: none; }
+  .hidden-list summary::-webkit-details-marker { display: none; }
+  .hidden-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); color: var(--muted); }
+  .hidden-row:last-child { border-bottom: 0; }
+  .hero { display: grid; gap: 10px; padding: 6px 0 16px; }
+  .hero h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; }
+  .prog-big { display: inline-grid; gap: 2px; padding: 12px 16px; border-radius: 12px; background: var(--ink); color: var(--bg); justify-self: start; }
+  .prog-big .l { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; opacity: .7; }
+  .prog-big .v { font-family: var(--mono); font-size: 20px; letter-spacing: .06em; }
+  .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .facts.two { grid-template-columns: repeat(2, 1fr); }
+  .fact { background: var(--surface); border-radius: 12px; padding: 10px 12px; display: grid; gap: 2px; }
+  .fact .l { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; }
+  .fact .v { font-family: var(--display); font-weight: 700; font-size: 19px; font-variant-numeric: tabular-nums; }
+  .fact .v small { font-size: 12px; font-weight: 500; color: var(--muted); }
+  .ing { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 10px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+  .ing:last-child { border-bottom: 0; }
+  .ing .n { font-weight: 500; }
+  .ing .a { font-variant-numeric: tabular-nums; color: var(--ink); font-weight: 600; white-space: nowrap; }
+  .ing .s { grid-column: 1 / -1; font-size: 12px; color: var(--muted); }
+  .ing .s::before { content: "Kaupasta: "; font-weight: 600; }
+  .ing.home .s::before { content: "Kotona aina"; font-weight: 600; }
+  .steps { display: grid; gap: 12px; counter-reset: s; }
+  .steps li { display: grid; grid-template-columns: 30px 1fr; gap: 10px; align-items: start; cursor: pointer; }
+  .steps li::before { counter-increment: s; content: counter(s); width: 28px; height: 28px; border-radius: 50%; background: var(--surface-2); display: grid; place-items: center; font-family: var(--display); font-weight: 700; font-size: 14px; }
+  .steps li.done { color: var(--muted); }
+  .steps li.done::before { content: "✓"; background: var(--ok-soft); color: var(--ok); }
+  .steps li strong { font-family: var(--mono); font-weight: 500; font-size: 14px; background: var(--surface-2); padding: 1px 6px; border-radius: 5px; }
+  .steps-hint { font-size: 12px; color: var(--muted); }
+  .tip { background: var(--accent-soft); color: var(--ink); padding: 12px 14px; border-radius: 12px; font-size: 15px; }
+  .tip b { color: var(--accent); }
+  .review { display: grid; gap: 4px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .review:last-child { border-bottom: 0; }
+  .review .h { display: flex; gap: 8px; align-items: center; font-size: 14px; flex-wrap: wrap; }
+  .review .who { font-weight: 700; }
+  .review .d { color: var(--muted); font-size: 12px; margin-left: auto; }
+  .review .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .review .c { font-size: 15px; }
+  .actionbar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 11; background: var(--surface); border-top: 1px solid var(--line); padding: 5px 14px max(5px, env(safe-area-inset-bottom)); }
+  .actionbar .btn { min-height: 38px; padding: 8px 12px; font-size: 14px; border-radius: 10px; }
+  .actionbar .in { max-width: 540px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .actionbar .in.one { grid-template-columns: 1fr; }
+  .toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: 96px; z-index: 20; background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 18px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow); opacity: 0; transition: opacity .2s; pointer-events: none; display: flex; gap: 14px; align-items: center; width: max-content; max-width: calc(100vw - 32px); }
+  .toast.show { opacity: 1; pointer-events: auto; }
+  .toast button { color: var(--toast-link); font-weight: 700; text-transform: uppercase; letter-spacing: .04em; font-size: 13px; padding: 6px 2px; flex: 0 0 auto; }
+
+  /* Review modal + first-run chooser + day picker */
+  .modal { position: fixed; inset: 0; z-index: 15; background: rgba(12,10,6,.55); display: grid; align-items: end; }
+  .modal.center { align-items: center; padding: 18px; }
+  .modal .box { background: var(--surface); border-radius: 20px 20px 0 0; padding: 18px 18px max(18px, env(safe-area-inset-bottom)); max-width: 540px; width: 100%; margin: 0 auto; display: grid; gap: 16px; max-height: 92dvh; overflow-y: auto; }
+  .modal.center .box { border-radius: 20px; }
+  .modal h2 { font-size: 22px; }
+  .q { display: grid; gap: 8px; }
+  .q .l { font-weight: 600; font-size: 14px; }
+  .starpick { display: flex; gap: 6px; }
+  .starpick button { font-size: 34px; line-height: 1; color: var(--line); width: 48px; height: 48px; }
+  .starpick button.on { color: var(--warn); }
+  .opts { display: flex; gap: 8px; flex-wrap: wrap; }
+  .opts button { padding: 9px 14px; border-radius: 999px; background: var(--surface-2); font-weight: 600; font-size: 14px; color: var(--muted); min-height: 40px; }
+  .opts button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+  textarea.note { width: 100%; min-height: 70px; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg); resize: vertical; }
+  .who-pick { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .who-pick .btn { min-height: 64px; font-size: 20px; }
+
+  /* Kokki (chat) – laid out like a dedicated chat app: full screen, plain assistant text, rounded composer */
+  .chef-card { display: grid; gap: 8px; background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: 14px 16px; border-left: 3px solid var(--cat-iltapala); }
+  .chef-card .t { font-family: var(--display); font-weight: 700; font-size: 17px; }
+  .chef-card .mini { display: grid; gap: 2px; font-size: 14px; line-height: 1.4; }
+  .chef-card .mini b { font-size: 11px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); margin-top: 10px; }
+  /* Amount first: it stays whole and lines up, however long the ingredient name is. */
+  .chef-card .mini ul li { padding: 5px 0; border-bottom: 1px solid var(--line); }
+  .chef-card .mini ul li:last-child { border-bottom: 0; }
+  .chef-card .mini ul li b { display: inline; font-size: 14px; text-transform: none; letter-spacing: 0; color: var(--ink); margin: 0 7px 0 0; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .chef-card .mini ul li i { display: block; font-style: normal; font-size: 12px; color: var(--muted); }
+  .chef-card .mini ol { list-style: decimal; padding-left: 20px; display: grid; gap: 7px; margin-top: 4px; }
+  .chef-card .mini ol li { display: list-item; padding-left: 2px; }
+  .chef-card .mini ol li strong { font-family: var(--mono); font-weight: 500; font-size: 13px; background: var(--surface-2); padding: 1px 5px; border-radius: 5px; }
+  .chef-card .tipline { margin-top: 10px; font-size: 13px; color: var(--muted); }
+  body.chat-open .top { display: none; }
+  .chat { position: fixed; left: 0; right: 0; top: 0; height: 100dvh; z-index: 4; background: var(--bg); display: grid; grid-template-rows: auto 1fr auto; }
+  .chat-top { display: flex; align-items: center; gap: 10px; padding: calc(8px + env(safe-area-inset-top)) 14px 8px 16px; background: var(--bg); }
+  .chat-top .ttl { font-family: var(--display); font-weight: 700; font-size: 17px; }
+  .chat-top .who-mini { margin-left: auto; font-size: 13px; font-weight: 600; color: var(--muted); background: var(--surface-2); padding: 6px 12px; border-radius: 999px; min-height: 34px; }
+  .chat-top .clear { width: 36px; height: 36px; border-radius: 50%; background: var(--surface-2); color: var(--ink); display: grid; place-items: center; font-size: 22px; line-height: 1; padding-bottom: 2px; }
+  .chat-log { overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 6px 16px 20px; display: grid; gap: 18px; align-content: start; max-width: 540px; width: 100%; margin: 0 auto; }
+  .msg { font-size: 16px; line-height: 1.5; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .msg.me { justify-self: end; max-width: 85%; background: var(--surface-2); color: var(--ink); padding: 10px 15px; border-radius: 20px; border-bottom-right-radius: 6px; }
+  .msg.bot { justify-self: stretch; max-width: 100%; }
+  .msg.err { justify-self: stretch; background: var(--warn-soft); color: var(--ink); padding: 10px 14px; border-radius: 14px; }
+  .typing { display: inline-flex; gap: 5px; align-items: center; padding: 4px 0; }
+  .typing i { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); animation: blink 1.2s infinite; }
+  .typing i:nth-child(2) { animation-delay: .2s; }
+  .typing i:nth-child(3) { animation-delay: .4s; }
+  @keyframes blink { 0%, 60%, 100% { opacity: .25; } 30% { opacity: 1; } }
+  .chat-form { padding: 6px 12px 10px; background: var(--bg); max-width: 540px; width: 100%; margin: 0 auto; }
+  body:not(.kb):not(.typing) .chat-form { padding-bottom: calc(10px + env(safe-area-inset-bottom) / 2); }
+  /* While typing, sit as close to the keyboard as iOS allows (its own toolbar still takes a strip). */
+  body.kb .chat-form, body.typing .chat-form { padding-top: 4px; padding-bottom: 4px; }
+  .composer { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 6px; background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: 5px 5px 5px 16px; box-shadow: var(--shadow); }
+  .composer textarea { width: 100%; min-height: 38px; height: 38px; max-height: 150px; overflow-y: auto; padding: 9px 0; border: 0; background: transparent; resize: none; font-size: 16px; line-height: 1.35; }
+  .composer textarea:focus-visible { outline: none; }
+  .composer .send { width: 38px; height: 38px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; flex: 0 0 auto; }
+  .composer .send svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+  .composer .send:disabled { background: var(--surface-2); color: var(--muted); }
+  .starters { display: flex; gap: 8px; flex-wrap: wrap; }
+  .starters button { padding: 9px 14px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); font-size: 14px; font-weight: 500; color: var(--ink); text-align: left; }
+
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<div class="app" id="app">
+  <header class="top">
+    <button class="theme" data-theme-toggle aria-label="Vaihda teema" title="Teema">
+      <svg viewBox="0 0 24 24" class="ic-moon" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      <svg viewBox="0 0 24 24" class="ic-sun" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      <span class="lbl"></span>
+    </button>
+    <div class="seg" role="group" aria-label="Kuka käyttää">
+      <button data-profile="leo" aria-pressed="true">Leo</button>
+      <button data-profile="aiti" aria-pressed="false">Kirsi</button>
+    </div>
+  </header>
+  <main id="main"></main>
+</div>
+
+<nav class="tabs" aria-label="Näkymät">
+  <div class="in">
+    <button data-tab="today" aria-pressed="true" id="todayTab">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>Tänään
+    </button>
+    <button data-tab="recipes" aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5V5.5M8 7h8M8 11h6"/></svg>Reseptit
+    </button>
+    <button data-tab="chef" aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 21h10v-5H7zM12 3a4 4 0 0 0-3.9 3.1A3.5 3.5 0 0 0 7 13v3h10v-3a3.5 3.5 0 0 0-1.1-6.9A4 4 0 0 0 12 3z"/></svg>Kokki
+    </button>
+    <button data-tab="favs" aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-7.5-10A4.2 4.2 0 0 1 12 8a4.2 4.2 0 0 1 7.5 2.5c0 5.4-7.5 10-7.5 10z"/></svg>Suosikit
+    </button>
+    <button data-tab="shop" aria-pressed="false" id="shopTab">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"/><circle cx="9" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></svg>Ostoslista
+    </button>
+  </div>
+</nav>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div id="overlay"></div>
+<div id="who"></div>
+<div id="chef"></div>
+
+<script>
+(() => {
+  const CATS = { lounas: "Lounas", iltapala: "Iltapala", keitto: "Keitto", salaatti: "Salaatti", uuniruoka: "Uuniruoka", pasta: "Pasta", leivonta: "Leivonta", aamiainen: "Aamiainen" };
+  const PREF = { leo: ["lounas", "uuniruoka", "pasta"], aiti: ["iltapala", "keitto", "salaatti", "aamiainen"] };
+  const NAMES = { leo: "Leo", aiti: "Kirsi" };
+  const OTHER = { leo: "aiti", aiti: "leo" };
+  const PROFILES = ["leo", "aiti"];
+  const TASTE = ["liian mautonta", "sopiva", "liian suolaista"];
+  const PANTRY = "Kotona aina: suola, pippuri, rypsi- ja oliiviöljy, kuivatut mausteet, sokeri ja vehnäjauhot. Näitä ei lisätä listalle.";
+  const DAY = 24 * 3600 * 1000;
+  const EMPTY_PREFS = () => ({ hidden: [], favorites: [], kept: [], deleted: [] });
+
+  const S = {
+    profile: "leo", tab: "today", cat: "all", q: "",
+    recipes: [], reviews: [], plan: [], shopping: [],
+    prefs: { leo: EMPTY_PREFS(), aiti: EMPTY_PREFS(), shared: EMPTY_PREFS() },
+    db: null, dbState: "loading", open: null, review: null, dayPick: null, seed: 0, rerolled: false, busy: false, chat: [], chefBusy: false, firstRun: false, stepsDone: new Set(),
+  };
+  const store = { get: (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
+  // Suggestions are stable for a calendar day (per person); "Arvo uudet" re-rolls them for the rest of that day.
+  const daySeed = (who) => { const d = new Date(); let h = (d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate()) + (who === "aiti" ? 7 : 3); h = Math.imul(h ^ (h >>> 15), 2246822519); h = Math.imul(h ^ (h >>> 13), 3266489917); return ((h ^ (h >>> 16)) >>> 0) / 4294967296; };
+  const seedKey = () => "ruoka.seed." + S.profile + "." + new Date().toDateString();
+  const loadSeed = () => { const v = store.get(seedKey()); S.rerolled = !!(v && Number.isFinite(+v)); S.seed = S.rerolled ? +v : daySeed(S.profile); };
+  const savedProfile = store.get("ruoka.profile");
+  if (PROFILES.includes(savedProfile)) S.profile = savedProfile; else S.firstRun = true;
+  loadSeed();
+
+  // Theme: "auto" follows the phone; "dark"/"light" lock it. Stored per device.
+  const THEMES = ["auto", "dark", "light"], THEME_LABEL = { auto: "Auto", dark: "Tumma", light: "Vaalea" };
+  let theme = store.get("ruoka.theme"); if (!THEMES.includes(theme)) theme = "auto";
+  const darkMedia = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  const applyTheme = () => {
+    if (theme === "auto") delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = theme;
+    const l = document.querySelector(".theme .lbl"); if (l) l.textContent = THEME_LABEL[theme];
+    const dark = theme === "dark" || (theme === "auto" && darkMedia && darkMedia.matches);
+    const m = document.getElementById("themeColor"); if (m) m.content = dark ? "#16140F" : "#F6F4EF";
+  };
+  applyTheme();
+  if (darkMedia && darkMedia.addEventListener) darkMedia.addEventListener("change", applyTheme);
+
+  const $ = (s, r = document) => r.querySelector(s);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const num = (v) => { const n = typeof v === "string" ? parseFloat(v.replace(",", ".")) : Number(v); return Number.isFinite(n) ? n : null; };
+  const fmtDay = (ts) => new Date(ts).toLocaleDateString("fi-FI", { weekday: "short", day: "numeric", month: "numeric" });
+  const fmtWhen = (ts) => { const d = new Date(ts); return d.toLocaleDateString("fi-FI", { weekday: "short" }) + " klo " + d.toLocaleTimeString("fi-FI", { hour: "2-digit", minute: "2-digit" }); };
+  const stars = (n) => { const k = Math.min(5, Math.max(0, Math.round(num(n) ?? 0))); return "★".repeat(k) + "☆".repeat(5 - k); };
+  const byId = (id) => S.recipes.find((r) => r.id === id);
+  const uid = () => Math.random().toString(36).slice(2, 9) + Date.now().toString(36).slice(-3);
+
+  // Local calendar day keys, so "tiistai" means the same on both phones regardless of time zone offsets in UTC.
+  const pad = (n) => String(n).padStart(2, "0");
+  const dayKey = (d) => d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
+  const todayKey = () => dayKey(new Date());
+  const dayDate = (key) => { const p = String(key || "").split("-").map(Number); return p.length === 3 ? new Date(p[0], p[1] - 1, p[2]) : null; };
+  const capit = (s) => s ? s.charAt(0).toUpperCase() + s.slice(1) : s;
+  function dayLabel(key) {
+    const d = dayDate(key); if (!d) return "";
+    const t = todayKey();
+    if (key === t) return "Tänään";
+    if (key === dayKey(new Date(Date.now() + DAY))) return "Huomenna";
+    return capit(d.toLocaleDateString("fi-FI", { weekday: "long" }));
+  }
+  const dayDate2 = (key) => { const d = dayDate(key); return d ? d.toLocaleDateString("fi-FI", { day: "numeric", month: "numeric" }) + "." : ""; };
+
+  // Visibility per profile: proposals ("ehdotus") show only after "Pidetään"; hidden ones never.
+  const prefsOf = (who) => S.prefs[who] || (S.prefs[who] = EMPTY_PREFS());
+  const P = () => prefsOf(S.profile);
+  const DELETED = () => prefsOf("shared").deleted;   // removed from the book for both
+  const isDeleted = (r) => DELETED().includes(r.id);
+  const isHidden = (r) => P().hidden.includes(r.id) || isDeleted(r);
+  const KEPT = () => prefsOf("shared").kept;
+  const isProposal = (r) => r.status === "ehdotus" && !KEPT().includes(r.id);
+  const FAVS = () => prefsOf("shared").favorites;   // favourites are shared by the family
+  const isFav = (r) => FAVS().includes(r.id);
+  const visible = () => S.recipes.filter((r) => !isHidden(r) && !isProposal(r));
+  // Recipes meant for this person (who lists them, or who is missing); used for suggestions only – the book itself shows everything.
+  const forMe = (r) => !Array.isArray(r.who) || r.who.length === 0 || r.who.includes(S.profile);
+  const mine = () => { const m = visible().filter(forMe); return m.length ? m : visible(); };
+  const proposals = () => S.recipes.filter((r) => isProposal(r) && !isHidden(r)).sort((a, b) => (forMe(b) - forMe(a)) || (b.added || 0) - (a.added || 0));
+  // toast(message) or toast(message, undoFn) – the undo variant stays up longer and offers "Kumoa".
+  let toastT, toastUndo = null;
+  const toast = (m, undo) => {
+    const t = $("#toast"); toastUndo = undo || null;
+    t.innerHTML = `<span>${esc(m)}</span>${undo ? `<button type="button" data-toast-undo>Kumoa</button>` : ""}`;
+    t.classList.add("show"); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove("show"), undo ? 7000 : 2000);
+  };
+
+  // ---------- Layers (recipe sheet, review modal, day picker) tied to browser history so the phone's back button closes them ----------
+  const layers = [];
+  const applyPop = (name) => { if (name === "review") S.review = null; else if (name === "day") S.dayPick = null; else if (name === "sheet") { S.open = null; S.review = null; S.dayPick = null; S.stepsDone = new Set(); } };
+  const pushLayer = (name) => { layers.push(name); try { history.pushState({ ruoka: layers.length }, ""); } catch (e) {} };
+  window.addEventListener("popstate", (e) => { const depth = (e.state && Number(e.state.ruoka)) || 0; while (layers.length > depth) applyPop(layers.pop()); render(); });
+  try { if (history.state && history.state.ruoka) history.replaceState(null, ""); } catch (e) {}
+  function closeTop() { const n = layers.pop(); if (n) { applyPop(n); try { history.back(); } catch (e) {} } else { S.review = null; S.dayPick = null; S.open = null; } render(); }
+  function closeAll() { const n = layers.length; while (layers.length) applyPop(layers.pop()); S.open = null; S.review = null; S.dayPick = null; S.stepsDone = new Set(); if (n) { try { history.go(-n); } catch (e) {} } render(); }
+  function openRecipe(id, review) {
+    if (!byId(id)) return;
+    if (!S.open) pushLayer("sheet");
+    else if (S.review && layers[layers.length - 1] === "review") { layers.pop(); try { history.back(); } catch (e) {} }
+    S.open = id; S.review = null; S.dayPick = null; S.stepsDone = new Set();
+    if (review) { S.review = review; pushLayer("review"); }
+    render();
+    const sh = $("#overlay .sheet"); if (sh) sh.scrollTop = 0;
+    const b = $("#overlay .back"); if (b && !review) b.focus({ preventScroll: true });
+  }
+  function openReview(review) { if (S.review) return; S.review = review; pushLayer("review"); render(); }
+  function closeReview() { if (layers[layers.length - 1] === "review") closeTop(); else { S.review = null; render(); } }
+  function openDayPick(id) { if (S.dayPick) return; S.dayPick = id; pushLayer("day"); render(); }
+  function closeDayPick() { if (layers[layers.length - 1] === "day") closeTop(); else { S.dayPick = null; render(); } }
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && (S.review || S.dayPick || S.open)) closeTop(); });
+
+  // Keep the screen on while a recipe is open (hands are busy in the kitchen).
+  let wake = null, wakeBusy = false;
+  async function wakeSync() {
+    if (wakeBusy || !navigator.wakeLock) return;
+    const want = !!S.open && !document.hidden;
+    wakeBusy = true;
+    try {
+      if (want && !wake) { wake = await navigator.wakeLock.request("screen"); wake.addEventListener("release", () => { wake = null; }); }
+      else if (!want && wake) { const w = wake; wake = null; await w.release(); }
+    } catch (e) { wake = null; }
+    wakeBusy = false;
+  }
+
+  // Stats per recipe for one profile (plain maps so odd recipe ids can't touch Object.prototype)
+  function stats(profile) {
+    const m = Object.create(null);
+    for (const r of S.reviews) {
+      if (r.who !== profile) continue;
+      const s = (m[r.recipeId] ||= { n: 0, sum: 0, last: 0 });
+      s.n++; s.sum += r.stars; s.last = Math.max(s.last, r.at || 0);
+    }
+    for (const k in m) m[k].avg = m[k].sum / m[k].n;
+    return m;
+  }
+  function allStats() {
+    const m = Object.create(null);
+    for (const r of S.reviews) { const s = (m[r.recipeId] ||= { n: 0, sum: 0 }); s.n++; s.sum += r.stars; }
+    for (const k in m) m[k].avg = m[k].sum / m[k].n;
+    return m;
+  }
+  function seededShuffle(arr, seed) {
+    const a = arr.slice(); let x = Math.floor((seed % 1) * 2 ** 31) || 1;
+    for (let i = a.length - 1; i > 0; i--) { x = (x * 48271) % 2147483647; const j = x % (i + 1); [a[i], a[j]] = [a[j], a[i]]; }
+    return a;
+  }
+  function suggestions(seed = S.seed) {
+    const st = stats(S.profile), pref = PREF[S.profile] || [];
+    const out = [], used = new Set();
+    const take = (r, why) => { if (r && !used.has(r.id)) { used.add(r.id); out.push({ r, why }); } };
+    const pool = mine();
+    const pick = (arr, salt) => arr.length ? seededShuffle(arr.slice(0, 3), seed + salt)[0] : null;   // one of the top three, so the list rotates
+    // The newest unrated recipe leads only while it is actually new (a week) and until "Arvo uudet" is pressed.
+    const newest = tryThis();
+    if (newest && !S.rerolled && Date.now() - newest.added < 7 * DAY) take(newest, "Uusin kirjassa");
+    const rated = pool.filter((r) => st[r.id]);
+    const fav = pick(rated.filter((r) => st[r.id].avg >= 4 || isFav(r)).sort((a, b) => st[b.id].avg - st[a.id].avg || st[a.id].last - st[b.id].last), 0.11);
+    take(fav, "Suosikkisi");
+    const old = pick(rated.filter((r) => !used.has(r.id) && Date.now() - st[r.id].last > 5 * DAY).sort((a, b) => st[a.id].last - st[b.id].last), 0.23);
+    take(old, "Pitkästä aikaa");
+    const fresh = seededShuffle(pool.filter((r) => !st[r.id]), seed)
+      .sort((a, b) => (pref.indexOf(a.cat) === -1) - (pref.indexOf(b.cat) === -1));
+    for (const r of fresh) { if (out.length >= 3) break; take(r, "Uusi kokeilu"); }
+    for (const r of seededShuffle(pool, seed + 0.37)) { if (out.length >= 3) break; take(r, "Tee taas"); }
+    return out;
+  }
+  // "Arvo uudet": pick a seed that actually changes the list (if the book is big enough for that)
+  function reroll() {
+    const cur = suggestions().map((s) => s.r.id).join();
+    S.rerolled = true;
+    let seed = Math.random();
+    for (let i = 0; i < 12; i++) { seed = Math.random(); if (suggestions(seed).map((s) => s.r.id).join() !== cur) break; }
+    S.seed = seed; store.set(seedKey(), String(seed)); render();
+  }
+  // "Uusin kirjassa": the newest recipe this profile has kept but not yet rated
+  function tryThis() {
+    const st = stats(S.profile);
+    return mine().filter((r) => !st[r.id] && r.added).sort((a, b) => b.added - a.added)[0] || null;
+  }
+
+  // ---------- Rendering ----------
+  const catKey = (r) => (r.cat in CATS ? r.cat : "lounas");
+  function catChip(r) { return `<span class="cat" style="--cat-color: var(--cat-${catKey(r)})">${esc(CATS[r.cat] || r.cat)}</span>`; }
+  const protein = (r) => (r.macros && r.macros.protein != null) ? `<span>${r.macros.protein} g prot.</span>` : "";
+  const kcal = (r) => (r.macros && r.macros.kcal != null) ? `<span>${r.macros.kcal} kcal</span>` : "";
+  function recipeCard(r, why) {
+    const st = stats(S.profile)[r.id], all = allStats()[r.id];
+    const whoDone = st ? `<span class="stars" title="${st.avg.toFixed(1)}">${stars(st.avg)}</span>` : `<span class="pill new">Uusi sinulle</span>`;
+    const other = !st && all ? `<span class="pill">${NAMES[OTHER[S.profile]]}: ${stars(all.avg)}</span>` : "";
+    const theirs = !forMe(r) ? `<span class="pill">${S.profile === "leo" ? "Kirsin" : "Leon"}</span>` : "";
+    return `<button class="card tap" data-open="${esc(r.id)}">
+      <div class="card-top">${catChip(r)}<span>${why ? `<span class="why">${esc(why)}</span> ` : ""}${isFav(r) ? `<span class="why" aria-label="Suosikki">♥</span>` : ""}</span></div>
+      <h3>${esc(r.name)}</h3>
+      <div class="meta"><span class="prog">${esc(r.time || "")}</span>${r.active ? `<span>${esc(r.active)}</span>` : ""}${protein(r)}${whoDone}${other}${theirs}</div>
+    </button>`;
+  }
+  function dbNote() {
+    if (S.dbState === "loading") return `<div class="empty">Haetaan reseptejä…</div>`;
+    if (S.dbState === "none") return `<div class="empty">Reseptikirjaan ei saatu yhteyttä. Tarkista nettiyhteys ja avaa sivu uudelleen.</div>`;
+    if (!S.recipes.length) return `<div class="empty">Kirjassa ei ole vielä reseptejä.</div>`;
+    return "";
+  }
+  const offlineBanner = () => S.dbState === "offline" ? `<div class="banner"><b>Ei yhteyttä.</b> Näytetään viimeksi haettu kirja – muutokset eivät tallennu ennen kuin netti palaa.</div>` : "";
+
+  // Only today and later; older entries are swept away when the plan is next saved.
+  const planUpcoming = () => S.plan.filter((p) => p.day >= todayKey() && byId(p.recipeId)).sort((a, b) => a.day < b.day ? -1 : a.day > b.day ? 1 : 0);
+
+  function renderToday() {
+    const hour = new Date().getHours();
+    const hello = hour < 10 ? "Huomenta" : hour < 17 ? "Päivää" : "Iltaa";
+    const note = dbNote();
+    const up = planUpcoming();
+    const planHtml = up.length ? up.map((p) => {
+      const r = byId(p.recipeId); if (!r) return "";
+      const today = p.day === todayKey();
+      return `<div class="card plan">
+        <div><div class="t">${esc(r.name)}</div><div class="sub">${esc(dayLabel(p.day))} ${esc(dayDate2(p.day))} · ${esc(NAMES[p.who] || "")}${today ? ` · <span class="pill ok">Tänään</span>` : ""}</div></div>
+        <div class="row-actions"><button class="btn small primary" data-done="${esc(p.id)}">Tehty – arvioi</button><button class="btn small" data-open="${esc(r.id)}">Avaa</button><button class="btn small ghost icon" data-unplan="${esc(p.id)}" aria-label="Poista suunnitelmasta" title="Poista suunnitelmasta">✕</button></div>
+      </div>`;
+    }).join("") : `<div class="empty">Ei vielä suunnitelmia. Avaa resepti ja paina <b>Suunnittele päivälle</b>, niin näet täältä mitä on tulossa.</div>`;
+    const sugg = suggestions();
+    const recent = S.reviews.slice().sort((a, b) => b.at - a.at).slice(0, 3);
+    const props = proposals(), prop = props[0];
+    const tryCard = (r, eyebrow, primary) => `<div class="try">
+        <span class="eyebrow">${eyebrow}</span>
+        ${catChip(r)}
+        <h3>${esc(r.name)}</h3>
+        <div class="meta"><span class="prog">${esc(r.time || "")}</span>${r.active ? `<span>${esc(r.active)}</span>` : ""}${r.servings ? `<span>${esc(r.servings)} annosta</span>` : ""}${protein(r)}</div>
+        ${r.tips ? `<p style="opacity:.85;font-size:14px">${esc(r.tips)}</p>` : ""}
+        <div class="row-actions">${primary}<button class="btn" data-open="${esc(r.id)}">Avaa resepti</button><button class="btn no" data-hide="${esc(r.id)}">✕ Ei kiinnosta</button></div>
+      </div>`;
+    const topCard = prop ? `<section><div class="sec-head"><h2>Pidetäänkö resepti?</h2><span class="eyebrow">${props.length > 1 ? props.length + " uutta ehdotusta" : "uusi ehdotus"}</span></div>
+        ${tryCard(prop, "Uusi ehdotus kirjaan", `<button class="btn primary" data-keep="${esc(prop.id)}">Pidetään</button>`)}</section>` : "";
+    return `
+      <section class="greeting"><h1>${hello}, ${NAMES[S.profile]}.</h1><p>Terveellistä arkiruokaa: lounaita ja iltapaloja tavallisista aineksista. Arvioi aina kun teet, niin kirja oppii mistä tykkäätte.</p></section>
+      ${offlineBanner()}
+      ${note ? "" : topCard}
+      <section><button class="chef-card" data-chef style="text-align:left">
+        <span class="t">👨‍🍳 Kysy kokilta</span>
+        <p>Kerro mitä jääkaapissa on – vaikka "jauhelihaa ja paprikaa" – niin saat reseptin, jonka voi tallentaa kirjaan.</p>
+      </button></section>
+      <section>
+        <div class="sec-head"><h2>Viikon suunnitelma</h2>${up.length ? `<span class="eyebrow">${up.length} ${up.length === 1 ? "ruoka" : "ruokaa"}</span>` : ""}</div>
+        ${note || planHtml}
+      </section>
+      <section>
+        <div class="sec-head"><h2>Mitä tänään?</h2><button class="link" data-reroll>Arvo uudet</button></div>
+        ${note || `<div class="sugg">${sugg.map((s) => recipeCard(s.r, s.why)).join("")}</div>`}
+      </section>
+      ${recent.length ? `<section><div class="sec-head"><h2>Viimeksi arvioitu</h2></div><div class="card">${recent.map(reviewRow).join("")}</div></section>` : ""}
+    `;
+  }
+  function reviewRow(v) {
+    const r = byId(v.recipeId);
+    const canDelete = v.who === S.profile && Date.now() - v.at < 3600 * 1000;
+    return `<div class="review"><div class="h"><span class="who">${esc(NAMES[v.who] || v.who)}</span><span class="stars">${stars(v.stars)}</span>${r ? `<button class="link" data-open="${esc(r.id)}">${esc(r.name)}</button>` : ""}<span class="d">${fmtDay(v.at)}${canDelete ? ` · <button class="link" data-unreview="${esc(v.id)}">Poista</button>` : ""}</span></div>
+      <div class="tags">${v.taste ? `<span class="pill">${esc(v.taste)}</span>` : ""}</div>${v.comment ? `<div class="c">${esc(v.comment)}</div>` : ""}</div>`;
+  }
+
+  function renderRecipes() {
+    const note = dbNote();
+    const pref = PREF[S.profile] || [];
+    const q = S.q.trim().toLowerCase();
+    const pool = visible();
+    let list = pool.filter((r) => S.cat === "all" || r.cat === S.cat);
+    if (q) list = list.filter((r) => (r.name + " " + (CATS[r.cat] || "") + " " + (r.tags || []).join(" ") + " " + r.ing.map((i) => i.n + " " + i.s).join(" ")).toLowerCase().includes(q));
+    list.sort((a, b) => (pref.indexOf(a.cat) === -1) - (pref.indexOf(b.cat) === -1) || a.order - b.order);
+    const chips = [["all", "Kaikki"], ...Object.entries(CATS)].map(([k, v]) => `<button class="chip" data-cat="${k}" aria-pressed="${S.cat === k}">${v}</button>`).join("");
+    const hidden = S.recipes.filter((r) => P().hidden.includes(r.id) && !isDeleted(r));
+    const deleted = S.recipes.filter(isDeleted);
+    const hiddenHtml = (hidden.length ? `<details class="hidden-list"><summary>Piilotetut (${hidden.length}) ›</summary><div class="card">${hidden.map((r) => `<div class="hidden-row"><span>${esc(r.name)}</span><button class="btn small" data-unhide="${esc(r.id)}">Palauta</button></div>`).join("")}</div></details>` : "")
+      + (deleted.length ? `<details class="hidden-list"><summary>Poistetut (${deleted.length}) ›</summary><div class="card">${deleted.map((r) => `<div class="hidden-row"><span>${esc(r.name)}</span><button class="btn small" data-undelete="${esc(r.id)}">Palauta</button></div>`).join("")}</div></details>` : "");
+    return `
+      <section>
+        <div class="sec-head"><h2>Reseptit</h2><span class="eyebrow">${pool.length} kpl</span></div>
+        ${offlineBanner()}
+        <input class="search" type="search" placeholder="Hae nimellä tai aineksella…" value="${esc(S.q)}" data-search aria-label="Hae reseptejä">
+        <div class="chips">${chips}</div>
+        ${note || (list.length ? `<div class="list">${list.map((r) => recipeCard(r)).join("")}</div>` : `<div class="empty">Ei osumia.</div>`)}
+        ${hiddenHtml}
+      </section>`;
+  }
+
+  function renderFavs() {
+    const note = dbNote();
+    const st = stats(S.profile);
+    const pool = visible();
+    const hearts = pool.filter(isFav).sort((a, b) => (st[b.id]?.avg || 0) - (st[a.id]?.avg || 0));
+    const top = pool.filter((r) => !isFav(r) && st[r.id] && st[r.id].avg >= 4).sort((a, b) => st[b.id].avg - st[a.id].avg);
+    return `
+      <section>
+        <div class="sec-head"><h2>Suosikit</h2><span class="eyebrow">yhteiset</span></div>
+        ${offlineBanner()}
+        ${note || (hearts.length ? `<div class="list">${hearts.map((r) => recipeCard(r)).join("")}</div>` : `<div class="empty">Ei vielä sydämiä. Avaa resepti ja napauta ♥ oikeasta yläkulmasta – suosikit ovat teidän yhteisiä.</div>`)}
+      </section>
+      ${top.length ? `<section><div class="sec-head"><h2>Arvioit 4–5 tähteä</h2><span class="eyebrow">${NAMES[S.profile]}</span></div><div class="list">${top.map((r) => recipeCard(r)).join("")}</div></section>` : ""}`;
+  }
+
+  function renderShop() {
+    const items = S.shopping;
+    const open = items.filter((i) => !i.done), done = items.filter((i) => i.done);
+    const row = (i) => `<label class="shop-item ${i.done ? "done" : ""}"><input type="checkbox" data-check="${esc(i.id)}" ${i.done ? "checked" : ""}><div><div class="t">${esc(i.text)}</div>${i.sub ? `<div class="sub">${esc(i.sub)}</div>` : ""}</div><button class="btn small ghost" data-remove="${esc(i.id)}" aria-label="Poista rivi">✕</button></label>`;
+    return `
+      <section>
+        <div class="sec-head"><h2>Ostoslista</h2><div class="row-actions">${open.length ? `<button class="link" data-share-shop>Jaa</button>` : ""}${done.length ? `<button class="link" data-clear-done>Poista ruksitut</button>` : ""}</div></div>
+        ${S.dbState === "none" ? dbNote() : offlineBanner()}
+        <div class="card">
+          ${items.length ? open.map(row).join("") + done.map(row).join("") : `<div class="pantry">Lista on tyhjä. Avaa resepti ja paina <b>Lisää ostoslistalle</b> – listalle tulee vain se, mitä ei ole kotona.</div>`}
+        </div>
+        <form class="addrow" data-addform><input class="search" type="text" placeholder="Lisää oma rivi, esim. banaanit" data-addtext aria-label="Uusi rivi" autocomplete="off" enterkeyhint="done" maxlength="120"><button class="btn primary" type="submit">Lisää</button></form>
+        <p class="pantry">${PANTRY}</p>
+      </section>`;
+  }
+
+  function setBadge(tabId, n) {
+    const tab = document.getElementById(tabId); if (!tab) return;
+    let badge = $(".badge", tab);
+    if (n) { if (!badge) { badge = document.createElement("span"); badge.className = "badge"; tab.prepend(badge); } badge.textContent = n; }
+    else if (badge) badge.remove();
+  }
+  function render() {
+    // Live updates re-render everything; keep the reader's place and any half-typed text.
+    const y = window.scrollY, sheetY = $("#overlay .sheet")?.scrollTop || 0;
+    const ae = document.activeElement, focusSel = ae && ae.matches?.("[data-search],[data-comment],[data-addtext],[data-chat]") ? (ae.hasAttribute("data-search") ? "[data-search]" : ae.hasAttribute("data-comment") ? "[data-comment]" : ae.hasAttribute("data-chat") ? "[data-chat]" : "[data-addtext]") : null;
+    const caret = focusSel ? ae.selectionStart : 0, draft = focusSel === "[data-addtext]" || focusSel === "[data-chat]" ? ae.value : null;
+    try {
+      $("#main").innerHTML = S.tab === "chef" ? "" : S.tab === "today" ? renderToday() : S.tab === "recipes" ? renderRecipes() : S.tab === "favs" ? renderFavs() : renderShop();
+    } catch (e) { console.error(e); $("#main").innerHTML = `<div class="empty">Näkymää ei voitu piirtää. Avaa sivu uudelleen.</div>`; }
+    document.querySelectorAll("[data-profile]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.profile === S.profile)));
+    document.querySelectorAll("[data-tab]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.tab === S.tab)));
+    setBadge("shopTab", S.shopping.filter((i) => !i.done).length);
+    setBadge("todayTab", S.dbState === "loading" ? 0 : proposals().length);
+    try { renderOverlay(); } catch (e) { console.error(e); S.open = null; S.review = null; S.dayPick = null; $("#overlay").innerHTML = ""; document.body.style.overflow = ""; }
+    renderWho();
+    try { renderChef(); } catch (e) { console.error(e); }
+    wakeSync();
+    window.scrollTo(0, y);
+    const sh = $("#overlay .sheet"); if (sh) sh.scrollTop = sheetY;
+    if (focusSel) { const el = $(focusSel); if (el) { if (draft !== null) el.value = draft; el.focus({ preventScroll: true }); try { el.setSelectionRange(caret, caret); } catch (e) {} } }
+  }
+
+  function renderWho() {
+    const w = $("#who");
+    if (!S.firstRun) { if (w.innerHTML) w.innerHTML = ""; return; }
+    if (w.innerHTML) return;
+    w.innerHTML = `<div class="modal center" role="dialog" aria-modal="true" aria-labelledby="whoTitle"><div class="box">
+      <div><span class="eyebrow">Tervetuloa</span><h2 id="whoTitle">Kuka käyttää tätä puhelinta?</h2><p style="color:var(--muted);margin-top:6px">Valinta muistetaan. Voit vaihtaa milloin vain yläpalkista.</p></div>
+      <div class="who-pick"><button class="btn primary" data-pick-who="leo">Leo</button><button class="btn primary" data-pick-who="aiti">Kirsi</button></div>
+    </div></div>`;
+  }
+
+  // ---------- Kokki (chat with a home-cooking expert; the API key lives in the Supabase edge function) ----------
+  const CHEF_URL = "https://nkhfqgyxronrfsdbeddn.supabase.co/functions/v1/ruoka-chef";
+  const STARTERS = ["Jääkaapissa on jauhelihaa ja paprikaa", "Nopea iltapala, 15 minuuttia", "Mitä tekisin uunivuoaksi kanasta?"];
+  let chatCount = -1;
+  const CHAT_KEY = "ruoka.chat.v1";
+  const saveChat = () => store.set(CHAT_KEY, JSON.stringify(S.chat.slice(-24)));
+  try { const c = JSON.parse(store.get(CHAT_KEY) || "[]"); if (Array.isArray(c)) S.chat = c.filter((m) => m && typeof m.content === "string"); } catch (e) {}
+  // The chef returns a recipe inside a fenced "ruoka" block; show the talk, offer the recipe as a card.
+  const RUOKA_RE = /```ruoka\s*([\s\S]*?)```/;
+  function splitReply(text) {
+    const m = RUOKA_RE.exec(text || "");
+    if (!m) return { talk: text || "", recipe: null };
+    let recipe = null;
+    try { const r = JSON.parse(m[1].trim()); if (r && r.name && Array.isArray(r.ing) && Array.isArray(r.steps)) recipe = r; } catch (e) {}
+    return { talk: (text.slice(0, m.index) + text.slice(m.index + m[0].length)).trim(), recipe };
+  }
+  // The whole recipe is shown in the chat, so nothing has to be saved to be read.
+  function chefCard(r, i, saved) {
+    const m = r.macros || {};
+    const bits = [r.time ? '<span class="prog">' + esc(r.time) + "</span>" : "",
+      r.active ? "<span>" + esc(r.active) + "</span>" : "",
+      r.servings ? "<span>" + esc(r.servings) + " annosta</span>" : "",
+      m.protein != null ? "<span>" + esc(m.protein) + " g prot.</span>" : "",
+      m.kcal != null ? "<span>" + esc(m.kcal) + " kcal</span>" : "",
+      r.oven ? "<span>" + esc(r.oven) + "</span>" : ""].join("");
+    const ing = Array.isArray(r.ing) ? r.ing.filter((x) => x && x.n).map((x) =>
+      "<li>" + (x.a ? "<b>" + esc(x.a) + "</b>" : "") + esc(x.n) + (x.s && x.s !== x.n ? "<i>" + esc(x.s) + "</i>" : x.p ? "<i>kotona aina</i>" : "") + "</li>").join("") : "";
+    const steps = Array.isArray(r.steps) ? r.steps.map((x) => "<li>" + stepHtml(String(x)) + "</li>").join("") : "";
+    return '<div class="chef-card" style="margin-top:8px"><span class="t">' + esc(r.name) + "</span>"
+      + '<div class="meta">' + bits + "</div>"
+      + '<div class="mini">'
+      + (ing ? "<b>Ainekset</b><ul>" + ing + "</ul>" : "")
+      + (steps ? "<b>Näin teet</b><ol>" + steps + "</ol>" : "")
+      + (r.tips ? '<p class="tipline">' + esc(r.tips) + "</p>" : "")
+      + "</div>"
+      + (saved || '<button class="btn small primary" data-save-chef="' + i + '" ' + (S.chefBusy ? "disabled" : "") + ">Lisää kirjaan ehdotuksena</button>")
+      + "</div>";
+  }
+  function openChef() { S.tab = "chef"; render(); window.scrollTo(0, 0); }
+  // iOS never tells a web page how the keyboard animates, only what the viewport is once it has settled.
+  // So we move nothing while it rises — our own motion is exactly what reads as a jolt — and apply one
+  // adjustment after the viewport has been quiet for a moment, by which time the keyboard covers that area.
+  function applyChatLayout() {
+    const el = $("#chef .chat"); if (!el) return;
+    const vv = window.visualViewport;
+    const vh = vv ? vv.height : window.innerHeight, vtop = vv ? vv.offsetTop : 0;
+    const kb = Math.max(0, Math.round(window.innerHeight - vh - vtop));
+    const kbOpen = kb > 120;
+    document.body.classList.toggle("kb", kbOpen);
+    if (!kbOpen && document.body.classList.contains("typing") && !$("[data-chat]")?.matches(":focus")) document.body.classList.remove("typing");
+    const barsHidden = kbOpen || document.body.classList.contains("typing");
+    const headerH = barsHidden ? 0 : ($(".top")?.offsetHeight || 0);
+    const navH = barsHidden ? 0 : ($("nav.tabs")?.offsetHeight || 0);
+    const top = (vtop + headerH) + "px", height = Math.max(220, vh - headerH - navH) + "px";
+    const changed = el.style.top !== top || el.style.height !== height;
+    const log = $("#chatLog");
+    // Keep the reader's place: only follow the end if they were already at the end.
+    const atEnd = log ? log.scrollHeight - log.scrollTop - log.clientHeight < 80 : true;
+    const keep = log ? log.scrollTop : 0;
+    el.style.top = top; el.style.height = height;
+    if (log && changed) log.scrollTop = atEnd ? log.scrollHeight : keep;
+  }
+  // Debounced: iOS keeps reporting while the keyboard animates, and every step we apply reads as a jolt.
+  let kbSettle;
+  const syncChatLayout = (delay = 150) => { clearTimeout(kbSettle); kbSettle = setTimeout(applyChatLayout, delay); };
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener("resize", () => syncChatLayout());
+    window.visualViewport.addEventListener("scroll", () => syncChatLayout());
+  }
+  window.addEventListener("resize", () => syncChatLayout());
+  window.addEventListener("orientationchange", () => syncChatLayout(350));
+  const syncBurst = () => syncChatLayout(350);   // after the keyboard has finished, never during it
+  // Tapping the field is the signal: don't wait for focus/viewport events, they are unreliable on iOS.
+  document.addEventListener("pointerdown", (e) => { if (e.target.closest?.("[data-chat]")) { document.body.classList.add("typing"); syncBurst(); } });
+  document.addEventListener("focusin", (e) => { if (e.target.matches?.("[data-chat]")) { document.body.classList.add("typing"); syncBurst(); } });
+  document.addEventListener("focusout", (e) => { if (e.target.matches?.("[data-chat]")) { document.body.classList.remove("typing"); syncBurst(); } });
+  // Safari still nudges the page itself; put it straight back.
+  window.addEventListener("scroll", () => { if (S.tab === "chef" && window.scrollY) window.scrollTo(0, 0); }, { passive: true });
+  function renderChef() {
+    const c = $("#chef");
+    if (S.tab !== "chef") { if (c.innerHTML) { c.innerHTML = ""; chatCount = -1; document.body.classList.remove("kb", "chat-open", "typing"); document.documentElement.classList.remove("chat-lock"); if (!S.open) document.body.style.overflow = ""; } return; }
+    document.body.classList.add("chat-open");
+    document.documentElement.classList.add("chat-lock");
+    if (!S.open) { document.body.style.overflow = "hidden"; if (window.scrollY) window.scrollTo(0, 0); }
+    // Re-rendering rebuilds the log, which would jump back to the first message — remember where we were.
+    const prev = $("#chatLog");
+    const prevTop = prev ? prev.scrollTop : 0;
+    const prevAtEnd = prev ? prev.scrollHeight - prev.scrollTop - prev.clientHeight < 80 : true;
+    const bubbles = S.chat.map((m, i) => {
+      if (m.role === "user") return '<div class="msg me">' + esc(m.content) + "</div>";
+      if (m.role === "error") return '<div class="msg err">' + esc(m.content) + "</div>";
+      const parts = splitReply(m.content);
+      const saved = m.savedId ? '<span class="pill ok">Lisätty kirjaan ehdotuksena</span>' : "";
+      const card = parts.recipe ? chefCard(parts.recipe, i, saved) : "";
+      return '<div class="msg bot">' + esc(parts.talk) + card + "</div>";
+    }).join("");
+    const empty = '<div class="msg bot">Moi ' + esc(NAMES[S.profile]) + '! Kerro mitä kotoa löytyy tai mitä tekisit mieli, niin keksin arkiruokareseptin. Voit myös kysyä neuvoa.</div>'
+      + '<div class="starters">' + STARTERS.map((t) => '<button data-starter="' + esc(t) + '">' + esc(t) + "</button>").join("") + "</div>";
+    c.innerHTML = '<div class="chat" role="dialog" aria-modal="true" aria-label="Kokki">'
+      + '<div class="chat-top"><span class="ttl">👨‍🍳 Kokki</span>'
+      + '<button class="who-mini" data-profile="' + OTHER[S.profile] + '" title="Vaihda käyttäjäksi ' + esc(NAMES[OTHER[S.profile]]) + '">' + esc(NAMES[S.profile]) + ' ⇄</button>'
+      + (S.chat.length ? '<button class="clear" data-chat-clear aria-label="Uusi keskustelu" title="Uusi keskustelu">+</button>' : "") + "</div>"
+      + '<div class="chat-log" id="chatLog">' + (S.chat.length ? bubbles : empty) + (S.chefBusy ? '<div class="msg bot"><span class="typing"><i></i><i></i><i></i></span></div>' : "") + "</div>"
+      + '<form class="chat-form" data-chatform><div class="composer"><textarea data-chat rows="1" maxlength="1000" placeholder="Mitä kotona on?" enterkeyhint="send"></textarea>'
+      + '<button class="send" type="submit" aria-label="Lähetä" ' + (S.chefBusy ? "disabled" : "") + '><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button></div></form></div>';
+    applyChatLayout();
+    const log = $("#chatLog");
+    if (log) {
+      const n = S.chat.length + (S.chefBusy ? 1 : 0);
+      log.scrollTop = (chatCount !== n || prevAtEnd) ? log.scrollHeight : prevTop;
+      chatCount = n;
+    }
+  }
+  const chefHeaders = () => ({ "content-type": "application/json", apikey: SUPABASE_KEY, authorization: "Bearer " + SUPABASE_KEY });
+  async function askChef(text) {
+    if (S.chefBusy) return;
+    S.chat = [...S.chat.filter((m) => m.role !== "error"), { role: "user", content: text }];
+    S.chefBusy = true; render();
+    try {
+      const res = await fetch(CHEF_URL, {
+        method: "POST", headers: chefHeaders(),
+        body: JSON.stringify({ who: S.profile, messages: S.chat.filter((m) => m.role === "user" || m.role === "assistant").map((m) => ({ role: m.role, content: m.content })) }),
+      });
+      const data = await res.json().catch(() => ({}));
+      S.chat.push(res.ok && data.text ? { role: "assistant", content: data.text } : { role: "error", content: data.message || "Kokkiin ei saatu yhteyttä. Yritä hetken päästä uudelleen." });
+    } catch (e) { S.chat.push({ role: "error", content: "Ei verkkoyhteyttä – kokki tarvitsee netin." }); }
+    S.chefBusy = false; saveChat(); render();
+  }
+  async function saveChefRecipe(i) {
+    const m = S.chat[i]; if (!m || S.chefBusy) return;
+    const parts = splitReply(m.content); if (!parts.recipe) return;
+    S.chefBusy = true; render();
+    try {
+      const res = await fetch(CHEF_URL, { method: "POST", headers: chefHeaders(), body: JSON.stringify({ action: "save", who: S.profile, recipe: parts.recipe }) });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok && data.ok) { m.savedId = data.id; await load("recipes"); toast("Lisätty kirjaan – löydät sen Tänään-välilehden ehdotuksista"); }
+      else toast(data.message || "Tallennus epäonnistui");
+    } catch (e) { toast("Tallennus epäonnistui"); }
+    S.chefBusy = false; saveChat(); render();
+  }
+
+  // Highlight temperatures and times inside step text, so the key numbers stand out in the kitchen.
+  const STEP_RE = /(\d{1,3}\s?°C|\d{1,3}(?:[–-]\d{1,3})?\s?(?:minuuttia|min|tuntia|h)(?![a-zäöå]))/g;
+  const stepHtml = (s) => esc(s).replace(STEP_RE, "<strong>$1</strong>");
+
+  function renderOverlay() {
+    const o = $("#overlay");
+    if (!S.open) { o.innerHTML = ""; document.body.style.overflow = ""; return; }
+    const r = byId(S.open); if (!r) { S.open = null; S.review = null; S.dayPick = null; o.innerHTML = ""; document.body.style.overflow = ""; return; }
+    document.body.style.overflow = "hidden";
+    const revs = S.reviews.filter((v) => v.recipeId === r.id).sort((a, b) => b.at - a.at);
+    const shopCount = r.ing.filter((i) => !i.p).length;
+    const prot = r.macros ? r.macros.protein : null, kc = r.macros ? r.macros.kcal : null;
+    o.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="${esc(r.name)}"><div class="in">
+      <div class="sheet-top"><button class="back" data-close>‹ Takaisin</button>
+        <button class="round heart" data-fav="${esc(r.id)}" aria-pressed="${isFav(r)}" aria-label="Suosikki"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-7.5-10A4.2 4.2 0 0 1 12 8a4.2 4.2 0 0 1 7.5 2.5c0 5.4-7.5 10-7.5 10z"/></svg></button>
+        <button class="round share" data-share="${esc(r.id)}" aria-label="Jaa resepti" title="Jaa resepti"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M8 7l4-4 4 4M5 13v6a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-6"/></svg></button>
+      </div>
+      <div class="hero">
+        ${isProposal(r) ? `<span class="pill new">Uusi ehdotus – ei vielä kirjassa</span>` : ""}
+        ${catChip(r)}
+        <h1>${esc(r.name)}</h1>
+        ${r.oven ? `<div class="prog-big"><span class="l">Uuni</span><span class="v">${esc(r.oven)}</span></div>` : ""}
+        ${(r.tags || []).length ? `<div class="tags">${r.tags.slice(0, 6).map((t) => `<span class="pill">${esc(t)}</span>`).join("")}</div>` : ""}
+      </div>
+      <div class="facts">
+        <div class="fact"><span class="l">Kokonaisaika</span><span class="v">${esc(r.time || "–")}</span></div>
+        <div class="fact"><span class="l">Työaikaa</span><span class="v">${esc(r.active || "–")}</span></div>
+        <div class="fact"><span class="l">Annoksia</span><span class="v">${r.servings ?? "–"}</span></div>
+      </div>
+      <div class="facts two" style="margin-top:8px">
+        <div class="fact"><span class="l">Proteiini</span><span class="v">${prot ?? "–"} g <small>/ annos</small></span></div>
+        <div class="fact"><span class="l">Energia</span><span class="v">${kc ?? "–"} <small>kcal / annos</small></span></div>
+      </div>
+      <section style="margin-top:22px">
+        <div class="sec-head"><h2>Ainekset</h2>${shopCount ? `<button class="btn small" data-shop="${esc(r.id)}">+ Ostoslistalle (${shopCount})</button>` : `<span class="eyebrow">kaikki kotona</span>`}</div>
+        <div class="card">${r.ing.map((i) => `<div class="ing ${i.p ? "home" : ""}"><span class="n">${esc(i.n)}</span><span class="a">${esc(i.a)}</span>${i.p ? `<span class="s"></span>` : (i.s && i.s !== i.n ? `<span class="s">${esc(i.s)}</span>` : "")}</div>`).join("")}</div>
+      </section>
+      <section style="margin-top:22px">
+        <div class="sec-head"><h2>Näin teet</h2><span class="steps-hint">napauta vaihetta, kun se on tehty</span></div>
+        <div class="card"><ol class="steps">${r.steps.map((s, i) => `<li class="${S.stepsDone.has(i) ? "done" : ""}" data-step="${i}"><span>${stepHtml(s)}</span></li>`).join("")}</ol></div>
+      </section>
+      ${r.tips ? `<section style="margin-top:22px"><div class="tip"><b>Vinkki.</b> ${esc(r.tips)}</div></section>` : ""}
+      <section style="margin-top:22px">
+        <div class="sec-head"><h2>Arviot</h2><span class="eyebrow">${revs.length ? revs.length + " kpl" : "ei vielä"}</span></div>
+        ${revs.length ? `<div class="card">${revs.map(reviewRow).join("")}</div>` : `<div class="empty">Kukaan ei ole vielä arvioinut tätä. Kun teet sen, paina <b>Tehty – arvioi</b>.</div>`}
+      </section>
+      ${isProposal(r) ? "" : `<section style="margin-top:22px;gap:8px"><button class="btn no block" data-hide="${esc(r.id)}">✕ Ei kiinnosta – piilota minulta</button><button class="btn ghost block" data-delete="${esc(r.id)}">Poista resepti kirjasta (molemmilta)</button></section>`}
+    </div>
+    <div class="actionbar"><div class="in">
+      ${isProposal(r) ? `<div class="row-actions" style="display:grid;grid-template-columns:1fr 2fr;gap:8px"><button class="btn no" data-hide="${esc(r.id)}">✕ Ei kiinnosta</button><button class="btn primary" data-keep="${esc(r.id)}">Pidetään – lisää kirjaan</button></div>` : `
+      <button class="btn" data-plan="${esc(r.id)}">Suunnittele päivälle</button>
+      <button class="btn primary" data-rate="${esc(r.id)}">Tehty – arvioi</button>`}
+    </div></div>
+    </div>
+    ${S.review ? renderReviewModal(r) : S.dayPick ? renderDayPick(r) : ""}`;
+  }
+
+  function renderReviewModal(r) {
+    const v = S.review;
+    return `<div class="modal" data-modal role="dialog" aria-modal="true" aria-labelledby="reviewTitle"><div class="box">
+      <div><span class="eyebrow">${esc(NAMES[S.profile])} arvioi</span><h2 id="reviewTitle">${esc(r.name)}</h2></div>
+      <div class="q"><span class="l">Kuinka hyvää?</span><div class="starpick" role="radiogroup" aria-label="Tähdet">${[1, 2, 3, 4, 5].map((n) => `<button class="${v.stars >= n ? "on" : ""}" data-star="${n}" role="radio" aria-checked="${v.stars === n}" aria-label="${n} tähteä">★</button>`).join("")}</div></div>
+      <div class="q"><span class="l">Miten onnistui?</span><div class="opts">${TASTE.map((t) => `<button data-taste="${esc(t)}" aria-pressed="${v.taste === t}">${esc(t)}</button>`).join("")}</div></div>
+      <div class="q"><span class="l">Muistiinpano seuraavaa kertaa varten</span><textarea class="note" data-comment maxlength="500" placeholder="esim. enemmän valkosipulia, uunissa 5 min pidempään">${esc(v.comment)}</textarea></div>
+      <div class="row-actions" style="display:grid;grid-template-columns:1fr 2fr"><button class="btn" data-review-cancel>Peruuta</button><button class="btn primary" data-review-save ${v.stars && !S.busy ? "" : "disabled"}>${S.busy ? "Tallennetaan…" : v.stars ? "Tallenna arvio" : "Valitse tähdet"}</button></div>
+    </div></div>`;
+  }
+
+  // Day picker: the next seven days, so "Tee tiistaina" is one tap.
+  function renderDayPick(r) {
+    const days = [];
+    for (let i = 0; i < 7; i++) { const d = new Date(); d.setHours(12, 0, 0, 0); d.setDate(d.getDate() + i); days.push(dayKey(d)); }
+    return `<div class="modal" data-modal role="dialog" aria-modal="true" aria-labelledby="dayTitle"><div class="box">
+      <div><span class="eyebrow">Viikon suunnitelma</span><h2 id="dayTitle">Milloin teet: ${esc(r.name)}?</h2></div>
+      <div class="daypick">${days.map((k) => `<button data-set-day="${esc(k)}">${esc(dayLabel(k))}<span class="d">${esc(dayDate2(k))}</span></button>`).join("")}</div>
+      <button class="btn ghost block" data-day-cancel>Peruuta</button>
+    </div></div>`;
+  }
+
+  // ---------- Data ----------
+  const CACHE_KEY = "ruoka.cache.v1";
+  function saveCache() { store.set(CACHE_KEY, JSON.stringify({ recipes: S.recipes, reviews: S.reviews, plan: S.plan, shopping: S.shopping, prefs: S.prefs, at: Date.now() })); }
+  function loadCache() {
+    try {
+      const c = JSON.parse(store.get(CACHE_KEY) || "null");
+      if (!c || !Array.isArray(c.recipes) || !c.recipes.length) return;
+      S.recipes = c.recipes.map(normRecipe).filter(Boolean); S.reviews = (c.reviews || []).map(normReview).filter(Boolean);
+      S.plan = normPlan(c.plan); S.shopping = normShopping(c.shopping);
+      for (const who of ["leo", "aiti", "shared"]) S.prefs[who] = normPrefs(c.prefs && c.prefs[who]);
+      S.dbState = "cached";   // shown right away; replaced by live data as soon as it arrives
+    } catch (e) {}
+  }
+  // Rows come from a shared database: shape them defensively so one odd row can't break the whole app.
+  const strList = (v) => Array.isArray(v) ? v.filter((x) => typeof x === "string") : [];
+  function normRecipe(row) {
+    const d = row && typeof row.data === "object" && row.data ? row.data : row;
+    if (!d || typeof d !== "object") return null;
+    const id = String(row.id ?? d.id ?? ""); if (!id) return null;
+    const macros = d.macros && typeof d.macros === "object" ? { protein: num(d.macros.protein), kcal: num(d.macros.kcal) } : null;
+    return {
+      id, name: String(d.name || id), cat: typeof d.cat === "string" ? d.cat : "lounas",
+      who: Array.isArray(d.who) ? d.who.map(String) : null,
+      time: d.time ? String(d.time) : "", active: d.active ? String(d.active) : "", oven: d.oven ? String(d.oven) : "",
+      servings: num(d.servings), tags: strList(d.tags).slice(0, 10),
+      tips: d.tips ? String(d.tips) : "", status: d.status ? String(d.status) : "",
+      order: num(d.order) ?? 0, added: num(d.added) ?? 0, macros: macros && (macros.protein != null || macros.kcal != null) ? macros : null,
+      ing: Array.isArray(d.ing) ? d.ing.filter((i) => i && typeof i === "object").map((i) => ({ n: String(i.n ?? ""), a: String(i.a ?? ""), s: i.s ? String(i.s) : "", p: !!i.p })) : [],
+      steps: Array.isArray(d.steps) ? d.steps.map((s) => String(s ?? "")) : [],
+    };
+  }
+  function normReview(r) {
+    if (!r || typeof r !== "object" || !r.id) return null;
+    const st = num(r.stars); if (st == null) return null;
+    return { id: String(r.id), recipeId: String(r.recipe_id ?? r.recipeId ?? ""), who: String(r.who ?? ""), stars: Math.min(5, Math.max(1, st)), taste: String(r.taste ?? ""), comment: String(r.comment ?? ""), at: num(r.at) ?? 0 };
+  }
+  const normPlan = (items) => Array.isArray(items) ? items.filter((p) => p && typeof p === "object" && p.recipeId && /^\d{4}-\d{2}-\d{2}$/.test(String(p.day))).map((p) => ({ id: String(p.id || uid()), recipeId: String(p.recipeId), day: String(p.day), who: p.who === "aiti" ? "aiti" : "leo" })) : [];
+  const normShopping = (items) => Array.isArray(items) ? items.filter((i) => i && typeof i === "object" && i.text).map((i) => ({ id: String(i.id || uid()), text: String(i.text).slice(0, 120), sub: String(i.sub ?? "").slice(0, 300), done: !!i.done })) : [];
+  const normPrefs = (row) => ({ hidden: strList(row?.hidden), favorites: strList(row?.favorites), kept: strList(row?.kept), deleted: strList(row?.deleted) });
+
+  async function saveShopping(items) {
+    S.shopping = normShopping(items); render(); saveCache();
+    if (!S.db) return toast("Ei yhteyttä – ei tallennettu");
+    const { error } = await S.db.from("ruoka_shopping").upsert({ id: "main", items: S.shopping });
+    if (error) toast("Tallennus epäonnistui");
+  }
+  function addToShopping(r) {
+    const items = S.shopping.map((x) => ({ ...x }));
+    let added = 0, merged = 0;
+    for (const i of r.ing) {
+      if (i.p) continue;
+      const text = i.s || i.n, sub = `${r.name}${i.a ? " · " + i.a : ""}`;
+      const dup = items.find((x) => x.text === text && !x.done);
+      if (dup) { if (!dup.sub.includes(r.name)) { dup.sub = dup.sub ? dup.sub + " + " + sub : sub; merged++; } continue; }
+      items.push({ id: uid(), text, sub, done: false });
+      added++;
+    }
+    saveShopping(items);
+    toast(added ? `${added} riviä lisätty ostoslistalle${merged ? `, ${merged} yhdistetty` : ""}` : merged ? "Määrät lisätty listalla oleviin riveihin" : "Kaikki on jo listalla");
+  }
+  // savePlan(fn): fn gets the latest list and returns the next one, so quick taps and undos never overwrite each other with stale copies.
+  async function savePlan(fn) {
+    const cutoff = dayKey(new Date(Date.now() - 14 * DAY));
+    S.plan = normPlan(fn(S.plan)).filter((p) => p.day >= cutoff);
+    render(); saveCache();
+    if (!S.db) return toast("Ei yhteyttä – ei tallennettu");
+    const { error } = await S.db.from("ruoka_plan").upsert({ id: "main", items: S.plan });
+    if (error) toast("Tallennus epäonnistui");
+  }
+  function planRecipe(id, day) {
+    const r = byId(id); if (!r) return;
+    const entry = { id: uid(), recipeId: id, day, who: S.profile };
+    closeDayPick();
+    savePlan((list) => [...list, entry]);
+    toast(`${dayLabel(day)} ${dayDate2(day)}: ${r.name}`, () => savePlan((list) => list.filter((p) => p.id !== entry.id)));
+  }
+  function unplan(entryId, silent) {
+    const gone = S.plan.find((p) => p.id === entryId);
+    savePlan((list) => list.filter((p) => p.id !== entryId));
+    if (!silent && gone) toast("Poistettu suunnitelmasta", () => savePlan((list) => [...list, gone]));
+  }
+  // savePrefs(who, fn): fn gets the latest prefs and returns the patch, so quick taps and undos never overwrite each other with stale copies.
+  async function savePrefs(who, fn) {
+    const next = { ...prefsOf(who), ...fn(prefsOf(who)) };
+    S.prefs[who] = normPrefs(next); render(); saveCache();
+    if (!S.db) return toast("Ei yhteyttä – ei tallennettu");
+    const { error } = await S.db.from("ruoka_prefs").upsert({ who, ...S.prefs[who] });
+    if (error) toast("Tallennus epäonnistui");
+  }
+  const without = (arr, id) => arr.filter((x) => x !== id);
+  const withId = (arr, id) => [...without(arr, id), id];
+  function hideRecipe(id) {
+    const r = byId(id); if (!r) return;
+    const who = S.profile, wasProposal = isProposal(r);
+    if (S.open === id) closeAll();
+    savePrefs(who, (p) => ({ hidden: withId(p.hidden, id) }));
+    toast(wasProposal ? "Ei lisätty kirjaan" : "Piilotettu – löydät sen Reseptit-välilehden lopusta", () => savePrefs(who, (p) => ({ hidden: without(p.hidden, id) })));
+  }
+  function keepRecipe(id) {
+    const who = S.profile;
+    savePrefs("shared", (p) => ({ kept: withId(p.kept, id) }));
+    if (P().hidden.includes(id)) savePrefs(who, (p) => ({ hidden: without(p.hidden, id) }));
+    toast("Lisätty kirjaan – näkyy nyt teille molemmille", () => savePrefs("shared", (p) => ({ kept: without(p.kept, id) })));
+  }
+  function deleteRecipe(id) {
+    const r = byId(id); if (!r) return;
+    if (!confirm(`Poistetaanko "${r.name}" kirjasta? Se katoaa sekä sinulta että ${S.profile === "leo" ? "Kirsiltä" : "Leolta"}. Voit palauttaa sen Reseptit-välilehden lopusta.`)) return;
+    const wasFav = isFav(r);
+    if (S.open === id) closeAll();
+    savePrefs("shared", (p) => ({ deleted: withId(p.deleted, id), favorites: without(p.favorites, id) }));
+    toast("Resepti poistettu kirjasta", () => savePrefs("shared", (p) => ({ deleted: without(p.deleted, id), favorites: wasFav ? withId(p.favorites, id) : p.favorites })));
+  }
+  function restoreRecipe(id) { savePrefs("shared", (p) => ({ deleted: without(p.deleted, id) })); toast("Palautettu kirjaan"); }
+  function toggleFav(id) {
+    const on = FAVS().includes(id);
+    savePrefs("shared", (p) => ({ favorites: on ? without(p.favorites, id) : withId(p.favorites, id) }));
+    toast(on ? "Poistettu suosikeista" : "Lisätty yhteisiin suosikkeihin ♥");
+  }
+  async function removeReview(id) {
+    if (!S.db) return toast("Ei yhteyttä");
+    const { error } = await S.db.from("ruoka_reviews").delete().eq("id", id);
+    if (error) return toast("Poisto epäonnistui");
+    await load("reviews");
+    if (S.reviews.some((v) => v.id === id)) return toast("Arviota ei voi enää poistaa (yli tunti vanha)");
+    toast("Arvio poistettu");
+  }
+  async function saveReview() {
+    const v = S.review; if (!v || !v.stars || S.busy) return;
+    if (!S.db) return toast("Ei yhteyttä");
+    S.busy = true; render();
+    const { error } = await S.db.from("ruoka_reviews").insert({ recipe_id: v.recipeId, who: S.profile, stars: v.stars, taste: v.taste || "", comment: v.comment.trim().slice(0, 500), at: Date.now() });
+    S.busy = false;
+    if (error) { render(); return toast("Tallennus epäonnistui"); }
+    if (v.planId) await savePlan((list) => list.filter((p) => p.id !== v.planId));
+    await load("reviews");
+    closeReview(); toast("Kiitos! Arvio tallennettu.");
+  }
+  async function shareRecipe(r) {
+    const lines = [r.name, [r.time, r.active, r.servings ? r.servings + " annosta" : ""].filter(Boolean).join(" · ")];
+    if (r.oven) lines.push("Uuni: " + r.oven);
+    lines.push("", "Ainekset:", ...r.ing.map((i) => `• ${i.n}${i.a ? " – " + i.a : ""}`), "", "Näin teet:", ...r.steps.map((s, i) => `${i + 1}. ${s}`));
+    if (r.tips) lines.push("", "Vinkki: " + r.tips);
+    lines.push("", "Kotiruoka-kirja · " + location.href.split("#")[0]);
+    await shareText(r.name, lines.join("\n"));
+  }
+  async function shareText(title, text) {
+    try { if (navigator.share) { await navigator.share({ title, text }); return; } } catch (e) { if (e && e.name === "AbortError") return; }
+    try { await navigator.clipboard.writeText(text); toast("Kopioitu leikepöydälle"); } catch (e) { toast("Jakaminen ei onnistunut"); }
+  }
+
+  const SUPABASE_URL = "https://nkhfqgyxronrfsdbeddn.supabase.co";
+  const SUPABASE_KEY = "sb_publishable_YgV-RORNesAaMS--00Gz6Q_HB_3C7kk";
+  const TABLES = ["recipes", "reviews", "plan", "shopping", "prefs"];   // table name in the database is "ruoka_" + this
+  const seq = {};   // per-table request counter: a slow, older response never overwrites a newer one
+  async function load(table) {
+    if (!S.db) return false;
+    const my = (seq[table] = (seq[table] || 0) + 1);
+    let res; try { res = await S.db.from("ruoka_" + table).select("*"); } catch (e) { res = { error: e }; }
+    if (my !== seq[table]) return null;   // superseded by a newer request
+    if (res.error || !Array.isArray(res.data)) { console.warn(table, res.error); return false; }
+    const data = res.data;
+    try {
+      if (table === "recipes") S.recipes = data.map(normRecipe).filter(Boolean).sort((a, b) => a.order - b.order);
+      if (table === "reviews") S.reviews = data.map(normReview).filter(Boolean);
+      if (table === "plan") S.plan = normPlan(data.find((r) => r && r.id === "main")?.items);
+      if (table === "shopping") S.shopping = normShopping(data.find((r) => r && r.id === "main")?.items);
+      if (table === "prefs") for (const row of data) if (row && ["leo", "aiti", "shared"].includes(row.who)) S.prefs[row.who] = normPrefs(row);
+    } catch (e) { console.warn(table, e); return false; }
+    if (S.dbState === "offline" || S.dbState === "cached") S.dbState = "ok";
+    render(); saveCache();
+    return true;
+  }
+  let loading = null;
+  function loadAll() {
+    if (loading) return loading;
+    loading = (async () => {
+      const ok = await Promise.all(TABLES.map(load));
+      const failed = ok.some((x) => x === false);
+      S.dbState = !failed ? "ok" : (S.recipes.length ? "offline" : "none");
+      render(); if (S.dbState === "ok") saveCache();
+    })().finally(() => { loading = null; });
+    return loading;
+  }
+  async function connect() {
+    if (!window.supabase) { S.dbState = S.recipes.length ? "offline" : "none"; render(); return; }
+    S.db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+    // Live updates: any change on any table reloads that table, so both phones stay in sync. Subscribed first so nothing is missed while loading.
+    S.db.channel("kotiruoka").on("postgres_changes", { event: "*", schema: "public" }, (p) => {
+      const t = String(p.table || "").replace(/^ruoka_/, "");
+      if (TABLES.includes(t)) load(t);
+    }).subscribe();
+    await loadAll();
+    document.addEventListener("visibilitychange", () => { if (!document.hidden) { loadAll(); wakeSync(); } });
+    window.addEventListener("online", () => loadAll());
+    window.addEventListener("offline", () => { if (S.dbState === "ok") { S.dbState = "offline"; render(); } });
+  }
+
+  // ---------- Events ----------
+  document.addEventListener("click", (e) => {
+    const tu = e.target.closest("[data-toast-undo]");
+    if (tu) { const fn = toastUndo; toastUndo = null; $("#toast").classList.remove("show"); if (fn) fn(); return; }
+    const tt = e.target.closest("[data-theme-toggle]");
+    if (tt) { theme = THEMES[(THEMES.indexOf(theme) + 1) % THEMES.length]; store.set("ruoka.theme", theme); applyTheme(); return; }
+    const t = e.target.closest("[data-chat-clear],[data-chef],[data-starter],[data-save-chef],[data-pick-who],[data-step],[data-share],[data-share-shop],[data-delete],[data-undelete],[data-unplan],[data-unreview],[data-profile],[data-tab],[data-open],[data-close],[data-reroll],[data-cat],[data-plan],[data-set-day],[data-day-cancel],[data-rate],[data-shop],[data-done],[data-star],[data-taste],[data-review-cancel],[data-review-save],[data-remove],[data-clear-done],[data-hide],[data-unhide],[data-keep],[data-fav]");
+    if (!t) return;
+    const d = t.dataset;
+    if ("chatClear" in d) { S.chat = []; saveChat(); render(); }
+    else if ("chef" in d) { openChef(); }
+    else if (d.starter) { askChef(d.starter); }
+    else if (d.saveChef) { saveChefRecipe(+d.saveChef); }
+    else if (d.pickWho) { if (!PROFILES.includes(d.pickWho)) return; S.profile = d.pickWho; store.set("ruoka.profile", S.profile); S.firstRun = false; loadSeed(); render(); }
+    else if (d.step != null) { const i = +d.step; if (S.stepsDone.has(i)) S.stepsDone.delete(i); else S.stepsDone.add(i); t.classList.toggle("done", S.stepsDone.has(i)); }
+    else if (d.share) { const r = byId(d.share); if (r) shareRecipe(r); }
+    else if ("shareShop" in d) { const open = S.shopping.filter((i) => !i.done); shareText("Ostoslista", ["Ostoslista (Kotiruoka-kirja):", ...open.map((i) => `☐ ${i.text}${i.sub ? " (" + i.sub + ")" : ""}`)].join("\n")); }
+    else if (d.delete) { deleteRecipe(d.delete); }
+    else if (d.undelete) { restoreRecipe(d.undelete); }
+    else if (d.unplan) { unplan(d.unplan); }
+    else if (d.unreview) { removeReview(d.unreview); }
+    else if (d.hide) { hideRecipe(d.hide); }
+    else if (d.unhide) { savePrefs(S.profile, (p) => ({ hidden: without(p.hidden, d.unhide) })); toast("Palautettu"); }
+    else if (d.keep) { keepRecipe(d.keep); }
+    else if (d.fav) { toggleFav(d.fav); }
+    else if (d.profile) { if (!PROFILES.includes(d.profile)) return; S.profile = d.profile; store.set("ruoka.profile", S.profile); loadSeed(); render(); }
+    else if (d.tab) { S.tab = d.tab; render(); window.scrollTo(0, 0); }
+    else if (d.open) { openRecipe(d.open); }
+    else if ("close" in d) { closeTop(); }
+    else if ("reroll" in d) { reroll(); }
+    else if (d.cat) { S.cat = d.cat; render(); }
+    else if (d.plan) { openDayPick(d.plan); }
+    else if (d.setDay) { if (S.dayPick) planRecipe(S.dayPick, d.setDay); }
+    else if ("dayCancel" in d) { closeDayPick(); }
+    else if (d.rate) { openReview({ recipeId: d.rate, stars: 0, taste: "", comment: "" }); }
+    else if (d.shop) { const r = byId(d.shop); if (r) addToShopping(r); }
+    else if (d.done) { const p = S.plan.find((x) => x.id === d.done); if (p && byId(p.recipeId)) openRecipe(p.recipeId, { recipeId: p.recipeId, stars: 0, taste: "", comment: "", planId: p.id }); }
+    else if (d.star) { if (S.review) { S.review.stars = +d.star; render(); } }
+    else if (d.taste) { if (S.review) { S.review.taste = S.review.taste === d.taste ? "" : d.taste; render(); } }
+    else if ("reviewCancel" in d) { closeReview(); }
+    else if ("reviewSave" in d) { saveReview(); }
+    else if (d.remove) { e.preventDefault(); const gone = S.shopping.find((i) => i.id === d.remove); saveShopping(S.shopping.filter((i) => i.id !== d.remove)); if (gone) toast("Rivi poistettu", () => saveShopping([...S.shopping, gone])); }
+    else if ("clearDone" in d) { const gone = S.shopping.filter((i) => i.done); saveShopping(S.shopping.filter((i) => !i.done)); toast("Ruksitut poistettu", () => saveShopping([...S.shopping, ...gone.filter((g) => !S.shopping.some((i) => i.id === g.id))])); }
+  });
+  document.addEventListener("change", (e) => {
+    const c = e.target.closest("[data-check]");
+    if (c) saveShopping(S.shopping.map((i) => i.id === c.dataset.check ? { ...i, done: c.checked } : i));
+  });
+  document.addEventListener("input", (e) => {
+    if (e.target.matches("[data-search]")) { S.q = e.target.value; render(); }
+    if (e.target.matches("[data-comment]") && S.review) S.review.comment = e.target.value;
+    if (e.target.matches("[data-chat]")) { e.target.style.height = "38px"; e.target.style.height = Math.min(150, e.target.scrollHeight) + "px"; syncChatLayout(); }
+  });
+  document.addEventListener("keydown", (e) => {
+    // Enter sends, Shift+Enter makes a new line
+    if (e.target.matches("[data-chat]") && e.key === "Enter" && !e.shiftKey) { e.preventDefault(); e.target.closest("form").requestSubmit(); }
+  });
+  document.addEventListener("submit", (e) => {
+    const cf = e.target.closest("[data-chatform]");
+    if (cf) { e.preventDefault(); const inp = $("[data-chat]", cf), text = inp.value.trim().slice(0, 1000); if (!text) return; inp.value = ""; askChef(text); return; }
+    const f = e.target.closest("[data-addform]"); if (!f) return;
+    e.preventDefault();
+    const inp = $("[data-addtext]", f), text = inp.value.trim().slice(0, 120); if (!text) return;
+    inp.value = "";
+    saveShopping([...S.shopping, { id: uid(), text, sub: "", done: false }]);
+  });
+
+  loadCache();
+  render();
+  connect().catch((e) => { console.error(e); S.dbState = S.recipes.length ? "offline" : "none"; render(); });
+  if ("serviceWorker" in navigator) window.addEventListener("load", () => { navigator.serviceWorker.register("sw.js").catch(() => {}); });
+})();
+</script>
+</body>
+</html>
