@@ -406,7 +406,7 @@
     if (key === dayKey(new Date(Date.now() + DAY))) return "Huomenna";
     return capit(d.toLocaleDateString("fi-FI", { weekday: "long" }));
   }
-  const dayDate2 = (key) => { const d = dayDate(key); return d ? d.toLocaleDateString("fi-FI", { day: "numeric", month: "numeric" }) + "." : ""; };
+  const dayDate2 = (key) => { const d = dayDate(key); return d ? d.toLocaleDateString("fi-FI", { day: "numeric", month: "numeric" }) : ""; };
 
   // Visibility per profile: proposals ("ehdotus") show only after "Pidetään"; hidden ones never.
   const prefsOf = (who) => S.prefs[who] || (S.prefs[who] = EMPTY_PREFS());
@@ -862,7 +862,7 @@
       </div>
       <div class="facts">
         <div class="fact"><span class="l">Kokonaisaika</span><span class="v">${esc(r.time || "–")}</span></div>
-        <div class="fact"><span class="l">Työaikaa</span><span class="v">${esc(r.active || "–")}</span></div>
+        <div class="fact"><span class="l">Työaikaa</span><span class="v">${esc((r.active || "–").replace(/\s*työtä$/i, ""))}</span></div>
         <div class="fact"><span class="l">Annoksia</span><span class="v">${r.servings ?? "–"}</span></div>
       </div>
       <div class="facts two" style="margin-top:8px">
